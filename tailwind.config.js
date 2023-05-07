@@ -8,9 +8,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'main-gradient': 'radial-gradient(72.9% 72.9% at 91.25% 20.1%, #0E535C 0%, #052327 100%)',
+        'hero-pattern': 'url("/images/hero-pattern.png")',
       },
     },
   },
