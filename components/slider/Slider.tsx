@@ -51,7 +51,7 @@ export const Slider: React.FC<Props> = ({ slides }) => {
       <div className="relative">
         <div
           ref={slidesContainer}
-          className="slides-container h-96 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0"
+          className="scrollbar-hide h-96 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0"
         >
           {slides.map((slide) => (
             <div
