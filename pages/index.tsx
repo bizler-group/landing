@@ -4,11 +4,17 @@ import {
   IconBrandInstagram,
   IconBrandTelegram,
   IconBrandLinkedin,
+  IconArrowLeft,
+  IconArrowRight,
 } from '@tabler/icons-react'
+import { useRef } from 'react'
 
 const nunitoSans = Nunito_Sans({ subsets: ['cyrillic', 'latin'] })
 
 export default function Home() {
+  const slidesContainer = useRef<HTMLDivElement>(null)
+  const slide = useRef<HTMLDivElement>(null)
+
   return (
     <main
       className={`min-h-screen ${nunitoSans.className} bg-[#052327] bg-main-gradient overflow-hidden relative`}
@@ -169,12 +175,17 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto pt-7 w-4/5 flex justify-between gap-12 mb-24">
+      <div className="mx-auto pt-7 w-4/5 flex items-end justify-between gap-12 mb-24">
         <div className="min-h-[450px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Mission-1-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1" />
 
-        <div className="mt-10 flex flex-col gap-10 flex-1">
-          <h3 className="text-[#E0ECEB] font-bold text-3xl">Наша миссия</h3>
-          <p className="text-[#B8C1C1] text-2xl">
+        <div className="flex flex-col gap-10 flex-1">
+          <p className="text-[#52B6C4] tracking-widest uppercase">
+            Наша миссия
+          </p>
+          <h3 className="text-[#E0ECEB] font-bold text-5xl leading-normal">
+            Some title 2 lines of text of testim
+          </h3>
+          <p className="text-[#B8C1C1] text-xl leading-snug">
             Решить локальные проблемы с помощью IT и внести свой вклад в
             развитие нашего региона. Мы хотим использовать максимум своих знаний
             и навыков для реализаций проектов и поднять благополучие региона на
@@ -183,10 +194,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto pt-7 w-4/5 flex justify-between gap-12 mb-10">
-        <div className="mt-10 flex flex-col gap-10 flex-1">
-          <h3 className="text-[#E0ECEB] font-bold text-3xl">Видение</h3>
-          <p className="text-[#B8C1C1] text-2xl">
+      <div className="mx-auto pt-7 w-4/5 flex justify-between gap-12 mb-20">
+        <div className="flex flex-col gap-10 flex-1">
+          <p className="text-[#52B6C4] tracking-widest uppercase">Видение</p>
+          <h3 className="text-[#E0ECEB] font-bold text-5xl leading-normal">
+            Some title 2 lines of text of testim
+          </h3>
+          <p className="text-[#B8C1C1] text-xl leading-snug">
             Наша первостепенная задача – создать коммьюнити, где всех будет
             объединять одна миссия и ценности. Мы открыты для всех, чьё виденье
             совпадает с нашим. Нам неважно, какой вы расы, нации и пола, мы с
@@ -195,6 +209,118 @@ export default function Home() {
         </div>
 
         <div className="min-h-[400px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Vision-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1" />
+      </div>
+
+      <div className="mx-auto pt-7 w-4/5 mb-20">
+        <h2 className="text-4xl font-bold text-white mb-7">Наши лидеры</h2>
+
+        <div className="relative">
+          <div
+            ref={slidesContainer}
+            className="slides-container h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0"
+          >
+            <div
+              ref={slide}
+              className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden"
+            >
+              <img
+                className="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1600"
+                alt="mountain_image"
+              />
+            </div>
+            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/6263568/pexels-photo-6263568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image"
+              />
+            </div>
+            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image"
+              />
+            </div>
+            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/10343729/pexels-photo-10343729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image"
+              />
+            </div>
+            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/13860053/pexels-photo-13860053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image"
+              />
+            </div>
+            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/8576739/pexels-photo-8576739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image"
+              />
+            </div>
+            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/1743367/pexels-photo-1743367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image"
+              />
+            </div>
+            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/5920021/pexels-photo-5920021.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="mountain_image"
+              />
+            </div>
+            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/12805075/pexels-photo-12805075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image"
+              />
+            </div>
+            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-5 gap-5 mx-auto justify-center items-center md:flex">
+          <button
+            role="button"
+            className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
+            aria-label="prev"
+            disabled={slidesContainer.current?.scrollLeft === 0}
+            onClick={() => {
+              if (!slide.current || !slidesContainer.current) return
+              slidesContainer.current.scrollLeft -= slide.current.clientWidth
+            }}
+          >
+            <IconArrowLeft className={`text-[#52B6C4] ${slidesContainer.current?.scrollLeft === 0 && 'text-[#194f55]'}`} />
+          </button>
+
+          <button
+            role="button"
+            className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
+            aria-label="next"
+            onClick={() => {
+              if (!slide.current || !slidesContainer.current) return
+              slidesContainer.current.scrollLeft += slide.current.clientWidth
+            }}
+          >
+            <IconArrowRight className="text-[#52B6C4]" />
+          </button>
+        </div>
       </div>
     </main>
   )
