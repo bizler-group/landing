@@ -11,8 +11,16 @@ const nunitoSans = Nunito_Sans({ subsets: ['cyrillic', 'latin'] })
 export default function Home() {
   return (
     <main
-      className={`min-h-screen ${nunitoSans.className} bg-[#052327] bg-main-gradient overflow-hidden`}
+      className={`min-h-screen ${nunitoSans.className} bg-[#052327] bg-main-gradient overflow-hidden relative`}
     >
+      <Image
+        className="absolute top-24 right-0 mix-blend-soft-light"
+        src="/images/hero-pattern.png"
+        alt="hero-pattern"
+        width={700}
+        height={800}
+      />
+
       <header className="mx-auto pt-7 w-4/5 flex items-center justify-between">
         <div>
           <Image
@@ -88,7 +96,7 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="text-white mx-auto w-4/5 mt-32 mb-48 relative">
+      <div className="text-white mx-auto w-4/5 mt-32 mb-48">
         <h1 className="text-5xl font-bold mb-7 leading-tight max-w-xl">
           Реализуйте свои идеи вместе с нами
         </h1>
@@ -102,15 +110,6 @@ export default function Home() {
         <button className="bg-[#52B6C4] rounded-3xl px-6 py-3 mt-5">
           Связаться с нами
         </button>
-
-        {/* <div className="absolute top-0 left-50% z-10 bg-hero-pattern w-28 h-28" /> */}
-        <Image
-          className="absolute -top-[40%] left-[52%] mix-blend-soft-light"
-          src="/images/hero-pattern.png"
-          alt="hero-pattern"
-          width={700}
-          height={800}
-        />
       </div>
 
       <div className="mb-20">
