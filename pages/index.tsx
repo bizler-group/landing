@@ -4,17 +4,75 @@ import {
   IconBrandInstagram,
   IconBrandTelegram,
   IconBrandLinkedin,
-  IconArrowLeft,
-  IconArrowRight,
 } from '@tabler/icons-react'
-import { useRef } from 'react'
+import { Slider } from '~/components/slider/Slider'
 
 const nunitoSans = Nunito_Sans({ subsets: ['cyrillic', 'latin'] })
 
-export default function Home() {
-  const slidesContainer = useRef<HTMLDivElement>(null)
-  const slide = useRef<HTMLDivElement>(null)
+const SLIDES = [
+  {
+    id: 1,
+    image: '/images/leaders/1.webp',
+    title: 'Александр Кузнецов',
+    description: 'Генеральный директор',
+  },
+  {
+    id: 2,
+    image: '/images/leaders/2.jpeg',
+    title: 'Александр Кузнецов',
+    description: 'Генеральный директор',
+  },
+  {
+    id: 3,
+    image: '/images/leaders/3.webp',
+    title: 'Александр Кузнецов',
+    description: 'Генеральный директор',
+  },
+  {
+    id: 4,
+    image: '/images/leaders/4.jpeg',
+    title: 'Александр Кузнецов',
+    description: 'Генеральный директор',
+  },
+  {
+    id: 5,
+    image: '/images/leaders/5.webp',
+    title: 'Александр Кузнецов',
+    description: 'Генеральный директор',
+  },
+  {
+    id: 6,
+    image: '/images/leaders/6.jpeg',
+    title: 'Александр Кузнецов',
+    description: 'Генеральный директор',
+  },
+  {
+    id: 7,
+    image: '/images/leaders/7.jpeg',
+    title: 'Александр Кузнецов',
+    description: 'Генеральный директор',
+  },
+  {
+    id: 8,
+    image: '/images/leaders/8.jpeg',
+    title: 'Александр Кузнецов',
+    description: 'Генеральный директор',
+  },
+  {
+    id: 9,
+    image: '/images/leaders/9.jpeg',
+    title: 'Александр Кузнецов',
+    description: 'Генеральный директор',
+  },
+  {
+    id: 10,
+    image: '/images/leaders/10.webp',
+    title: 'Александр Кузнецов',
+    description: 'Генеральный директор',
+  },
+]
 
+export default function Home() {
   return (
     <main
       className={`min-h-screen ${nunitoSans.className} bg-[#052327] bg-main-gradient overflow-hidden relative`}
@@ -214,7 +272,9 @@ export default function Home() {
       <div className="mx-auto pt-7 w-4/5 mb-20">
         <h2 className="text-4xl font-bold text-white mb-7">Наши лидеры</h2>
 
-        <div className="relative">
+        <Slider slides={SLIDES} />
+
+        {/* <div className="relative">
           <div
             ref={slidesContainer}
             className="slides-container h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0"
@@ -320,7 +380,7 @@ export default function Home() {
           >
             <IconArrowRight className="text-[#52B6C4]" />
           </button>
-        </div>
+        </div> */}
       </div>
     </main>
   )
