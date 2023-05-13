@@ -113,7 +113,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="mb-10">
+      <div className="mb-20">
         <h2 className="text-4xl font-bold text-white text-center mt-32">
           Нам доверяют
         </h2>
@@ -168,6 +168,34 @@ export default function Home() {
             />
           </div>
         </div>
+      </div>
+
+      <div className="mx-auto pt-7 w-4/5 flex justify-between gap-12 mb-24">
+        <div className="min-h-[450px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Mission-1-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1" />
+
+        <div className="mt-10 flex flex-col gap-10 flex-1">
+          <h3 className="text-[#E0ECEB] font-bold text-3xl">Наша миссия</h3>
+          <p className="text-[#B8C1C1] text-2xl">
+            Решить локальные проблемы с помощью IT и внести свой вклад в
+            развитие нашего региона. Мы хотим использовать максимум своих знаний
+            и навыков для реализаций проектов и поднять благополучие региона на
+            новый уровень.
+          </p>
+        </div>
+      </div>
+
+      <div className="mx-auto pt-7 w-4/5 flex justify-between gap-12 mb-10">
+        <div className="mt-10 flex flex-col gap-10 flex-1">
+          <h3 className="text-[#E0ECEB] font-bold text-3xl">Видение</h3>
+          <p className="text-[#B8C1C1] text-2xl">
+            Наша первостепенная задача – создать коммьюнити, где всех будет
+            объединять одна миссия и ценности. Мы открыты для всех, чьё виденье
+            совпадает с нашим. Нам неважно, какой вы расы, нации и пола, мы с
+            радостью объединимся с вами для достижения общей цели.
+          </p>
+        </div>
+
+        <div className="min-h-[400px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Vision-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1" />
       </div>
     </main>
   )
