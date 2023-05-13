@@ -113,18 +113,60 @@ export default function Home() {
         />
       </div>
 
-      <div>
+      <div className="mb-10">
         <h2 className="text-4xl font-bold text-white text-center mt-32">
           Нам доверяют
         </h2>
 
-        <div className="flex justify-center mt-10">
-          <Image
-            src="/images/partner-logos.png"
-            alt="Picture of the author"
-            width={1000}
-            height={250}
-          />
+        <div className="flex justify-center items-center gap-x-16 mt-10">
+          <div>
+            <Image
+              src="/images/partner-logos/airbnb.png"
+              alt="Airbnb logo"
+              width={100}
+              height={40}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/partner-logos/hubspot.png"
+              alt="Hubspot logo"
+              width={100}
+              height={40}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/partner-logos/google.png"
+              alt="Google logo"
+              width={100}
+              height={40}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/partner-logos/microsoft.png"
+              alt="Microsoft logo"
+              width={100}
+              height={40}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/partner-logos/walmart.png"
+              alt="Walmart logo"
+              width={100}
+              height={40}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/partner-logos/fedex.png"
+              alt="FedEx logo"
+              width={100}
+              height={40}
+            />
+          </div>
         </div>
       </div>
     </main>
