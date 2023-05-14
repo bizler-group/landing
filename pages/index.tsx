@@ -9,66 +9,93 @@ import { Slider } from '~/components/slider/Slider'
 
 const nunitoSans = Nunito_Sans({ subsets: ['cyrillic', 'latin'] })
 
-const SLIDES = [
+const LEADER_SLIDES = [
   {
     id: 1,
-    image: '/images/leaders/1.webp',
-    title: 'Александр Кузнецов',
-    description: 'Генеральный директор',
+    image: '/images/leaders/qural.jpeg',
+    title: 'Курал Атабаев',
+    description: 'Основатель',
   },
   {
     id: 2,
-    image: '/images/leaders/2.jpeg',
-    title: 'Александр Кузнецов',
-    description: 'Генеральный директор',
+    image: '/images/leaders/abat.jpeg',
+    title: 'Абат Даулетбаев',
+    description: 'Директор, программист, инженер',
   },
   {
     id: 3,
-    image: '/images/leaders/3.webp',
-    title: 'Александр Кузнецов',
-    description: 'Генеральный директор',
+    image: '/images/leaders/azamat.jpeg',
+    title: 'Азамат Жумабаев',
+    description: 'Технический директор',
   },
   {
     id: 4,
-    image: '/images/leaders/4.jpeg',
-    title: 'Александр Кузнецов',
-    description: 'Генеральный директор',
+    image: '/images/leaders/begis.jpeg',
+    title: 'Бегис Орынбаев',
+    description: 'Дизайнер',
+  },
+]
+
+const PROJECT_SLIDES = [
+  {
+    id: 1,
+    image: '/images/projects/1.webp',
+    title: 'Project name',
+    description: 'Position + some information in 2 lines lorem ipsum',
+  },
+  {
+    id: 2,
+    image: '/images/projects/2.jpeg',
+    title: 'Project name',
+    description: 'Position + some information in 2 lines lorem ipsum',
+  },
+  {
+    id: 3,
+    image: '/images/projects/3.webp',
+    title: 'Project name',
+    description: 'Position + some information in 2 lines lorem ipsum',
+  },
+  {
+    id: 4,
+    image: '/images/projects/4.jpeg',
+    title: 'Project name',
+    description: 'Position + some information in 2 lines lorem ipsum',
   },
   {
     id: 5,
-    image: '/images/leaders/5.webp',
-    title: 'Александр Кузнецов',
-    description: 'Генеральный директор',
+    image: '/images/projects/5.webp',
+    title: 'Project name',
+    description: 'Position + some information in 2 lines lorem ipsum',
   },
   {
     id: 6,
-    image: '/images/leaders/6.jpeg',
-    title: 'Александр Кузнецов',
-    description: 'Генеральный директор',
+    image: '/images/projects/6.jpeg',
+    title: 'Project name',
+    description: 'Position + some information in 2 lines lorem ipsum',
   },
   {
     id: 7,
-    image: '/images/leaders/7.jpeg',
-    title: 'Александр Кузнецов',
-    description: 'Генеральный директор',
+    image: '/images/projects/7.jpeg',
+    title: 'Project name',
+    description: 'Position + some information in 2 lines lorem ipsum',
   },
   {
     id: 8,
-    image: '/images/leaders/8.jpeg',
-    title: 'Александр Кузнецов',
-    description: 'Генеральный директор',
+    image: '/images/projects/8.jpeg',
+    title: 'Project name',
+    description: 'Position + some information in 2 lines lorem ipsum',
   },
   {
     id: 9,
-    image: '/images/leaders/9.jpeg',
-    title: 'Александр Кузнецов',
-    description: 'Генеральный директор',
+    image: '/images/projects/9.jpeg',
+    title: 'Project name',
+    description: 'Position + some information in 2 lines lorem ipsum',
   },
   {
     id: 10,
-    image: '/images/leaders/10.webp',
-    title: 'Александр Кузнецов',
-    description: 'Генеральный директор',
+    image: '/images/projects/10.webp',
+    title: 'Project name',
+    description: 'Position + some information in 2 lines lorem ipsum',
   },
 ]
 
@@ -233,7 +260,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto pt-7 w-4/5 flex items-end justify-between gap-12 mb-24">
+      <div className="mx-auto pt-7 w-4/5 flex items-end justify-between gap-12 mb-28">
         <div className="min-h-[450px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Mission-1-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1" />
 
         <div className="flex flex-col gap-10 flex-1">
@@ -269,118 +296,16 @@ export default function Home() {
         <div className="min-h-[400px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Vision-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1" />
       </div>
 
-      <div className="mx-auto pt-7 w-4/5 mb-20">
+      <div className="mx-auto pt-7 w-4/5 mb-16">
         <h2 className="text-4xl font-bold text-white mb-7">Наши лидеры</h2>
 
-        <Slider slides={SLIDES} />
+        <Slider slides={LEADER_SLIDES} />
+      </div>
 
-        {/* <div className="relative">
-          <div
-            ref={slidesContainer}
-            className="slides-container h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0"
-          >
-            <div
-              ref={slide}
-              className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden"
-            >
-              <img
-                className="w-full h-full object-cover"
-                src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1600"
-                alt="mountain_image"
-              />
-            </div>
-            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images.pexels.com/photos/6263568/pexels-photo-6263568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="mountain_image"
-              />
-            </div>
-            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="mountain_image"
-              />
-            </div>
-            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images.pexels.com/photos/10343729/pexels-photo-10343729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="mountain_image"
-              />
-            </div>
-            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images.pexels.com/photos/13860053/pexels-photo-13860053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="mountain_image"
-              />
-            </div>
-            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images.pexels.com/photos/8576739/pexels-photo-8576739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="mountain_image"
-              />
-            </div>
-            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images.pexels.com/photos/1743367/pexels-photo-1743367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="mountain_image"
-              />
-            </div>
-            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images.pexels.com/photos/5920021/pexels-photo-5920021.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                alt="mountain_image"
-              />
-            </div>
-            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images.pexels.com/photos/12805075/pexels-photo-12805075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="mountain_image"
-              />
-            </div>
-            <div className="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="mountain_image"
-              />
-            </div>
-          </div>
-        </div>
+      <div className="mx-auto pt-7 w-4/5 mb-20">
+        <h2 className="text-4xl font-bold text-white mb-7">Наши проекты</h2>
 
-        <div className="mt-5 gap-5 mx-auto justify-center items-center md:flex">
-          <button
-            role="button"
-            className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
-            aria-label="prev"
-            disabled={slidesContainer.current?.scrollLeft === 0}
-            onClick={() => {
-              if (!slide.current || !slidesContainer.current) return
-              slidesContainer.current.scrollLeft -= slide.current.clientWidth
-            }}
-          >
-            <IconArrowLeft className={`text-[#52B6C4] ${slidesContainer.current?.scrollLeft === 0 && 'text-[#194f55]'}`} />
-          </button>
-
-          <button
-            role="button"
-            className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
-            aria-label="next"
-            onClick={() => {
-              if (!slide.current || !slidesContainer.current) return
-              slidesContainer.current.scrollLeft += slide.current.clientWidth
-            }}
-          >
-            <IconArrowRight className="text-[#52B6C4]" />
-          </button>
-        </div> */}
+        <Slider slides={PROJECT_SLIDES} />
       </div>
     </main>
   )

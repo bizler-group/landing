@@ -17,40 +17,42 @@ export const Slider: React.FC<Props> = ({ slides }) => {
   const [noNext, setNoNext] = useState(false)
   const slidesContainer = useRef<HTMLDivElement>(null)
 
-  const calculatePrevNext = useCallback(
+  const onPrevNext = useCallback(
     (dir: 'prev' | 'next') => {
       if (!slidesContainer.current) return
-      const canGoNext = true
-      const canGoBack =
-        slidesContainer.current.scrollLeft - slideClientWidth >
-        -(slideClientWidth / 2)
+      if (dir === 'prev' && noPrev) return
+      if (dir === 'next' && noNext) return
 
-      if (dir === 'prev') {
-        if (!canGoBack) {
-          setNoPrev(true)
-        } else {
+      switch (dir) {
+        case 'prev':
           slidesContainer.current.scrollLeft -= slideClientWidth
-          setNoNext(false)
-        }
-      }
-
-      if (dir === 'next') {
-        if (!canGoNext) {
-          setNoNext(true)
-        } else {
+          return
+        case 'next':
           slidesContainer.current.scrollLeft += slideClientWidth
-          setNoPrev(false)
-        }
+          return
+        default:
+          return
       }
     },
-    [slideClientWidth, slidesContainer]
+    [slideClientWidth, noPrev, noNext]
   )
+
+  const onScroll = useCallback((e: React.FormEvent) => {
+    const target = e.target as HTMLDivElement
+    const scrollLeft = target.scrollLeft
+    const scrollWidth = target.scrollWidth
+    const clientWidth = target.clientWidth
+
+    setNoPrev(scrollLeft === 0)
+    setNoNext(scrollLeft + clientWidth === scrollWidth)
+  }, [])
 
   return (
     <>
       <div className="relative">
         <div
           ref={slidesContainer}
+          onScroll={onScroll}
           className="scrollbar-hide h-96 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0"
         >
           {slides.map((slide) => (
@@ -60,10 +62,12 @@ export const Slider: React.FC<Props> = ({ slides }) => {
                 if (!ref) return
                 setSlideClientWidth(ref.clientWidth)
               }}
-              className="aspect-square h-full flex-shrink-0 snap-center rounded-3xl overflow-hidden"
+              className="aspect-square h-[90%] w-72 hover:w-80 hover:h-full hover:cursor-pointer transition-all flex-shrink-0 snap-center overflow-hidden"
             >
               <Image
-                className="w-full h-[85%] object-cover"
+                className={`rounded-3xl object-cover ${
+                  slide.description.length > 35 ? 'h-[70%]' : 'h-[80%]'
+                }`}
                 src={slide.image}
                 alt={slide.title}
                 width={500}
@@ -78,16 +82,16 @@ export const Slider: React.FC<Props> = ({ slides }) => {
         </div>
       </div>
 
-      <div className="mt-5 gap-5 mx-auto justify-center items-center md:flex">
+      <div className="mt-5 gap-5 mx-auto flex justify-center items-center">
         <button
           role="button"
           className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
           aria-label="prev"
           disabled={noPrev}
-          onClick={calculatePrevNext.bind(null, 'prev')}
+          onClick={onPrevNext.bind(null, 'prev')}
         >
           <IconArrowLeft
-            className={`text-[#52B6C4] ${noPrev && 'text-[#194f55]'}`}
+            className={noPrev ? 'text-[#194f55]' : 'text-[#52B6C4]'}
           />
         </button>
 
@@ -96,10 +100,10 @@ export const Slider: React.FC<Props> = ({ slides }) => {
           className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
           aria-label="next"
           disabled={noNext}
-          onClick={calculatePrevNext.bind(null, 'next')}
+          onClick={onPrevNext.bind(null, 'next')}
         >
           <IconArrowRight
-            className={`text-[#52B6C4] ${noNext && 'text-[#194f55]'}`}
+            className={noNext ? 'text-[#194f55]' : 'text-[#52B6C4]'}
           />
         </button>
       </div>
