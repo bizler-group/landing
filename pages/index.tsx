@@ -24,15 +24,15 @@ const LEADER_SLIDES = [
   },
   {
     id: 3,
-    image: '/images/leaders/azamat.jpeg',
+    image: '/images/leaders/azamat.jpg',
     title: 'Азамат Жумабаев',
     description: 'Технический директор',
   },
   {
     id: 4,
-    image: '/images/leaders/begis.jpeg',
+    image: '/images/leaders/begis.jpg',
     title: 'Бегис Орынбаев',
-    description: 'Дизайнер',
+    description: 'Проект менеджер, UX/UI дизайнер',
   },
 ]
 
