@@ -10,14 +10,15 @@ import { useCallback, useRef, useState } from 'react'
 interface Props {
   slides: {
     id: number | string
-    image: string
-    title: string
-    description: string
-    link?: string
+    avatar: string
+    name: string
+    position: string
+    company: string
+    content: string
   }[]
 }
 
-export const Slider: React.FC<Props> = ({ slides }) => {
+export const CardSlider: React.FC<Props> = ({ slides }) => {
   const [hoveredImageIndex, setHoveredImageIndex] = useState(-1)
   const [slideClientWidth, setSlideClientWidth] = useState(0)
   const [noPrev, setNoPrev] = useState(false)
@@ -60,7 +61,7 @@ export const Slider: React.FC<Props> = ({ slides }) => {
         <div
           ref={slidesContainer}
           onScroll={onScroll}
-          className="scrollbar-hide h-96 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0"
+          className="scrollbar-hide h-80 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0"
         >
           {slides.map((slide, index) => (
             <div
@@ -71,9 +72,9 @@ export const Slider: React.FC<Props> = ({ slides }) => {
               }}
               onMouseEnter={() => setHoveredImageIndex(index)}
               onMouseLeave={() => setHoveredImageIndex(-1)}
-              className="relative aspect-square h-[90%] w-72 hover:w-80 hover:h-full hover:cursor-pointer transition-all flex-shrink-0 snap-center overflow-hidden"
+              className="relative flex flex-col justify-between bg-[#041C1F] px-10 py-14 rounded-3xl min-w-[500px] aspect-square hover:cursor-pointer transition-all flex-shrink-0 snap-center overflow-hidden"
             >
-              <Image
+              {/* <Image
                 className={`rounded-3xl object-cover ${
                   slide.description.length > 35 ? 'h-[70%]' : 'h-[80%]'
                 } ${
@@ -97,6 +98,26 @@ export const Slider: React.FC<Props> = ({ slides }) => {
               <div className="mt-2.5 text-center">
                 <p className="text-white">{slide.title}</p>
                 <span className="text-[#B8C1C1]">{slide.description}</span>
+              </div> */}
+              <div>
+                <p className="text-white">{slide.content}</p>
+              </div>
+
+              <div className="flex gap-5 items-center justify-start">
+                <Image
+                  className="rounded-full w-14 h-14 object-cover"
+                  src={slide.avatar}
+                  alt={slide.name}
+                  width={100}
+                  height={100}
+                />
+
+                <div className="mt-2.5">
+                  <p className="text-white">{slide.name}</p>
+                  <span className="text-[#B8C1C1]">
+                    {slide.position}, {slide.company}
+                  </span>
+                </div>
               </div>
             </div>
           ))}

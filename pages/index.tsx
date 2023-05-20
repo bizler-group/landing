@@ -4,15 +4,19 @@ import {
   IconBrandInstagram,
   IconBrandTelegram,
   IconBrandLinkedin,
+  IconMailFilled,
 } from '@tabler/icons-react'
 import { Slider } from '~/components/slider/Slider'
+import { CardSlider } from '~/components/slider/CardSlider'
+import { Input } from '~/components/form/Input'
+import { Footer } from '~/components/layout/Footer'
 
 const nunitoSans = Nunito_Sans({ subsets: ['cyrillic', 'latin'] })
 
 const LEADER_SLIDES = [
   {
     id: 1,
-    image: '/images/leaders/qural.jpeg',
+    image: '/images/leaders/qural.jpg',
     title: 'Курал Атабаев',
     description: 'Основатель',
   },
@@ -42,67 +46,123 @@ const PROJECT_SLIDES = [
     image: '/images/projects/1.webp',
     title: 'Project name',
     description: 'Position + some information in 2 lines lorem ipsum',
+    link: 'https://google.com',
   },
   {
     id: 2,
     image: '/images/projects/2.jpeg',
     title: 'Project name',
     description: 'Position + some information in 2 lines lorem ipsum',
+    link: 'https://google.com',
   },
   {
     id: 3,
     image: '/images/projects/3.webp',
     title: 'Project name',
     description: 'Position + some information in 2 lines lorem ipsum',
+    link: 'https://google.com',
   },
   {
     id: 4,
     image: '/images/projects/4.jpeg',
     title: 'Project name',
     description: 'Position + some information in 2 lines lorem ipsum',
+    link: 'https://google.com',
   },
   {
     id: 5,
     image: '/images/projects/5.webp',
     title: 'Project name',
     description: 'Position + some information in 2 lines lorem ipsum',
+    link: 'https://google.com',
   },
   {
     id: 6,
     image: '/images/projects/6.jpeg',
     title: 'Project name',
     description: 'Position + some information in 2 lines lorem ipsum',
+    link: 'https://google.com',
   },
   {
     id: 7,
     image: '/images/projects/7.jpeg',
     title: 'Project name',
     description: 'Position + some information in 2 lines lorem ipsum',
+    link: 'https://google.com',
   },
   {
     id: 8,
     image: '/images/projects/8.jpeg',
     title: 'Project name',
     description: 'Position + some information in 2 lines lorem ipsum',
+    link: 'https://google.com',
   },
   {
     id: 9,
     image: '/images/projects/9.jpeg',
     title: 'Project name',
     description: 'Position + some information in 2 lines lorem ipsum',
+    link: 'https://google.com',
   },
   {
     id: 10,
     image: '/images/projects/10.webp',
     title: 'Project name',
     description: 'Position + some information in 2 lines lorem ipsum',
+    link: 'https://google.com',
+  },
+]
+
+const content =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in'
+
+const TESTIMONIALS_SLIDES = [
+  {
+    id: 1,
+    avatar: '/images/leaders/qural.jpg',
+    name: 'Айдана Абдыкадырова',
+    position: 'Директор',
+    company: 'Компания',
+    content,
+  },
+  {
+    id: 2,
+    avatar: '/images/leaders/qural.jpg',
+    name: 'Айдана Абдыкадырова',
+    position: 'Директор',
+    company: 'Компания',
+    content,
+  },
+  {
+    id: 3,
+    avatar: '/images/leaders/qural.jpg',
+    name: 'Айдана Абдыкадырова',
+    position: 'Директор',
+    company: 'Компания',
+    content,
+  },
+  {
+    id: 4,
+    avatar: '/images/leaders/qural.jpg',
+    name: 'Айдана Абдыкадырова',
+    position: 'Директор',
+    company: 'Компания',
+    content,
+  },
+  {
+    id: 5,
+    avatar: '/images/leaders/qural.jpg',
+    name: 'Айдана Абдыкадырова',
+    position: 'Директор',
+    company: 'Компания',
+    content,
   },
 ]
 
 export default function Home() {
   return (
     <main
-      className={`min-h-screen ${nunitoSans.className} bg-[#052327] bg-main-gradient overflow-hidden relative`}
+      className={`${nunitoSans.className} bg-[#052327] bg-main-gradient overflow-hidden relative`}
     >
       <Image
         className="absolute top-24 right-0 mix-blend-soft-light"
@@ -116,7 +176,7 @@ export default function Home() {
         <div>
           <Image
             src="/images/logo/white.svg"
-            alt="Picture of the author"
+            alt="Logo"
             width={150}
             height={150}
           />
@@ -306,6 +366,100 @@ export default function Home() {
         <h2 className="text-4xl font-bold text-white mb-7">Наши проекты</h2>
 
         <Slider slides={PROJECT_SLIDES} />
+      </div>
+
+      <div className="mx-auto pt-7 w-4/5 mb-16">
+        <h2 className="text-4xl font-bold text-white mb-7">О нас пишут</h2>
+
+        <CardSlider slides={TESTIMONIALS_SLIDES} />
+      </div>
+
+      <div className="mx-auto pt-7 w-4/5 mb-16">
+        <h2 className="text-4xl font-bold text-white mb-7">Свяжитесь с нами</h2>
+
+        <div className="flex gap-10 justify-between">
+          <form className="max-w-3xl flex-1">
+            <div className="flex gap-5">
+              <Input
+                label="First Name"
+                className="flex-1"
+                name="first_name"
+                placeholder="First Name"
+                value=""
+                onChange={() => {}}
+              />
+              <Input
+                label="Last Name"
+                className="flex-1"
+                name="last_name"
+                placeholder="Last Name"
+                value=""
+                onChange={() => {}}
+              />
+            </div>
+            <Input
+              className="my-5"
+              label="Message"
+              name="message"
+              type="textarea"
+              placeholder="Message"
+              value=""
+              onChange={() => {}}
+            />
+            <div className="flex gap-5">
+              <Input
+                label="Email"
+                className="flex-1"
+                name="email-address"
+                placeholder="email@example.com"
+                value=""
+                onChange={() => {}}
+              />
+              <Input
+                label="Phone Number"
+                className="flex-1"
+                name="phone-number"
+                placeholder="+4 "
+                value=""
+                onChange={() => {}}
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="bg-[#52B6C4] text-white mt-10 py-3 px-10 rounded-full"
+            >
+              Отправить
+            </button>
+          </form>
+
+          <div className="text-white w-[40%]">
+            <h3 className="font-bold text-2xl">Want to reach us directly?</h3>
+            <p className="text-base font-normal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui
+              pharetra elementum sit id sagittis non donec egestas.
+            </p>
+
+            <div className="mt-10">
+              <span className="flex gap-3 mb-4">
+                <IconMailFilled />
+                <a href="mailto:contact@example.com">contact@example.com</a>
+              </span>
+              <span className="flex gap-3 mb-4">
+                <IconMailFilled />
+                <a href="mailto:support@example.com">support@example.com</a>
+              </span>
+              <span className="flex gap-3">
+                <IconMailFilled />
+                <a href="mailto:press@example.com">press@example.com</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto pt-7 w-full bg-[#041C1F]">
+        <Footer />
       </div>
     </main>
   )
