@@ -1,3 +1,5 @@
+import cx from '~/lib/cx'
+
 interface Props {
   label?: string
   name: string
@@ -9,10 +11,6 @@ interface Props {
   ) => void
   error?: string
   className?: string
-}
-
-function classNames(...classes: (string | undefined)[]) {
-  return classes.filter(Boolean).join(' ')
 }
 
 export const Input: React.FC<Props> = ({
@@ -29,7 +27,7 @@ export const Input: React.FC<Props> = ({
   const isTextArea = type === 'textarea'
 
   return (
-    <div className={classNames('flex flex-col', className)}>
+    <div className={cx('flex flex-col', className)}>
       {label && (
         <label
           htmlFor={name}
@@ -45,7 +43,7 @@ export const Input: React.FC<Props> = ({
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          className={classNames(
+          className={cx(
             'px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:text-gray-200 dark:border-gray-600',
             error ? 'border-red-500' : undefined
           )}
@@ -60,7 +58,7 @@ export const Input: React.FC<Props> = ({
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          className={classNames(
+          className={cx(
             'px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:text-gray-200 dark:border-gray-600',
             error ? 'border-red-500' : undefined
           )}

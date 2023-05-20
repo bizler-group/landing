@@ -4,10 +4,11 @@ import {
   IconBrandTelegram,
 } from '@tabler/icons-react'
 import Image from 'next/image'
+import { LINKS } from '~/constants/data'
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-4/5 px-6 pt-5 pb-10 mx-auto">
+    <footer className="pt-7 px-20 pb-10 w-full bg-[#041C1F]">
       <div className="flex items-center justify-between">
         <Image
           src="/images/logo/white.svg"
@@ -18,38 +19,16 @@ export const Footer: React.FC = () => {
 
         <nav>
           <ul className="flex items-center space-x-8">
-            <li>
-              <a
-                href="https://nextjs.org/docs"
-                className="text-[#E0ECEB] hover:text-gray-300"
-              >
-                О нас
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://nextjs.org/learn"
-                className="text-[#E0ECEB] hover:text-gray-300"
-              >
-                Проекты
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://nextjs.org/learn"
-                className="text-[#E0ECEB] hover:text-gray-300"
-              >
-                Отзывы
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://nextjs.org/learn"
-                className="text-[#E0ECEB] hover:text-gray-300"
-              >
-                Связаться с нами
-              </a>
-            </li>
+            {LINKS.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="text-[#E0ECEB] hover:text-gray-300"
+                >
+                  {link.title}
+                </a>
+              </li>
+            ))}
 
             <li>
               <div className="flex space-x-4">
