@@ -1,11 +1,6 @@
-import {
-  IconArrowLeft,
-  IconArrowRight,
-  IconArrowUpRight,
-} from '@tabler/icons-react'
-import Image from 'next/image'
-import Link from 'next/link'
 import { useCallback, useRef, useState } from 'react'
+import Image from 'next/image'
+import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react'
 
 interface Props {
   slides: {
@@ -72,33 +67,8 @@ export const CardSlider: React.FC<Props> = ({ slides }) => {
               }}
               onMouseEnter={() => setHoveredImageIndex(index)}
               onMouseLeave={() => setHoveredImageIndex(-1)}
-              className="relative flex flex-col justify-between bg-[#041C1F] px-10 py-14 rounded-3xl min-w-[500px] aspect-square hover:cursor-pointer transition-all flex-shrink-0 snap-center overflow-hidden"
+              className="relative transition-all flex flex-col justify-between bg-[#041C1F] px-10 py-14 rounded-3xl min-w-[500px] aspect-square hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
             >
-              {/* <Image
-                className={`rounded-3xl object-cover ${
-                  slide.description.length > 35 ? 'h-[70%]' : 'h-[80%]'
-                } ${
-                  slide.link &&
-                  hoveredImageIndex === index &&
-                  'brightness-[30%]'
-                }`}
-                src={slide.image}
-                alt={slide.title}
-                width={500}
-                height={500}
-              />
-              {slide.link && hoveredImageIndex === index && (
-                <Link
-                  href={slide.link}
-                  className="flex text-white absolute top-[35%] left-1/3"
-                >
-                  Open details <IconArrowUpRight className="text-[#52B6C4]" />
-                </Link>
-              )}
-              <div className="mt-2.5 text-center">
-                <p className="text-white">{slide.title}</p>
-                <span className="text-[#B8C1C1]">{slide.description}</span>
-              </div> */}
               <div>
                 <p className="text-white">{slide.content}</p>
               </div>

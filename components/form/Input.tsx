@@ -26,13 +26,15 @@ export const Input: React.FC<Props> = ({
 }) => {
   const isTextArea = type === 'textarea'
 
+  const classNames = cx(
+    'px-4 py-2 mt-2 border rounded-md shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-gray-800 text-gray-200 border-gray-600',
+    error ? 'border-red-500' : undefined
+  )
+
   return (
     <div className={cx('flex flex-col', className)}>
       {label && (
-        <label
-          htmlFor={name}
-          className="text-sm font-medium text-gray-700 dark:text-gray-200"
-        >
+        <label htmlFor={name} className="text-sm font-medium text-[#E0ECEB]">
           {label}
         </label>
       )}
@@ -43,10 +45,7 @@ export const Input: React.FC<Props> = ({
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          className={cx(
-            'px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:text-gray-200 dark:border-gray-600',
-            error ? 'border-red-500' : undefined
-          )}
+          className={classNames}
           rows={5}
           {...props}
         />
@@ -58,10 +57,7 @@ export const Input: React.FC<Props> = ({
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          className={cx(
-            'px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:text-gray-200 dark:border-gray-600',
-            error ? 'border-red-500' : undefined
-          )}
+          className={classNames}
           {...props}
         />
       )}

@@ -11,11 +11,13 @@ import {
   TESTIMONIALS_SLIDES,
 } from '~/constants/data'
 
-const nunitoSans = Nunito_Sans({ subsets: ['cyrillic', 'latin'] })
+export const nunitoSans = Nunito_Sans({ subsets: ['cyrillic', 'latin'] })
 
 export default function Home() {
   return (
-    <main className={`container ${nunitoSans.className} overflow-hidden`}>
+    <main
+      className={`container ${nunitoSans.className} overflow-hidden relative z-50`}
+    >
       <div className="text-white mt-36 mb-60">
         <h1 className="text-5xl font-bold mb-7 leading-tight max-w-xl">
           Реализуйте свои идеи вместе с нами

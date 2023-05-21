@@ -4,7 +4,7 @@ import { Button } from './ui/Button'
 
 export const ContactForm: React.FC = () => {
   return (
-    <div className="pt-7 mb-16">
+    <div className="pt-7 px-2 mb-16">
       <h2 className="text-4xl font-bold text-white mb-7">Свяжитесь с нами</h2>
 
       <div className="flex gap-10 justify-between">

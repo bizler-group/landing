@@ -1,11 +1,11 @@
+import { useCallback, useRef, useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 import {
   IconArrowLeft,
   IconArrowRight,
   IconArrowUpRight,
 } from '@tabler/icons-react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useCallback, useRef, useState } from 'react'
 
 interface Props {
   slides: {
@@ -71,10 +71,10 @@ export const Slider: React.FC<Props> = ({ slides }) => {
               }}
               onMouseEnter={() => setHoveredImageIndex(index)}
               onMouseLeave={() => setHoveredImageIndex(-1)}
-              className="relative aspect-square h-[90%] w-72 hover:w-80 hover:h-full hover:cursor-pointer transition-all flex-shrink-0 snap-center overflow-hidden"
+              className="relative transition-all aspect-square h-[90%] w-72 hover:w-80 hover:h-full hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
             >
               <Image
-                className={`rounded-3xl object-cover ${
+                className={`rounded-3xl object-cover transition-all duration-300 ease-in-out ${
                   slide.description.length > 35 ? 'h-[70%]' : 'h-[80%]'
                 } ${
                   slide.link &&

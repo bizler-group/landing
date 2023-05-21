@@ -1,9 +1,11 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import {
   IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandTelegram,
 } from '@tabler/icons-react'
-import Image from 'next/image'
+
 import { LINKS } from '~/constants/data'
 
 export const Footer: React.FC = () => {
@@ -21,12 +23,12 @@ export const Footer: React.FC = () => {
           <ul className="flex items-center space-x-8">
             {LINKS.map((link) => (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
                   className="text-[#E0ECEB] hover:text-gray-300"
                 >
                   {link.title}
-                </a>
+                </Link>
               </li>
             ))}
 
@@ -35,6 +37,8 @@ export const Footer: React.FC = () => {
                 <a
                   href="https://nextjs.org/learn"
                   className="text-[#E0ECEB] hover:text-gray-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <IconBrandInstagram
                     className="text-white hover:text-gray-300"
@@ -44,6 +48,8 @@ export const Footer: React.FC = () => {
                 <a
                   href="https://nextjs.org/learn"
                   className="text-[#E0ECEB] hover:text-gray-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <IconBrandTelegram
                     className="text-white hover:text-gray-300"
@@ -53,6 +59,8 @@ export const Footer: React.FC = () => {
                 <a
                   href="https://nextjs.org/learn"
                   className="text-[#E0ECEB] hover:text-gray-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <IconBrandLinkedin
                     className="text-white hover:text-gray-300"
