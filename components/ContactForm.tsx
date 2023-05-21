@@ -2,20 +2,38 @@ import { IconMailFilled } from '@tabler/icons-react'
 import { Input } from './form/Input'
 import { Button } from './ui/Button'
 
+interface FormPayload {
+  first_name: string
+  last_name: string
+  message: string
+  email_address: string
+  phone_number: string
+}
+
 export const ContactForm: React.FC = () => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const form = e.currentTarget
+    const formData = new FormData(form)
+    const data = Object.fromEntries(
+      formData.entries()
+    ) as unknown as FormPayload
+
+    // TODO: send data to backend
+  }
+
   return (
     <div className="pt-7 px-2 mb-16">
       <h2 className="text-4xl font-bold text-white mb-7">Свяжитесь с нами</h2>
 
       <div className="flex gap-10 justify-between">
-        <form className="max-w-3xl flex-1">
+        <form className="max-w-3xl flex-1" onSubmit={onSubmit}>
           <div className="flex gap-5">
             <Input
               label="First Name"
               className="flex-1"
               name="first_name"
               placeholder="First Name"
-              value=""
               onChange={() => {}}
             />
             <Input
@@ -23,7 +41,6 @@ export const ContactForm: React.FC = () => {
               className="flex-1"
               name="last_name"
               placeholder="Last Name"
-              value=""
               onChange={() => {}}
             />
           </div>
@@ -33,24 +50,21 @@ export const ContactForm: React.FC = () => {
             name="message"
             type="textarea"
             placeholder="Message"
-            value=""
             onChange={() => {}}
           />
           <div className="flex gap-5">
             <Input
               label="Email"
               className="flex-1"
-              name="email-address"
+              name="email_address"
               placeholder="email@example.com"
-              value=""
               onChange={() => {}}
             />
             <Input
               label="Phone Number"
               className="flex-1"
-              name="phone-number"
+              name="phone_number"
               placeholder="+4 "
-              value=""
               onChange={() => {}}
             />
           </div>

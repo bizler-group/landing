@@ -5,7 +5,7 @@ interface Props {
   name: string
   type?: string
   placeholder?: string
-  value: string
+  value?: string
   onChange: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void
