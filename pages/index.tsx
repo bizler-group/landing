@@ -18,7 +18,7 @@ export default function Home() {
     <main
       className={`container ${nunitoSans.className} overflow-hidden relative z-50`}
     >
-      <div className="text-white mt-36 mb-60">
+      <div className="text-white min-h-[85vh] flex justify-center items-start flex-col">
         <h1 className="text-5xl font-bold mb-7 leading-tight max-w-xl">
           Реализуйте свои идеи вместе с нами
         </h1>

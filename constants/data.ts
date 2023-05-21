@@ -53,6 +53,111 @@ export const LEADER_SLIDES = [
   },
 ]
 
+export const TEAM_MEMBERS = [
+  {
+    id: 1,
+    name: 'Курал Атабаев',
+    position: 'Основатель',
+    image: '/images/leaders/qural.jpg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'Каракалпакстан',
+  },
+  {
+    id: 2,
+    name: 'Абат Даулетбаев',
+    position: 'Директор, программист, инженер',
+    image: '/images/leaders/abat.jpeg',
+    flag: '/images/flags/kazakhstan.svg',
+    country: 'Казахстан',
+  },
+  {
+    id: 3,
+    name: 'Азамат Жумабаев',
+    position: 'Технический директор',
+    image: '/images/leaders/azamat.jpg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'Каракалпакстан',
+  },
+  {
+    id: 4,
+    name: 'Бегис Орынбаев',
+    position: 'Проект менеджер, UX/UI дизайнер',
+    image: '/images/leaders/begis.jpg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'Каракалпакстан',
+  },
+  {
+    id: 5,
+    name: 'Курал Атабаев',
+    position: 'Основатель',
+    image: '/images/leaders/qural.jpg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'Каракалпакстан',
+  },
+  {
+    id: 6,
+    name: 'Абат Даулетбаев',
+    position: 'Директор, программист, инженер',
+    image: '/images/leaders/abat.jpeg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'Казахстан',
+  },
+  {
+    id: 7,
+    name: 'Азамат Жумабаев',
+    position: 'Технический директор',
+    image: '/images/leaders/azamat.jpg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'Каракалпакстан',
+  },
+  {
+    id: 8,
+    name: 'Бегис Орынбаев',
+    position: 'Проект менеджер, UX/UI дизайнер',
+    image: '/images/leaders/begis.jpg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'Каракалпакстан',
+  },
+]
+
+export const ROLES = [
+  {
+    id: 1,
+    en: 'LEADERSHIP',
+    ru: 'РУКОВОДСТВО',
+  },
+  {
+    id: 2,
+    en: 'CLIENT SERVICES',
+    ru: 'КЛИЕНТСКИЕ УСЛУГИ',
+  },
+  {
+    id: 3,
+    en: 'CREATIVE',
+    ru: 'ТВОРЧЕСТВО',
+  },
+  {
+    id: 4,
+    en: 'DEVELOPMENT',
+    ru: 'РАЗРАБОТКА',
+  },
+  {
+    id: 5,
+    en: 'MARKETING & SALES',
+    ru: 'МАРКЕТИНГ И ПРОДАЖИ',
+  },
+  {
+    id: 6,
+    en: 'STRATEGY',
+    ru: 'СТРАТЕГИЯ',
+  },
+  {
+    id: 7,
+    en: 'ALL',
+    ru: 'ВСЕ',
+  },
+]
+
 export const PROJECT_SLIDES = [
   {
     id: 1,
