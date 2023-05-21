@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import {
   IconBrandLinkedin,
@@ -6,8 +7,8 @@ import {
   IconBrandTelegram,
 } from '@tabler/icons-react'
 
+import { Button } from '../ui/Button'
 import { LINKS } from '~/constants/data'
-import Link from 'next/link'
 
 export const Header: React.FC = () => {
   const router = useRouter()
@@ -29,11 +30,10 @@ export const Header: React.FC = () => {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`${
-                  router.asPath.startsWith(link.href)
-                    ? 'text-[#52B6C4]'
-                    : 'text-[#E0ECEB]'
-                } hover:text-[#52B6C4]`}
+                className={`${router.asPath.startsWith(link.href)
+                  ? 'text-[#52B6C4]'
+                  : 'text-[#E0ECEB]'
+                  } hover:text-[#52B6C4]`}
               >
                 {link.title}
               </Link>
@@ -43,9 +43,9 @@ export const Header: React.FC = () => {
       </nav>
 
       <div className="flex space-x-4">
-        <button className="text-white mr-4 bg-[#52B6C4] rounded-3xl px-5 py-1">
+        <Button className="mr-4 !px-5 !py-1">
           RU
-        </button>
+        </Button>
 
         <a
           href="https://nextjs.org/docs"
