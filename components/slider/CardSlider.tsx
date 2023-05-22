@@ -14,7 +14,6 @@ interface Props {
 }
 
 export const CardSlider: React.FC<Props> = ({ slides }) => {
-  const [hoveredImageIndex, setHoveredImageIndex] = useState(-1)
   const [slideClientWidth, setSlideClientWidth] = useState(0)
   const [noPrev, setNoPrev] = useState(false)
   const [noNext, setNoNext] = useState(false)
@@ -65,8 +64,6 @@ export const CardSlider: React.FC<Props> = ({ slides }) => {
                 if (!ref) return
                 setSlideClientWidth(ref.clientWidth)
               }}
-              onMouseEnter={() => setHoveredImageIndex(index)}
-              onMouseLeave={() => setHoveredImageIndex(-1)}
               className="relative transition-all flex flex-col justify-between bg-[#041C1F] px-10 py-14 rounded-3xl min-w-[500px] aspect-square hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
             >
               <div>
