@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
 import {
   IconBrandLinkedin,
@@ -9,7 +10,6 @@ import {
 
 import { Button } from '../ui/Button'
 import { LINKS } from '~/constants/data'
-import { useState } from 'react'
 
 export const Header: React.FC = () => {
   const router = useRouter()
@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
           <path
             fillRule="evenodd"
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
           ></path>
         </svg>
       </button>
@@ -59,7 +59,7 @@ export const Header: React.FC = () => {
         } w-full md:block md:w-auto`}
         id="navbar-default"
       >
-        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 bg-gray-900 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
+        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 max-md:bg-gray-900 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
           {LINKS.map((link) => (
             <li key={link.href}>
               <Link
