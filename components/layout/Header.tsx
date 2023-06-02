@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
       <button
         data-collapse-toggle="navbar-default"
         type="button"
-        className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 outline-none ring-2 ring-gray-200"
+        className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden outline-none ring-2 ring-gray-200"
         aria-controls="navbar-default"
         aria-expanded="false"
         onClick={handleMenuToggle}

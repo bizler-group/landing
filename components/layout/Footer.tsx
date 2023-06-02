@@ -12,8 +12,8 @@ const year = new Date().getFullYear()
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="pt-7 pb-10 w-full bg-[#041C1F] max-md:mb-10">
-      <div className="container max-md:mx-5">
+    <footer className="pt-7 pb-10 w-full bg-[#041C1F] max-md:pb-16">
+      <div className="container max-md:w-[85%]">
         <div className="flex items-center justify-between max-md:flex-col max-md:items-start max-md:gap-10">
           <Image
             src="/images/logo/white.svg"
@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
           </nav>
         </div>
 
-        <div className="mt-7 mb-10 h-px w-full max-md:w-[75%] max-md:mx-auto bg-white/30" />
+        <div className="mt-7 mb-10 h-px w-full max-md:w-[85%] max-md:mx-auto bg-white/30" />
 
         <p className="text-white">All rights reserved {year}</p>
       </div>
