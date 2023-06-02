@@ -43,7 +43,7 @@ export const Button: React.FC<Props> = ({
   const clasess = cx(
     bg,
     color,
-    'hover:bg-[#4396A1] rounded-3xl py-3 px-10',
+    'hover:bg-[#4396A1] rounded-3xl py-3 px-10 max-md:px-5 max-md:py-2.5',
     variant === 'outlined'
       ? 'border border-[#52B6C4] hover:text-white'
       : undefined,

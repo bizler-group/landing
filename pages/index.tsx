@@ -18,8 +18,8 @@ export default function Home() {
     <main
       className={`container ${nunitoSans.className} overflow-hidden relative z-50`}
     >
-      <div className="text-white min-h-[85vh] flex justify-center items-start flex-col">
-        <h1 className="text-5xl font-bold mb-7 leading-tight max-w-xl">
+      <div className="text-white md:min-h-[85vh] flex justify-center items-start flex-col max-md:mx-5 max-md:justify-start max-md:my-40">
+        <h1 className="text-5xl font-bold mb-7 leading-tight max-w-xl max-md:text-4xl max-md:mb-5">
           Реализуйте свои идеи вместе с нами
         </h1>
         <p className="text-xl text-[#B8C1C1] max-w-2xl">
@@ -37,7 +37,7 @@ export default function Home() {
           Нам доверяют
         </h2>
 
-        <div className="flex justify-center items-center gap-x-16 mt-10">
+        <div className="flex justify-center items-center gap-x-16 mt-10 max-md:flex-wrap max-md:gap-10">
           <div>
             <Image
               src="/images/partner-logos/airbnb.png"
@@ -89,17 +89,17 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-7 flex items-end justify-between gap-12 mb-28">
-        <div className="min-h-[450px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Mission-1-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1" />
+      <div className="pt-7 flex max-md:flex-col-reverse items-end justify-between gap-12 mb-28 max-md:mx-5">
+        <div className="min-h-[450px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Mission-1-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1 max-md:w-full" />
 
-        <div className="flex flex-col gap-10 flex-1">
-          <p className="text-[#52B6C4] tracking-widest uppercase">
+        <div className="flex flex-col gap-10 flex-1 max-md:gap-5">
+          <p className="text-[#52B6C4] tracking-widest max-md:tracking-wide uppercase">
             Наша миссия
           </p>
-          <h3 className="text-[#E0ECEB] font-bold text-5xl leading-normal">
+          <h3 className="text-[#E0ECEB] font-bold text-5xl max-md:text-4xl leading-normal">
             Some title 2 lines of text of testim
           </h3>
-          <p className="text-[#B8C1C1] text-xl leading-snug">
+          <p className="text-[#B8C1C1] text-xl max-md:text-lg leading-snug">
             Решить локальные проблемы с помощью IT и внести свой вклад в
             развитие нашего региона. Мы хотим использовать максимум своих знаний
             и навыков для реализаций проектов и поднять благополучие региона на
@@ -108,13 +108,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-7 flex justify-between gap-12 mb-20">
-        <div className="flex flex-col gap-10 flex-1">
-          <p className="text-[#52B6C4] tracking-widest uppercase">Видение</p>
-          <h3 className="text-[#E0ECEB] font-bold text-5xl leading-normal">
+      <div className="pt-7 flex max-md:flex-col justify-between gap-12 mb-20 max-md:mx-5">
+        <div className="flex flex-col gap-10 flex-1 max-md:gap-5">
+          <p className="text-[#52B6C4] tracking-widest max-md:tracking-wide uppercase">
+            Видение
+          </p>
+          <h3 className="text-[#E0ECEB] font-bold text-5xl max-md:text-4xl leading-normal">
             Some title 2 lines of text of testim
           </h3>
-          <p className="text-[#B8C1C1] text-xl leading-snug">
+          <p className="text-[#B8C1C1] text-xl max-md:text-lg leading-snug">
             Наша первостепенная задача – создать коммьюнити, где всех будет
             объединять одна миссия и ценности. Мы открыты для всех, чьё виденье
             совпадает с нашим. Нам неважно, какой вы расы, нации и пола, мы с
@@ -148,17 +150,17 @@ export default function Home() {
         <div className="min-h-[400px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Vision-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1" />
       </div>
 
-      <div className="pt-7 mb-16">
+      <div className="pt-7 mb-16 max-md:mx-5">
         <h2 className="text-4xl font-bold text-white mb-7">Наши лидеры</h2>
 
         <Slider slides={LEADER_SLIDES} />
       </div>
 
-      <div className="pt-7 mb-20">
-        <div className="flex justify-between">
+      <div className="pt-7 mb-20 max-md:mx-5">
+        <div className="flex justify-between max-md:flex-col">
           <h2 className="text-4xl font-bold text-white mb-7">Наши проекты</h2>
 
-          <div>
+          <div className="max-md:flex max-md:mb-5">
             <Button variant="outlined" active>
               Все проекты
             </Button>
@@ -171,7 +173,7 @@ export default function Home() {
         <Slider slides={PROJECT_SLIDES} />
       </div>
 
-      <div className="pt-7 mb-16">
+      <div className="pt-7 mb-16 max-md:mx-5">
         <h2 className="text-4xl font-bold text-white mb-7">О нас пишут</h2>
 
         <CardSlider slides={TESTIMONIALS_SLIDES} />

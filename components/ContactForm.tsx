@@ -23,12 +23,12 @@ export const ContactForm: React.FC = () => {
   }
 
   return (
-    <div className="pt-7 px-2 mb-16">
+    <div className="pt-7 px-2 mb-16 max-md:mx-5">
       <h2 className="text-4xl font-bold text-white mb-7">Свяжитесь с нами</h2>
 
-      <div className="flex gap-10 justify-between">
+      <div className="flex gap-10 justify-between max-md:flex-col">
         <form className="max-w-3xl flex-1" onSubmit={onSubmit}>
-          <div className="flex gap-5">
+          <div className="flex gap-5 max-md:flex-col">
             <Input
               label="First Name"
               className="flex-1"
@@ -52,7 +52,7 @@ export const ContactForm: React.FC = () => {
             placeholder="Message"
             onChange={() => {}}
           />
-          <div className="flex gap-5">
+          <div className="flex gap-5 max-md:flex-col">
             <Input
               label="Email"
               className="flex-1"
@@ -69,13 +69,13 @@ export const ContactForm: React.FC = () => {
             />
           </div>
 
-          <Button className="mt-10" type="submit">
+          <Button className="mt-10 max-md:mx-auto max-md:w-full" type="submit">
             Отправить
           </Button>
         </form>
 
-        <div className="text-white w-[40%]">
-          <h3 className="font-bold text-2xl">Want to reach us directly?</h3>
+        <div className="text-white w-[40%] max-md:w-full">
+          <h3 className="font-bold text-2xl max-md:mb-3">Want to reach us directly?</h3>
           <p className="text-base font-normal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui
             pharetra elementum sit id sagittis non donec egestas.

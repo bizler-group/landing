@@ -12,9 +12,9 @@ const year = new Date().getFullYear()
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="pt-7 pb-10 w-full bg-[#041C1F]">
-      <div className="container">
-        <div className="flex items-center justify-between">
+    <footer className="pt-7 pb-10 w-full bg-[#041C1F] max-md:mb-10">
+      <div className="container max-md:mx-5">
+        <div className="flex items-center justify-between max-md:flex-col max-md:items-start max-md:gap-10">
           <Image
             src="/images/logo/white.svg"
             alt="Logo"
@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
           />
 
           <nav>
-            <ul className="flex items-center space-x-8">
+            <ul className="flex items-center gap-8 max-md:flex-col max-md:items-start max-md:gap-5">
               {LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
                 </li>
               ))}
 
-              <li>
+              <li className="max-md:mt-10">
                 <div className="flex space-x-4">
                   <a
                     href="https://nextjs.org/learn"
@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
           </nav>
         </div>
 
-        <div className="mt-7 mb-10 h-px w-full bg-white/30" />
+        <div className="mt-7 mb-10 h-px w-full max-md:w-[75%] max-md:mx-auto bg-white/30" />
 
         <p className="text-white">All rights reserved {year}</p>
       </div>
