@@ -27,6 +27,7 @@ export default function Home() {
         h5,
         h6 {
           font-family: ${jost.style.fontFamily};
+          text-transform: uppercase;
         }
       `}</style>
       <section className="text-white md:min-h-[80vh] flex justify-center items-start flex-col max-md:mx-5 max-md:justify-start max-md:my-40">
