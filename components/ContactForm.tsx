@@ -23,7 +23,7 @@ export const ContactForm: React.FC = () => {
   }
 
   return (
-    <div className="pt-7 px-2 mb-16 max-md:mx-5">
+    <section id="contact" className="pt-7 px-2 mb-16 max-md:mx-5">
       <h2 className="text-4xl font-bold text-white mb-7">Свяжитесь с нами</h2>
 
       <div className="flex gap-10 justify-between max-md:flex-col">
@@ -75,7 +75,9 @@ export const ContactForm: React.FC = () => {
         </form>
 
         <div className="text-white w-[40%] max-md:w-full">
-          <h3 className="font-bold text-2xl max-md:mb-3">Want to reach us directly?</h3>
+          <h3 className="font-bold text-2xl max-md:mb-3">
+            Want to reach us directly?
+          </h3>
           <p className="text-base font-normal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui
             pharetra elementum sit id sagittis non donec egestas.
@@ -97,6 +99,6 @@ export const ContactForm: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

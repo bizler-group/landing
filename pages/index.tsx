@@ -18,7 +18,7 @@ export default function Home() {
     <main
       className={`container ${nunitoSans.className} overflow-hidden relative z-50`}
     >
-      <div className="text-white md:min-h-[85vh] flex justify-center items-start flex-col max-md:mx-5 max-md:justify-start max-md:my-40">
+      <section className="text-white md:min-h-[85vh] flex justify-center items-start flex-col max-md:mx-5 max-md:justify-start max-md:my-40">
         <h1 className="text-5xl font-bold mb-7 leading-tight max-w-xl max-md:text-4xl max-md:mb-5">
           Реализуйте свои идеи вместе с нами
         </h1>
@@ -30,9 +30,9 @@ export default function Home() {
         </p>
 
         <Button className="mt-7">Связаться с нами</Button>
-      </div>
+      </section>
 
-      <div className="mb-20">
+      <section id="partners" className="mb-20">
         <h2 className="text-4xl font-bold text-white text-center mt-32">
           Нам доверяют
         </h2>
@@ -87,9 +87,9 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="pt-7 flex max-md:flex-col-reverse items-end justify-between gap-12 mb-28 max-md:mx-5">
+      <section className="pt-7 flex max-md:flex-col-reverse items-end justify-between gap-12 mb-28 max-md:mx-5">
         <div className="min-h-[450px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Mission-1-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1 max-md:w-full" />
 
         <div className="flex flex-col gap-10 flex-1 max-md:gap-5">
@@ -106,9 +106,9 @@ export default function Home() {
             новый уровень.
           </p>
         </div>
-      </div>
+      </section>
 
-      <div className="pt-7 flex max-md:flex-col justify-between gap-12 mb-20 max-md:mx-5">
+      <section className="pt-7 flex max-md:flex-col justify-between gap-12 mb-20 max-md:mx-5">
         <div className="flex flex-col gap-10 flex-1 max-md:gap-5">
           <p className="text-[#52B6C4] tracking-widest max-md:tracking-wide uppercase">
             Видение
@@ -148,15 +148,15 @@ export default function Home() {
         </div>
 
         <div className="min-h-[400px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Vision-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1" />
-      </div>
+      </section>
 
-      <div className="pt-7 mb-16 max-md:mx-5">
+      <section id='leaders' className="pt-7 mb-16 max-md:mx-5">
         <h2 className="text-4xl font-bold text-white mb-7">Наши лидеры</h2>
 
         <Slider slides={LEADER_SLIDES} />
-      </div>
+      </section>
 
-      <div className="pt-7 mb-20 max-md:mx-5">
+      <section id="projects" className="pt-7 mb-20 max-md:mx-5">
         <div className="flex justify-between max-md:flex-col">
           <h2 className="text-4xl font-bold text-white mb-7">Наши проекты</h2>
 
@@ -171,13 +171,13 @@ export default function Home() {
         </div>
 
         <Slider slides={PROJECT_SLIDES} />
-      </div>
+      </section>
 
-      <div className="pt-7 mb-16 max-md:mx-5">
+      <section id="testimonials" className="pt-7 mb-16 max-md:mx-5">
         <h2 className="text-4xl font-bold text-white mb-7">О нас пишут</h2>
 
         <CardSlider slides={TESTIMONIALS_SLIDES} />
-      </div>
+      </section>
 
       <ContactForm />
     </main>
