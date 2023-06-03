@@ -29,7 +29,9 @@ export default function Home() {
           С нами – всё легко и просто.
         </p>
 
-        <Button className="mt-7">Связаться с нами</Button>
+        <Button href="/#contact" className="mt-7">
+          Связаться с нами
+        </Button>
       </section>
 
       <section id="partners" className="mb-20">
@@ -150,7 +152,7 @@ export default function Home() {
         <div className="min-h-[400px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Vision-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1" />
       </section>
 
-      <section id='leaders' className="pt-7 mb-16 max-md:mx-5">
+      <section id="leaders" className="pt-7 mb-16 max-md:mx-5">
         <h2 className="text-4xl font-bold text-white mb-7">Наши лидеры</h2>
 
         <Slider slides={LEADER_SLIDES} />

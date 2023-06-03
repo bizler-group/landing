@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
   }
 
   return (
-    <header className="container flex flex-wrap items-center justify-between mx-auto p-4 pt-7">
+    <header className="relative container flex flex-wrap items-center justify-between mx-auto p-4 pt-7">
       <Link href="/">
         <Image
           src="/images/logo/white.svg"
@@ -54,7 +54,7 @@ export const Header: React.FC = () => {
         </svg>
       </button>
       <div
-        className={`${
+        className={`z-50 ${
           isMenuOpen ? 'top-20 left-0 right-0' : 'hidden'
         } w-full md:block md:w-auto`}
         id="navbar-default"

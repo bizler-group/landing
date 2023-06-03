@@ -60,7 +60,7 @@ export const Slider: React.FC<Props> = ({ slides }) => {
         <div
           ref={slidesContainer}
           onScroll={onScroll}
-          className="scrollbar-hide h-96 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0"
+          className="scrollbar-hide h-96 max-md:h-80 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[35vw] before:shrink-0 after:w-[35vw] after:shrink-0 md:before:w-0 md:after:w-0"
         >
           {slides.map((slide, index) => (
             <div
@@ -71,7 +71,7 @@ export const Slider: React.FC<Props> = ({ slides }) => {
               }}
               onMouseEnter={() => setHoveredImageIndex(index)}
               onMouseLeave={() => setHoveredImageIndex(-1)}
-              className="relative transition-all aspect-square h-[90%] w-72 hover:w-80 hover:h-full hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
+              className="relative transition-all aspect-square h-[90%] w-72 max-md:w-60 hover:w-80 hover:h-full hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
             >
               <Image
                 className={`rounded-3xl object-cover transition-all duration-300 ease-in-out ${

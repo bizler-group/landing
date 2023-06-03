@@ -11,11 +11,11 @@ export default function Project() {
   const [hoveredImageIndex, setHoveredImageIndex] = useState(-1)
 
   return (
-    <main className={`container ${nunitoSans.className} overflow-hidden relative z-50`}>
+    <main className={`container ${nunitoSans.className} overflow-hidden relative z-50 max-md:px-5`}>
       <div>
         <h1 className="text-4xl font-bold text-white mb-7 mt-20">Портфолио</h1>
 
-        <div className="flex gap-3">
+        <div className="flex flex-wrap gap-3">
           <Button variant="outlined" active>
             Все проекты
           </Button>
@@ -25,7 +25,7 @@ export default function Project() {
         </div>
       </div>
 
-      <div className="mt-8 mb-20 grid grid-cols-4 gap-y-7 gap-x-5">
+      <div className="mt-8 mb-20 grid grid-cols-4 gap-y-7 gap-x-5 max-md:grid-cols-1">
         {PROJECT_SLIDES.map((project, index) => (
           <ProjectCard
             key={project.id}

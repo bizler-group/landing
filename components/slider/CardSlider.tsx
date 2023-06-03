@@ -55,7 +55,7 @@ export const CardSlider: React.FC<Props> = ({ slides }) => {
         <div
           ref={slidesContainer}
           onScroll={onScroll}
-          className="scrollbar-hide h-80 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0"
+          className="scrollbar-hide h-80 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[35vw] before:shrink-0 after:w-[35vw] after:shrink-0 md:before:w-0 md:after:w-0"
         >
           {slides.map((slide, index) => (
             <div
@@ -64,7 +64,7 @@ export const CardSlider: React.FC<Props> = ({ slides }) => {
                 if (!ref) return
                 setSlideClientWidth(ref.clientWidth)
               }}
-              className="relative transition-all flex flex-col justify-between bg-[#041C1F] px-10 py-14 rounded-3xl min-w-[500px] aspect-square hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
+              className="relative transition-all flex flex-col justify-between bg-[#041C1F] px-10 py-14 max-md:px-5 max-md:py-7 rounded-3xl md:min-w-[500px] aspect-square hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
             >
               <div>
                 <p className="text-white">{slide.content}</p>

@@ -17,12 +17,12 @@ export const LINKS = [
   {
     id: 4,
     title: 'Отзывы',
-    href: '#testimonials',
+    href: '/#testimonials',
   },
   {
     id: 5,
     title: 'Связаться с нами',
-    href: '#contact',
+    href: '/#contact',
   },
 ]
 
