@@ -10,7 +10,6 @@ import {
 
 import { Button } from '../ui/Button'
 import { LINKS } from '~/constants/data'
-import { jost } from '~/pages'
 
 export const Header: React.FC = () => {
   const router = useRouter()
@@ -21,7 +20,7 @@ export const Header: React.FC = () => {
   }
 
   return (
-    <header className={`relative container flex flex-wrap items-center justify-between mx-auto p-4 pt-7 ${jost.className}`}>
+    <header className="relative container flex flex-wrap items-center justify-between mx-auto p-4 pt-7">
       <Link href="/">
         <Image
           src="/images/logo/white.svg"
