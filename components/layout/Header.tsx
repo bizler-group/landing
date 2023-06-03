@@ -88,6 +88,7 @@ export const Header: React.FC = () => {
         >
           <IconBrandInstagram
             className="text-white hover:text-gray-300"
+            strokeWidth={1.5}
             size={32}
           />
         </a>
@@ -99,6 +100,7 @@ export const Header: React.FC = () => {
         >
           <IconBrandTelegram
             className="text-white hover:text-gray-300"
+            strokeWidth={1.5}
             size={32}
           />
         </a>
@@ -110,6 +112,7 @@ export const Header: React.FC = () => {
         >
           <IconBrandLinkedin
             className="text-white hover:text-gray-300"
+            strokeWidth={1.5}
             size={32}
           />
         </a>
