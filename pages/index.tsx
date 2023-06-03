@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Nunito_Sans } from 'next/font/google'
+import { Nunito_Sans, Jost } from 'next/font/google'
 
 import { Button } from '~/components/ui/Button'
 import { Slider } from '~/components/slider/Slider'
@@ -12,13 +12,14 @@ import {
 } from '~/constants/data'
 
 export const nunitoSans = Nunito_Sans({ subsets: ['cyrillic', 'latin'] })
+export const jost = Jost({ subsets: ['cyrillic', 'latin'] })
 
 export default function Home() {
   return (
     <main
       className={`container ${nunitoSans.className} overflow-hidden relative z-50`}
     >
-      <section className="text-white md:min-h-[85vh] flex justify-center items-start flex-col max-md:mx-5 max-md:justify-start max-md:my-40">
+      <section className="text-white md:min-h-[80vh] flex justify-center items-start flex-col max-md:mx-5 max-md:justify-start max-md:my-40">
         <h1 className="text-5xl font-bold mb-7 leading-tight max-w-xl max-md:text-4xl max-md:mb-5">
           Реализуйте свои идеи вместе с нами
         </h1>

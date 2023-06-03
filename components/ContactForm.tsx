@@ -3,11 +3,8 @@ import { Input } from './form/Input'
 import { Button } from './ui/Button'
 
 interface FormPayload {
-  first_name: string
-  last_name: string
   message: string
   email_address: string
-  phone_number: string
 }
 
 export const ContactForm: React.FC = () => {
@@ -28,46 +25,21 @@ export const ContactForm: React.FC = () => {
 
       <div className="flex gap-10 justify-between max-md:flex-col">
         <form className="max-w-3xl flex-1" onSubmit={onSubmit}>
-          <div className="flex gap-5 max-md:flex-col">
-            <Input
-              label="First Name"
-              className="flex-1"
-              name="first_name"
-              placeholder="First Name"
-              onChange={() => {}}
-            />
-            <Input
-              label="Last Name"
-              className="flex-1"
-              name="last_name"
-              placeholder="Last Name"
-              onChange={() => {}}
-            />
-          </div>
           <Input
-            className="my-5"
+            label="Email"
+            className="flex-1"
+            name="email_address"
+            placeholder="email@example.com"
+            onChange={() => {}}
+          />
+          <Input
+            className="mt-5"
             label="Message"
             name="message"
             type="textarea"
             placeholder="Message"
             onChange={() => {}}
           />
-          <div className="flex gap-5 max-md:flex-col">
-            <Input
-              label="Email"
-              className="flex-1"
-              name="email_address"
-              placeholder="email@example.com"
-              onChange={() => {}}
-            />
-            <Input
-              label="Phone Number"
-              className="flex-1"
-              name="phone_number"
-              placeholder="+4 "
-              onChange={() => {}}
-            />
-          </div>
 
           <Button className="mt-10 max-md:mx-auto max-md:w-full" type="submit">
             Отправить
