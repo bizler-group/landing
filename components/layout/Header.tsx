@@ -71,7 +71,7 @@ export const Header: React.FC = () => {
       >
         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 max-md:bg-gray-900 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
           {LINKS.map((link) => (
-            <li key={link.href}>
+            <li key={link.href} onClick={handleMenuToggle}>
               <Link
                 href={link.href}
                 className={`${
@@ -85,7 +85,10 @@ export const Header: React.FC = () => {
             </li>
           ))}
 
-          <li className="hidden mt-4 max-md:flex gap-4 justify-center">
+          <li
+            className="hidden mt-4 max-md:flex gap-4 justify-center"
+            onClick={handleMenuToggle}
+          >
             {LANGUAGES.map((language) => (
               <Button
                 key={language.id}
