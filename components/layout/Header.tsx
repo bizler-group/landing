@@ -48,7 +48,7 @@ export const Header: React.FC = () => {
         aria-expanded="false"
         onClick={handleMenuToggle}
       >
-        <span className="sr-only">Open main menu</span>
+        <span className="sr-only">{t('open_main_menu')}</span>
         <svg
           className="w-6 h-6"
           aria-hidden="true"
@@ -85,7 +85,7 @@ export const Header: React.FC = () => {
             </li>
           ))}
 
-          <li className="mt-4 md:mt-0 flex gap-4 justify-center">
+          <li className="hidden mt-4 max-md:flex gap-4 justify-center">
             {LANGUAGES.map((language) => (
               <Button
                 key={language.id}
