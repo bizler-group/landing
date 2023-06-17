@@ -86,29 +86,22 @@ export const Header: React.FC = () => {
           ))}
 
           <li className="mt-4 md:mt-0 flex gap-4 justify-center">
-            {LANGUAGES.map((language) => {
-              if (language.id === lang)
-                return (
-                  <Button className="!px-5 !py-1" variant="outlined">
-                    <IconWorld
-                      style={{ display: 'inline', verticalAlign: 'middle' }}
-                    />{' '}
-                    {lang.toUpperCase()}
-                  </Button>
-                )
-
-              return (
-                <Button
-                  key={language.id}
-                  href={router.asPath}
-                  locale={language.id}
-                  className="!px-5 !py-1"
-                  variant="outlined"
-                >
-                  {language.title}
-                </Button>
-              )
-            })}
+            {LANGUAGES.map((language) => (
+              <Button
+                key={language.id}
+                href={language.id === lang ? undefined : router.asPath}
+                locale={language.id === lang ? undefined : language.id}
+                className="!px-5 !py-1"
+                variant="outlined"
+              >
+                {language.id === lang && (
+                  <IconWorld
+                    style={{ display: 'inline', verticalAlign: 'middle' }}
+                  />
+                )}{' '}
+                {language.title}
+              </Button>
+            ))}
           </li>
         </ul>
       </div>
