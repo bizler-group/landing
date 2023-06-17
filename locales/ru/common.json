@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "h1": "Реализуйте свои идеи вместе с нами",
+    "p1": "Наша креативная команда поможет вам воплотить вашу идею в жизнь.",
+    "p2": "С нами – всё легко и просто.",
+    "cta": "Связаться с нами"
+  },
+  "trusted_by": "Нам доверяют",
+  "our_mission": {
+    "title": "Наша миссия",
+    "subtitle": "Мы хотим сделать мир лучше, используя IT-технологии.",
+    "p": "Решить локальные проблемы с помощью IT и внести свой вклад в развитие нашего региона. Мы хотим использовать максимум своих знаний и навыков для реализаций проектов и поднять благополучие региона на новый уровень."
+  },
+  "vision": {
+    "title": "Видение",
+    "subtitle": "Мы хотим стать лучшей IT-компанией в регионе.",
+    "p": "Наша первостепенная задача – создать коммьюнити, где всех будет объединять одна миссия и ценности. Мы открыты для всех, чьё виденье совпадает с нашим. Мы хотим, чтобы наша компания была лучшей в регионе, чтобы наши сотрудники были счастливы и гордились своей работой, чтобы наши клиенты были довольны и возвращались к нам снова и снова.",
+    "feature1": {
+      "title": "Feature 1",
+      "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet."
+    },
+    "feature2": {
+      "title": "Feature 2",
+      "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet."
+    }
+  },
+  "our_leaders": {
+    "title": "Наши лидеры",
+    "qural": "Курал Атабаев",
+    "abat": "Абат Даулетбаев",
+    "azamat": "Азамат Жумабаев",
+    "begis": "Бегис Орынбаев",
+    "qural_role": "Основатель",
+    "abat_role": "Директор, программист, инженер",
+    "azamat_role": "Технический директор",
+    "begis_role": "Проект менеджер, UX/UI дизайнер"
+  },
+  "open_details": "Подробнее",
+  "our_projects": "Наши проекты",
+  "all_projects": "Все проекты",
+  "startups": "Стартапы",
+  "testimonials": "О нас пишут",
+  "contact_us": {
+    "title": "Свяжитесь с нами",
+    "email": "Электронная почта",
+    "email_placeholder": "email@example.com",
+    "message": "Сообщение",
+    "message_placeholder": "Ваше сообщение",
+    "submit": "Отправить",
+    "reach_us_directly": "Свяжитесь с нами напрямую",
+    "reach_us_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum sit id sagittis non donec egestas."
+  },
+  "links": {
+    "home": "Главная",
+    "about": "О нас",
+    "team": "Команда",
+    "projects": "Проекты",
+    "contact": "Связаться с нами",
+    "testimonials": "Отзывы"
+  },
+  "all_rights_reserved": "Все права защищены",
+  "page_not_found": "Страница не найдена"
+}

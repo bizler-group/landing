@@ -2,33 +2,28 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
+import useTranslation from 'next-translate/useTranslation'
 import {
   IconBrandLinkedin,
   IconBrandInstagram,
   IconBrandTelegram,
+  IconWorld,
 } from '@tabler/icons-react'
+import i18nConfig from '~/i18n.json'
 
 import { Button } from '../ui/Button'
 import { LINKS } from '~/constants/data'
 
-const LANGUAGES = [
-  {
-    id: 1,
-    title: 'RU',
-  },
-  {
-    id: 2,
-    title: 'EN',
-  },
-  {
-    id: 3,
-    title: 'UZ',
-  },
-]
+const LANGUAGES = i18nConfig.locales.map((locale) => ({
+  id: locale,
+  title: locale.toUpperCase(),
+}))
 
 export const Header: React.FC = () => {
   const router = useRouter()
+  const { t, lang } = useTranslation('common')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isLanguageOpen, setIsLanguageOpen] = useState(false)
 
   const handleMenuToggle = () => {
     setIsMenuOpen((prev) => !prev)
@@ -85,25 +80,63 @@ export const Header: React.FC = () => {
                     : 'text-[#E0ECEB]'
                 } hover:text-[#52B6C4] block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0`}
               >
-                {link.title}
+                {t(link.title)}
               </Link>
             </li>
           ))}
+
+          <li className="mt-4 md:mt-0 flex gap-4 justify-center">
+            {LANGUAGES.map((language) => {
+              if (language.id === lang)
+                return (
+                  <Button className="!px-5 !py-1" variant="outlined">
+                    <IconWorld
+                      style={{ display: 'inline', verticalAlign: 'middle' }}
+                    />{' '}
+                    {lang.toUpperCase()}
+                  </Button>
+                )
+
+              return (
+                <Button
+                  key={language.id}
+                  href={router.asPath}
+                  locale={language.id}
+                  className="!px-5 !py-1"
+                  variant="outlined"
+                >
+                  {language.title}
+                </Button>
+              )
+            })}
+          </li>
         </ul>
       </div>
 
       <div className="flex space-x-4 max-md:hidden">
-        <div className="relative">
-          {LANGUAGES.map((language, index) => {
-            const topPercent = index * 100 + 20 * index
+        <div
+          className="relative z-[100]"
+          onClick={() => setIsLanguageOpen((prev) => !prev)}
+        >
+          <Button className="mr-4 !px-5 !py-1" variant="outlined">
+            <IconWorld style={{ display: 'inline', verticalAlign: 'middle' }} />{' '}
+            {lang.toUpperCase()}
+          </Button>
+
+          {LANGUAGES.filter((i) => i.id !== lang).map((language, index) => {
+            const topPercent = 120 * index + 120
+
             return (
               <Button
                 key={language.id}
-                className={`!px-5 !py-1 ${
-                  index === 0 ? 'mr-4' : `absolute left-0 top-[${topPercent}%]`
-                }`}
+                href={router.asPath}
+                locale={language.id}
+                className={`!px-5 !py-1 absolute left-0 right-0 w-[85%]`}
+                style={{
+                  top: `${topPercent}%`,
+                  display: !isLanguageOpen ? 'none' : 'unset',
+                }}
                 variant="outlined"
-                // active={language.title === 'RU'}
               >
                 {language.title}
               </Button>

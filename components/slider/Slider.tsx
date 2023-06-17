@@ -1,6 +1,7 @@
 import { useCallback, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 import {
   IconArrowLeft,
   IconArrowRight,
@@ -8,6 +9,7 @@ import {
 } from '@tabler/icons-react'
 
 interface Props {
+  namespace?: string
   slides: {
     id: number | string
     image: string
@@ -17,7 +19,8 @@ interface Props {
   }[]
 }
 
-export const Slider: React.FC<Props> = ({ slides }) => {
+export const Slider: React.FC<Props> = ({ slides, namespace = 'common' }) => {
+  const { t } = useTranslation(namespace)
   const [hoveredImageIndex, setHoveredImageIndex] = useState(-1)
   const [slideClientWidth, setSlideClientWidth] = useState(0)
   const [noPrev, setNoPrev] = useState(false)
@@ -81,8 +84,8 @@ export const Slider: React.FC<Props> = ({ slides }) => {
                   hoveredImageIndex === index &&
                   'brightness-[30%]'
                 }`}
-                src={slide.image}
-                alt={slide.title}
+                src={t(slide.image)}
+                alt={t(slide.title)}
                 width={500}
                 height={500}
               />
@@ -91,12 +94,13 @@ export const Slider: React.FC<Props> = ({ slides }) => {
                   href={slide.link}
                   className="flex text-white absolute top-[35%] left-1/3"
                 >
-                  Open details <IconArrowUpRight className="text-[#52B6C4]" />
+                  {t('open_details', { namespace: 'common' })}{' '}
+                  <IconArrowUpRight className="text-[#52B6C4]" />
                 </Link>
               )}
               <div className="mt-2.5 text-center">
-                <p className="text-white">{slide.title}</p>
-                <span className="text-[#B8C1C1]">{slide.description}</span>
+                <p className="text-white">{t(slide.title)}</p>
+                <span className="text-[#B8C1C1]">{t(slide.description)}</span>
               </div>
             </div>
           ))}

@@ -1,0 +1,10 @@
+{
+  "locales": ["en", "ru", "kaa"],
+  "defaultLocale": "en",
+  "pages": {
+    "*": ["common"],
+    "/team": ["team"],
+    "/projects": ["projects"],
+    "/about": ["about"]
+  }
+}

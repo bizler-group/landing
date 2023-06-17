@@ -6,22 +6,28 @@ import { Button } from '~/components/ui/Button'
 import { ProjectCard } from '~/components/ui/ProjectCard'
 import { PROJECT_SLIDES } from '~/constants/data'
 import { nunitoSans } from '..'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function Project() {
+  const { t } = useTranslation('projects')
   const [hoveredImageIndex, setHoveredImageIndex] = useState(-1)
 
   return (
-    <main className={`container ${nunitoSans.className} overflow-hidden relative z-50 max-md:px-5`}>
+    <main
+      className={`container ${nunitoSans.className} overflow-hidden relative z-50 max-md:px-5`}
+    >
       <div>
-        <h1 className="text-4xl font-bold text-white mb-7 mt-20">Портфолио</h1>
+        <h1 className="text-4xl font-bold text-white mb-7 mt-20">
+          {t('portfolio')}
+        </h1>
 
         <div className="flex flex-wrap gap-3">
           <Button variant="outlined" active>
-            Все проекты
+            {t('common:all_projects')}
           </Button>
-          <Button variant="outlined">Website</Button>
-          <Button variant="outlined">CRM</Button>
-          <Button variant="outlined">Mobile app</Button>
+          <Button variant="outlined">{t('website')}</Button>
+          <Button variant="outlined">{t('crm')}</Button>
+          <Button variant="outlined">{t('mobile_app')}</Button>
         </div>
       </div>
 
@@ -29,8 +35,8 @@ export default function Project() {
         {PROJECT_SLIDES.map((project, index) => (
           <ProjectCard
             key={project.id}
-            title={project.title}
-            description={project.description}
+            title={t(project.title)}
+            description={t(project.description)}
             image={project.image}
             isImageOnHover={hoveredImageIndex === index}
             onMouseEnter={() => setHoveredImageIndex(index)}
@@ -41,7 +47,7 @@ export default function Project() {
                 href={project.link}
                 className="flex text-white absolute top-[35%] left-1/3"
               >
-                Open details <IconArrowUpRight className="text-[#52B6C4]" />
+                {t('common:open_details')} <IconArrowUpRight className="text-[#52B6C4]" />
               </Link>
             )}
           </ProjectCard>

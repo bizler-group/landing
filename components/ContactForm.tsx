@@ -1,4 +1,5 @@
 import { IconMailFilled } from '@tabler/icons-react'
+import useTranslation from 'next-translate/useTranslation'
 import { Input } from './form/Input'
 import { Button } from './ui/Button'
 
@@ -8,6 +9,8 @@ interface FormPayload {
 }
 
 export const ContactForm: React.FC = () => {
+  const { t } = useTranslation('common')
+
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget
@@ -21,38 +24,37 @@ export const ContactForm: React.FC = () => {
 
   return (
     <section id="contact" className="pt-7 px-2 mb-16 max-md:mx-5">
-      <h2 className="text-4xl font-bold text-white mb-7">Свяжитесь с нами</h2>
+      <h2 className="text-4xl font-bold text-white mb-7">{t('contact_us.title')}</h2>
 
       <div className="flex gap-10 justify-between max-md:flex-col">
         <form className="max-w-3xl flex-1" onSubmit={onSubmit}>
           <Input
-            label="Email"
+            label={t('contact_us.email')}
             className="flex-1"
             name="email_address"
-            placeholder="email@example.com"
+            placeholder={t('contact_us.email_placeholder')}
             onChange={() => {}}
           />
           <Input
             className="mt-5"
-            label="Message"
+            label={t('contact_us.message')}
             name="message"
             type="textarea"
-            placeholder="Message"
+            placeholder={t('contact_us.message_placeholder')}
             onChange={() => {}}
           />
 
           <Button className="mt-10 max-md:mx-auto max-md:w-full" type="submit">
-            Отправить
+            {t('contact_us.submit')}
           </Button>
         </form>
 
         <div className="text-white w-[40%] max-md:w-full">
           <h3 className="font-bold text-2xl max-md:mb-3">
-            Want to reach us directly?
+            {t('contact_us.reach_us_directly')}
           </h3>
           <p className="text-base font-normal">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui
-            pharetra elementum sit id sagittis non donec egestas.
+            {t('contact_us.reach_us_description')}
           </p>
 
           <div className="mt-10">

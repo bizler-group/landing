@@ -4,10 +4,12 @@ import cx from '~/lib/cx'
 
 interface Props {
   children: React.ReactNode
+  style?: React.CSSProperties
   className?: string
   disabled?: boolean
   active?: boolean
   href?: string
+  locale?: string
   external?: boolean
   variant?: 'filled' | 'outlined'
   type?: ButtonHTMLAttributes<HTMLButtonElement>['type']
@@ -16,8 +18,10 @@ interface Props {
 
 export const Button: React.FC<Props> = ({
   children,
+  style,
   className,
   href,
+  locale,
   external,
   disabled,
   active,
@@ -56,6 +60,8 @@ export const Button: React.FC<Props> = ({
     return (
       <Link
         href={href}
+        locale={locale}
+        style={style}
         className={clasess}
         onClick={onClick}
         {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
@@ -66,7 +72,7 @@ export const Button: React.FC<Props> = ({
   }
 
   return (
-    <button type={type} className={clasess} onClick={onClick}>
+    <button type={type} style={style} className={clasess} onClick={onClick}>
       {children}
     </button>
   )

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 import {
   IconBrandInstagram,
   IconBrandLinkedin,
@@ -9,6 +10,8 @@ import {
 import { LINKS } from '~/constants/data'
 
 export const Footer: React.FC<{ year: number }> = ({ year }) => {
+  const { t } = useTranslation('common')
+
   return (
     <footer className="pt-7 pb-10 w-full bg-[#041C1F] max-md:pb-16">
       <div className="container max-md:w-[85%]">
@@ -28,7 +31,7 @@ export const Footer: React.FC<{ year: number }> = ({ year }) => {
                     href={link.href}
                     className="text-[#E0ECEB] hover:text-gray-300"
                   >
-                    {link.title}
+                    {t(link.title)}
                   </Link>
                 </li>
               ))}
@@ -79,7 +82,9 @@ export const Footer: React.FC<{ year: number }> = ({ year }) => {
 
         <div className="mt-7 mb-10 h-px w-full max-md:w-[85%] max-md:mx-auto bg-white/30" />
 
-        <p className="text-white">All rights reserved {year}</p>
+        <p className="text-white">
+          {t('all_rights_reserved')} {year}
+        </p>
       </div>
     </footer>
   )
