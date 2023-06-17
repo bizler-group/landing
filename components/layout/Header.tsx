@@ -11,6 +11,21 @@ import {
 import { Button } from '../ui/Button'
 import { LINKS } from '~/constants/data'
 
+const LANGUAGES = [
+  {
+    id: 1,
+    title: 'RU',
+  },
+  {
+    id: 2,
+    title: 'EN',
+  },
+  {
+    id: 3,
+    title: 'UZ',
+  },
+]
+
 export const Header: React.FC = () => {
   const router = useRouter()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -50,7 +65,7 @@ export const Header: React.FC = () => {
             fillRule="evenodd"
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
             clipRule="evenodd"
-          ></path>
+          />
         </svg>
       </button>
       <div
@@ -78,10 +93,26 @@ export const Header: React.FC = () => {
       </div>
 
       <div className="flex space-x-4 max-md:hidden">
-        <Button className="mr-4 !px-5 !py-1">RU</Button>
+        <div className="relative">
+          {LANGUAGES.map((language, index) => {
+            const topPercent = index * 100 + 20 * index
+            return (
+              <Button
+                key={language.id}
+                className={`!px-5 !py-1 ${
+                  index === 0 ? 'mr-4' : `absolute left-0 top-[${topPercent}%]`
+                }`}
+                variant="outlined"
+                // active={language.title === 'RU'}
+              >
+                {language.title}
+              </Button>
+            )
+          })}
+        </div>
 
         <a
-          href="https://nextjs.org/docs"
+          href="https://www.instagram.com/bizler.group"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -93,7 +124,7 @@ export const Header: React.FC = () => {
         </a>
 
         <a
-          href="https://nextjs.org/docs"
+          href="https://t.me/bizler_portfolio"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -105,7 +136,7 @@ export const Header: React.FC = () => {
         </a>
 
         <a
-          href="https://nextjs.org/docs"
+          href="https://www.linkedin.com/company/bizler-group"
           target="_blank"
           rel="noopener noreferrer"
         >

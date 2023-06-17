@@ -19,17 +19,6 @@ export default function Home() {
     <main
       className={`container ${nunitoSans.className} overflow-hidden relative z-50`}
     >
-      <style jsx global>{`
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-          font-family: ${jost.style.fontFamily};
-          text-transform: uppercase;
-        }
-      `}</style>
       <section className="text-white md:min-h-[80vh] flex justify-center items-start flex-col max-md:mx-5 max-md:justify-start max-md:my-40">
         <h1 className="text-5xl font-bold mb-7 leading-tight max-w-xl max-md:text-4xl max-md:mb-5">
           Реализуйте свои идеи вместе с нами

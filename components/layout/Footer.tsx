@@ -8,9 +8,7 @@ import {
 
 import { LINKS } from '~/constants/data'
 
-const year = new Date().getFullYear()
-
-export const Footer: React.FC = () => {
+export const Footer: React.FC<{ year: number }> = ({ year }) => {
   return (
     <footer className="pt-7 pb-10 w-full bg-[#041C1F] max-md:pb-16">
       <div className="container max-md:w-[85%]">
@@ -38,7 +36,7 @@ export const Footer: React.FC = () => {
               <li className="max-md:mt-10">
                 <div className="flex space-x-4">
                   <a
-                    href="https://nextjs.org/learn"
+                    href="https://www.instagram.com/bizler.group"
                     className="text-[#E0ECEB] hover:text-gray-300"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -50,7 +48,7 @@ export const Footer: React.FC = () => {
                     />
                   </a>
                   <a
-                    href="https://nextjs.org/learn"
+                    href="https://t.me/bizler_portfolio"
                     className="text-[#E0ECEB] hover:text-gray-300"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -62,7 +60,7 @@ export const Footer: React.FC = () => {
                     />
                   </a>
                   <a
-                    href="https://nextjs.org/learn"
+                    href="https://www.linkedin.com/company/bizler-group"
                     className="text-[#E0ECEB] hover:text-gray-300"
                     target="_blank"
                     rel="noopener noreferrer"

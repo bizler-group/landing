@@ -12,7 +12,7 @@ export default function Team() {
         Meet the <strong>team</strong>
       </h1>
 
-      <div className="flex flex-wrap items-center justify-center gap-5">
+      {/* <div className="flex flex-wrap items-center justify-center gap-5">
         {ROLES.map((role, index) => (
           <Button
             key={role.id}
@@ -23,9 +23,9 @@ export default function Team() {
             {role.ru}
           </Button>
         ))}
-      </div>
+      </div> */}
 
-      <div className="mt-16 grid gap-y-10 grid-rows-3 grid-cols-4 max-md:grid-cols-2">
+      <div className="mt-16 grid gap-y-10 grid-rows-3 grid-cols-4 max-md:grid-cols-1">
         {TEAM_MEMBERS.map((member) => (
           <TeamAvatar
             key={member.id}
