@@ -34,7 +34,7 @@ export default function Team() {
         ))}
       </div> */}
 
-      <div className="mt-16 grid gap-y-10 grid-rows-3 grid-cols-4 max-md:grid-cols-1">
+      <div className="mt-16 grid gap-y-10 grid-rows-2 grid-cols-4 max-md:grid-cols-1">
         {TEAM_MEMBERS.map((member) => (
           <TeamAvatar
             key={member.id}
