@@ -9,7 +9,9 @@ import {
 
 import { LINKS } from '~/constants/data'
 
-export const Footer: React.FC<{ year: number }> = ({ year }) => {
+const year = new Date().getFullYear()
+
+export const Footer: React.FC = () => {
   const { t } = useTranslation('common')
 
   return (

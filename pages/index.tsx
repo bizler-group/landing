@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useCallback } from 'react'
 import { Nunito_Sans, Jost } from 'next/font/google'
 import useTranslation from 'next-translate/useTranslation'
 
@@ -18,6 +19,13 @@ export const jost = Jost({ subsets: ['cyrillic', 'latin'] })
 export default function Home() {
   const { t } = useTranslation('common')
 
+  const scrollTo = useCallback((id: string) => {
+    const el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [])
+
   return (
     <main
       className={`container ${nunitoSans.className} overflow-hidden relative z-50`}
@@ -29,7 +37,7 @@ export default function Home() {
         <p className="text-xl text-[#B8C1C1] max-w-2xl">{t('hero.p1')}</p>
         <p className="mt-5 text-xl text-[#B8C1C1]">{t('hero.p2')}</p>
 
-        <Button href="/#contact" className="mt-7">
+        <Button onClick={scrollTo.bind(null, 'contact')} className="mt-7">
           {t('hero.cta')}
         </Button>
       </section>

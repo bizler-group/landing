@@ -6,11 +6,7 @@ import { Header } from '~/components/layout/Header'
 import { Footer } from '~/components/layout/Footer'
 import { jost } from '.'
 
-export default function App({
-  Component,
-  pageProps,
-  year,
-}: AppProps & { year: number }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -36,13 +32,7 @@ export default function App({
 
       <Component {...pageProps} />
 
-      <Footer year={year} />
+      <Footer />
     </>
   )
-}
-
-App.getInitialProps = async () => {
-  const year = new Date().getFullYear()
-
-  return { year }
 }
