@@ -6,11 +6,12 @@ interface Props {
   type?: string
   placeholder?: string
   value?: string
-  onChange: (
+  onChange?: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void
-  error?: string
+  error?: string | null
   className?: string
+  required?: boolean
 }
 
 export const Input: React.FC<Props> = ({

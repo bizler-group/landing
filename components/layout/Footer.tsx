@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
   const { t } = useTranslation('common')
 
   return (
-    <footer className="pt-7 pb-10 w-full bg-[#041C1F] max-md:pb-16">
+    <footer className="pt-7 pb-10 w-full bg-[#041C1F] max-md:pb-16 relative z-50">
       <div className="container max-md:w-[85%]">
         <div className="flex items-center justify-between max-md:flex-col max-md:items-start max-md:gap-10">
           <Image

@@ -1,7 +1,9 @@
 import '~/styles/globals.css'
+import 'react-toastify/dist/ReactToastify.css'
 import type { AppProps } from 'next/app'
 
 import Head from 'next/head'
+import { ToastContainer } from 'react-toastify'
 import { Header } from '~/components/layout/Header'
 import { Footer } from '~/components/layout/Footer'
 import { jost } from '.'
@@ -31,6 +33,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <Header />
 
       <Component {...pageProps} />
+
+      <ToastContainer />
 
       <Footer />
     </>

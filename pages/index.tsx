@@ -49,6 +49,12 @@ export default function Home() {
 
         <div className="flex justify-center items-center gap-x-16 mt-10 max-md:flex-wrap max-md:gap-10">
           <div>
+            {/* <Image
+              src="/images/partner-logos/it-park-kr.png"
+              alt="IT park karakalpakstan logo"
+              width={100}
+              height={40}
+            /> */}
             <Image
               src="/images/partner-logos/airbnb.png"
               alt="Airbnb logo"

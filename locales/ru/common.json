@@ -47,6 +47,10 @@
     "message": "Сообщение",
     "message_placeholder": "Ваше сообщение",
     "submit": "Отправить",
+    "invalid_email": "Неверный email",
+    "message_min_length": "Сообщение должно содержать не менее 10 символов",
+    "success": "Сообщение успешно отправлено",
+    "error": "Произошла ошибка при отправке сообщения",
     "reach_us_directly": "Свяжитесь с нами напрямую",
     "reach_us_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum sit id sagittis non donec egestas."
   },
