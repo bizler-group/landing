@@ -83,6 +83,13 @@ export const ContactForm: React.FC = () => {
             className="flex-1"
             name="email_address"
             placeholder={t('contact_us.email_placeholder')}
+            onBlur={(e) =>
+              setEmailError(
+                e.target.value && !isEmail(e.target.value)
+                  ? t('contact_us.invalid_email')
+                  : null
+              )
+            }
             error={emailError}
             required
           />
@@ -92,6 +99,13 @@ export const ContactForm: React.FC = () => {
             name="message"
             type="textarea"
             placeholder={t('contact_us.message_placeholder')}
+            onBlur={(e) =>
+              setMessageError(
+                e.target.value && e.target.value.length < 10
+                  ? t('contact_us.message_min_length')
+                  : null
+              )
+            }
             error={messageError}
             required
           />

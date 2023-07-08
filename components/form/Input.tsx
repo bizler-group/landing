@@ -9,6 +9,7 @@ interface Props {
   onChange?: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void
+  onBlur?: (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void
   error?: string | null
   className?: string
   required?: boolean
