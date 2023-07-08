@@ -16,6 +16,28 @@ const generateText = (email: string, message: string, phone?: string) => {
   return text
 }
 
+const telegramApi = async (method: string, payload: any) => {
+  const url = `https://api.telegram.org/bot${botToken}/${method}`
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(payload)
+  })
+
+  if (!response.ok) {
+    throw new Error('Telegram API error')
+  }
+
+  const data = await response.json()
+  if (!data.ok) {
+    throw new Error('Telegram API error')
+  }
+
+  return data
+}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
@@ -32,16 +54,15 @@ export default async function handler(
   }
 
   const text = generateText(email, message, phone)
-  const url = `https://api.telegram.org/bot${botToken}/sendMessage`
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ chat_id: chatId, text })
-  })
 
-  if (!response.ok) {
+  try {
+    const data = await telegramApi('sendMessage', { chat_id: chatId, text })
+    await telegramApi('pinChatMessage', {
+      chat_id: chatId,
+      message_id: data.result.message_id,
+      disable_notification: false,
+    })
+  } catch (error) {
     return res.status(500).json({ ok: false })
   }
 
