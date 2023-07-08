@@ -9,11 +9,17 @@ import { Button } from './ui/Button'
 interface FormPayload {
   message: string
   email_address: string
+  phone?: string
 }
 
 const isEmail = (email: string) => {
   const re = /\S+@\S+\.\S+/
   return re.test(email)
+}
+
+const isPhone = (phone: string) => {
+  const re = /^\+?\d{10,20}$/
+  return re.test(phone)
 }
 
 const toastOptions: ToastOptions = {
@@ -30,6 +36,7 @@ const toastOptions: ToastOptions = {
 export const ContactForm: React.FC = () => {
   const { t } = useTranslation('common')
   const [emailError, setEmailError] = useState<string | null>(null)
+  const [phoneError, setPhoneError] = useState<string | null>(null)
   const [messageError, setMessageError] = useState<string | null>(null)
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -45,12 +52,18 @@ export const ContactForm: React.FC = () => {
       return
     }
 
+    if (data.phone && !isPhone(data.phone)) {
+      setPhoneError(t('contact_us.invalid_phone'))
+      return
+    }
+
     if (!data.message || data.message.length < 10) {
       setMessageError(t('contact_us.message_min_length'))
       return
     }
 
     setEmailError(null)
+    setPhoneError(null)
     setMessageError(null)
 
     const res = await fetch('/api/contact', {
@@ -92,6 +105,13 @@ export const ContactForm: React.FC = () => {
             }
             error={emailError}
             required
+          />
+          <Input
+            label={t('contact_us.phone')}
+            className="mt-5 flex-1"
+            name="phone"
+            placeholder={t('contact_us.phone_placeholder')}
+            error={phoneError}
           />
           <Input
             className="mt-5"

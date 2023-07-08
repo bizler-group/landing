@@ -51,6 +51,9 @@
     "message_min_length": "Сообщение должно содержать не менее 10 символов",
     "success": "Сообщение успешно отправлено",
     "error": "Произошла ошибка при отправке сообщения",
+    "phone": "Телефон",
+    "phone_placeholder": "+996 700 123 456",
+    "invalid_phone": "Неверный формат телефона",
     "reach_us_directly": "Свяжитесь с нами напрямую",
     "reach_us_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum sit id sagittis non donec egestas."
   },
