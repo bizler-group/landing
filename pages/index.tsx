@@ -136,14 +136,14 @@ export default function Home() {
           <div className="flex gap-3">
             <div>
               <div className="w-24 h-14 bg-white rounded-lg" />
-              <h3 className="my-3 font-bold text-2xl text-[#E0ECEB]">
+              <h3 className="my-3 font-bold text-xl text-[#E0ECEB]">
                 {t('vision.feature1.title')}
               </h3>
               <p className="text-[#B8C1C1]">{t('vision.feature1.p')}</p>
             </div>
             <div>
               <div className="w-24 h-14 bg-white rounded-lg" />
-              <h3 className="my-3 font-bold text-2xl text-[#E0ECEB]">
+              <h3 className="my-3 font-bold text-xl text-[#E0ECEB]">
                 {t('vision.feature2.title')}
               </h3>
               <p className="text-[#B8C1C1]">{t('vision.feature2.p')}</p>
