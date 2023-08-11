@@ -55,14 +55,8 @@ export default function Home() {
           {t('trusted_by')}
         </h2>
 
-        <div className="flex justify-center items-center gap-x-16 mt-10 max-md:flex-wrap max-md:gap-10">
+        <div className="flex justify-center items-center gap-x-16 max-md:mx-5 mt-10 max-md:flex-wrap max-md:gap-10">
           <div>
-            {/* <Image
-              src="/images/partner-logos/it-park-kr.png"
-              alt="IT park karakalpakstan logo"
-              width={100}
-              height={40}
-            /> */}
             <Image
               className="rounded-full"
               src="/images/partner-logos/era.jpeg"
@@ -97,7 +91,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-            className='invert'
+              className="invert"
               src="/images/partner-logos/nukus-avtovokzal.png"
               alt="Intuza academy logo"
               width={100}
