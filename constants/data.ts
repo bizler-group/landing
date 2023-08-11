@@ -231,6 +231,63 @@ export const PROJECT_SLIDES = [
   },
 ]
 
+export const KILLED_PROJECTS = [
+  {
+    name: 'Saiga',
+    date: 'December 1, 2021',
+    description:
+      'Saiga was a Discord bot that was created by Bizler. It was discontinued on December 1, 2021.',
+  },
+  {
+    name: 'Saiga',
+    date: 'December 1, 2021',
+    description:
+      'Saiga was a Discord bot that was created by Bizler. It was discontinued on December 1, 2021.',
+  },
+  {
+    name: 'Saiga',
+    date: 'December 1, 2021',
+    description:
+      'Saiga was a Discord bot that was created by Bizler. It was discontinued on December 1, 2021.',
+  },
+  {
+    name: 'Saiga',
+    date: 'December 1, 2021',
+    description:
+      'Saiga was a Discord bot that was created by Bizler. It was discontinued on December 1, 2021.',
+  },
+  {
+    name: 'Saiga',
+    date: 'December 1, 2021',
+    description:
+      'Saiga was a Discord bot that was created by Bizler. It was discontinued on December 1, 2021.',
+  },
+  {
+    name: 'Saiga',
+    date: 'December 1, 2021',
+    description:
+      'Saiga was a Discord bot that was created by Bizler. It was discontinued on December 1, 2021.',
+  },
+  {
+    name: 'Saiga',
+    date: 'December 1, 2021',
+    description:
+      'Saiga was a Discord bot that was created by Bizler. It was discontinued on December 1, 2021.',
+  },
+  {
+    name: 'Saiga',
+    date: 'December 1, 2021',
+    description:
+      'Saiga was a Discord bot that was created by Bizler. It was discontinued on December 1, 2021.',
+  },
+  {
+    name: 'Saiga',
+    date: 'December 1, 2021',
+    description:
+      'Saiga was a Discord bot that was created by Bizler. It was discontinued on December 1, 2021.',
+  },
+]
+
 const content =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in'
 
