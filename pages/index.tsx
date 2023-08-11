@@ -1,6 +1,11 @@
 import Image from 'next/image'
 import { useCallback } from 'react'
-import { Nunito_Sans, Jost } from 'next/font/google'
+import { Nunito_Sans, Jost, Roboto, Open_Sans, Inter } from 'next/font/google'
+import {
+  IconTrademark,
+  IconBriefcase,
+  IconAffiliate,
+} from '@tabler/icons-react'
 import useTranslation from 'next-translate/useTranslation'
 
 import { Button } from '~/components/ui/Button'
@@ -13,8 +18,11 @@ import {
   TESTIMONIALS_SLIDES,
 } from '~/constants/data'
 
-export const nunitoSans = Nunito_Sans({ subsets: ['cyrillic', 'latin'] })
-export const jost = Jost({ subsets: ['cyrillic', 'latin'] })
+export const nunitoSans = Inter({
+  weight: ['400', '500', '700'],
+  subsets: ['cyrillic', 'latin'],
+})
+export const jost = Open_Sans({ subsets: ['cyrillic', 'latin'] })
 
 export default function Home() {
   const { t } = useTranslation('common')
@@ -56,48 +64,50 @@ export default function Home() {
               height={40}
             /> */}
             <Image
-              src="/images/partner-logos/airbnb.png"
-              alt="Airbnb logo"
+              className="rounded-full"
+              src="/images/partner-logos/era.jpeg"
+              alt="New Era GPS logo"
               width={100}
               height={40}
             />
           </div>
           <div>
             <Image
-              src="/images/partner-logos/hubspot.png"
-              alt="Hubspot logo"
+              src="/images/partner-logos/logo_sky.png"
+              alt="Skymax logo"
               width={100}
               height={40}
             />
           </div>
           <div>
             <Image
-              src="/images/partner-logos/google.png"
-              alt="Google logo"
+              src="/images/partner-logos/jaslar-isler-agentligi.png"
+              alt="Jaslar isler agentligi logo"
               width={100}
               height={40}
             />
           </div>
           <div>
             <Image
-              src="/images/partner-logos/microsoft.png"
-              alt="Microsoft logo"
+              src="/images/partner-logos/it-park-kr.png"
+              alt="IT Park Karakalpakstan logo"
               width={100}
               height={40}
             />
           </div>
           <div>
             <Image
-              src="/images/partner-logos/walmart.png"
-              alt="Walmart logo"
+            className='invert'
+              src="/images/partner-logos/nukus-avtovokzal.png"
+              alt="Intuza academy logo"
               width={100}
               height={40}
             />
           </div>
           <div>
             <Image
-              src="/images/partner-logos/fedex.png"
-              alt="FedEx logo"
+              src="/images/partner-logos/intuza.png"
+              alt="Intuza logo"
               width={100}
               height={40}
             />
@@ -106,7 +116,13 @@ export default function Home() {
       </section>
 
       <section className="pt-7 flex max-md:flex-col-reverse items-end justify-between gap-12 mb-28 max-md:mx-5">
-        <div className="min-h-[450px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Mission-1-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1 max-md:w-full" />
+        <Image
+          className="rounded-2xl w-[45%] object-cover max-md:w-full max-md:rounded-lg"
+          src="/images/whiteboard.jpg"
+          alt="Whiteboard"
+          width={1920}
+          height={75}
+        />
 
         <div className="flex flex-col gap-10 flex-1 max-md:gap-5">
           <p className="text-[#52B6C4] tracking-widest max-md:tracking-wide uppercase">
@@ -135,14 +151,18 @@ export default function Home() {
 
           <div className="flex gap-3">
             <div>
-              <div className="w-24 h-14 bg-white rounded-lg" />
+              <div className="w-24 h-14 bg-white rounded-lg flex items-center justify-center">
+                <IconBriefcase size="3rem" />
+              </div>
               <h3 className="my-3 font-bold text-xl text-[#E0ECEB]">
                 {t('vision.feature1.title')}
               </h3>
               <p className="text-[#B8C1C1]">{t('vision.feature1.p')}</p>
             </div>
             <div>
-              <div className="w-24 h-14 bg-white rounded-lg" />
+              <div className="w-24 h-14 bg-white rounded-lg flex items-center justify-center">
+                <IconAffiliate size="3rem" />
+              </div>
               <h3 className="my-3 font-bold text-xl text-[#E0ECEB]">
                 {t('vision.feature2.title')}
               </h3>
@@ -151,7 +171,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="min-h-[400px] bg-slate-500 bg-[url('https://libertysteelgroup.com/it/wp-content/uploads/sites/6/2020/12/Vision-1.jpg')] bg-no-repeat bg-cover rounded-2xl flex-1" />
+        <Image
+          className="rounded-2xl w-[45%] object-cover max-md:w-full max-md:rounded-lg"
+          src="/images/meeting.jpg"
+          alt="Meeting"
+          width={1920}
+          height={75}
+        />
       </section>
 
       <section id="leaders" className="pt-7 mb-16 max-md:mx-5">

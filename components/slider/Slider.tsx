@@ -107,31 +107,33 @@ export const Slider: React.FC<Props> = ({ slides, namespace = 'common' }) => {
         </div>
       </div>
 
-      <div className="mt-5 gap-5 mx-auto flex justify-center items-center">
-        <button
-          role="button"
-          className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
-          aria-label="prev"
-          disabled={noPrev}
-          onClick={onPrevNext.bind(null, 'prev')}
-        >
-          <IconArrowLeft
-            className={noPrev ? 'text-[#194f55]' : 'text-[#52B6C4]'}
-          />
-        </button>
+      {(!noPrev || !noNext) && (
+        <div className="mt-5 gap-5 mx-auto flex justify-center items-center">
+          <button
+            role="button"
+            className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
+            aria-label="prev"
+            disabled={noPrev}
+            onClick={onPrevNext.bind(null, 'prev')}
+          >
+            <IconArrowLeft
+              className={noPrev ? 'text-[#194f55]' : 'text-[#52B6C4]'}
+            />
+          </button>
 
-        <button
-          role="button"
-          className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
-          aria-label="next"
-          disabled={noNext}
-          onClick={onPrevNext.bind(null, 'next')}
-        >
-          <IconArrowRight
-            className={noNext ? 'text-[#194f55]' : 'text-[#52B6C4]'}
-          />
-        </button>
-      </div>
+          <button
+            role="button"
+            className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
+            aria-label="next"
+            disabled={noNext}
+            onClick={onPrevNext.bind(null, 'next')}
+          >
+            <IconArrowRight
+              className={noNext ? 'text-[#194f55]' : 'text-[#52B6C4]'}
+            />
+          </button>
+        </div>
+      )}
     </>
   )
 }

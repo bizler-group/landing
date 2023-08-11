@@ -1,4 +1,4 @@
-import { IconMailFilled } from '@tabler/icons-react'
+import { IconMail, IconPhone } from '@tabler/icons-react'
 import { useState } from 'react'
 import { toast, ToastOptions } from 'react-toastify'
 import useTranslation from 'next-translate/useTranslation'
@@ -22,6 +22,10 @@ const isPhone = (phone: string) => {
   return re.test(phone)
 }
 
+const displayPhone = (lang: string) => {
+  return lang === 'kaa'
+}
+
 const toastOptions: ToastOptions = {
   position: 'top-right',
   autoClose: 5000,
@@ -34,7 +38,7 @@ const toastOptions: ToastOptions = {
 }
 
 export const ContactForm: React.FC = () => {
-  const { t } = useTranslation('common')
+  const { t, lang } = useTranslation('common')
   const [emailError, setEmailError] = useState<string | null>(null)
   const [phoneError, setPhoneError] = useState<string | null>(null)
   const [messageError, setMessageError] = useState<string | null>(null)
@@ -139,23 +143,25 @@ export const ContactForm: React.FC = () => {
           <h3 className="font-bold text-2xl max-md:mb-3">
             {t('contact_us.reach_us_directly')}
           </h3>
-          <p className="text-base font-normal">
+          <p className="mt-5 text-base font-normal">
             {t('contact_us.reach_us_description')}
           </p>
 
           <div className="mt-10">
             <span className="flex gap-3 mb-4">
-              <IconMailFilled />
-              <a href="mailto:contact@example.com">contact@example.com</a>
+              <IconMail />
+              <a href="mailto:bizler@gmail.com">bizler@gmail.com</a>
             </span>
             <span className="flex gap-3 mb-4">
-              <IconMailFilled />
-              <a href="mailto:support@example.com">support@example.com</a>
+              <IconMail />
+              <a href="mailto:bizler@yandex.com">bizler@yandex.com</a>
             </span>
-            <span className="flex gap-3">
-              <IconMailFilled />
-              <a href="mailto:press@example.com">press@example.com</a>
-            </span>
+            {displayPhone(lang) && (
+              <span className="flex gap-3">
+                <IconPhone />
+                <a href="tel:+998906601020">+99890 660-10-20</a>
+              </span>
+            )}
           </div>
         </div>
       </div>

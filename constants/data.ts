@@ -102,6 +102,22 @@ export const TEAM_MEMBERS = [
     flag: '/images/flags/karakalpakstan.svg',
     country: 'karakalpakstan',
   },
+  {
+    id: 7,
+    name: 'common:members.azamat_berdimuratov',
+    position: 'common:members.azamat_berdimuratov_role',
+    image: '/images/members/azamat_berdimuratov.jpeg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'karakalpakstan',
+  },
+  {
+    id: 8,
+    name: 'common:members.dilshod',
+    position: 'common:members.dilshod_role',
+    image: '/images/members/dilshod.jpeg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'karakalpakstan',
+  },
 ]
 
 export const ROLES = [

@@ -1,20 +1,20 @@
 {
   "hero": {
     "h1": "Ideyalarıńızdı biz benen birge ámelge asırıń",
-    "p1": "Наша креативная команда поможет вам воплотить вашу идею в жизнь.",
-    "p2": "С нами – всё легко и просто.",
-    "cta": "Связаться с нами"
+    "p1": "Kreativ komandamız ideyańızdı dúnyaǵa keltiriwde járdem beredi",
+    "p2": "Biz benen hámmesi ańsat hám ápiwayı",
+    "cta": "Biz benen baylanısıw"
   },
-  "trusted_by": "Нам доверяют",
+  "trusted_by": "Bizge isenim bildirgenler",
   "our_mission": {
-    "title": "Наша миссия",
-    "subtitle": "Мы хотим сделать мир лучше, используя IT-технологии.",
-    "p": "Решить локальные проблемы с помощью IT и внести свой вклад в развитие нашего региона. Мы хотим использовать максимум своих знаний и навыков для реализаций проектов и поднять благополучие региона на новый уровень."
+    "title": "MISSÍYAMÍZ",
+    "subtitle": "BIZ IT-TEXNOLOGIYALAR ARQALÍ DÚNYANÍ JAQSÍLAWDÍ QÁLEYMIZ",
+    "p": "IT arqalı jergilikli mashqalalardı sheshiw hám elimimizdiń rawajlanıwına úles qosıw. Bizler óz bilim hám uqıplarımızdı maksimal paydalanıp, joybarlardı islep elimizdiń jaģdayın jańa dárejege alıp shıģıwdı qáleymiz."
   },
   "vision": {
-    "title": "Видение",
-    "subtitle": "Мы хотим стать лучшей IT-компанией в регионе.",
-    "p": "Наша первостепенная задача – создать коммьюнити, где всех будет объединять одна миссия и ценности. Мы открыты для всех, чьё виденье совпадает с нашим. Мы хотим, чтобы наша компания была лучшей в регионе, чтобы наши сотрудники были счастливы и гордились своей работой, чтобы наши клиенты были довольны и возвращались к нам снова и снова.",
+    "title": "KÓZ QARASÍMÍZ",
+    "subtitle": "ELEMIZDE EŃ JAQSÍ IT-KOMPANIYA BOLÍW",
+    "p": "Bizlerdiń eń birinshi wazıypamız - hámmeni birdey maqsetler hám qádir-qımbat birlestiretuģın shólkem (community) jaratıw. Bizler kóz qaraslarımız tuwra kelgen bárshege ashıqpız. Bizler kompaniyamızdıń qániygeleri baxıtlı bolıwı hám óz jumısınan ráhatleniwi, tutınıwshılarımızdıń quwanıshlı bolıwı hám jánede bizge isenim bildirip keliwi ushın  elimizde eń jaqsısı bolıwın qáleymiz.",
     "feature1": {
       "title": "Создать компанию",
       "p": "Переход от локального лидера к международному гиганту: Наша амбициозная цель - быть в числе глобальных лидеров в сфере информационных технологий"
@@ -25,53 +25,57 @@
     }
   },
   "our_leaders": {
-    "title": "Наши лидеры",
-    "qural": "Курал Атабаев",
-    "abat": "Абат Даулетбаев",
-    "azamat": "Азамат Жумабаев",
-    "begis": "Бегис Орынбаев",
-    "qural_role": "Основатель",
-    "abat_role": "Директор, программист, инженер",
-    "azamat_role": "Технический директор",
-    "begis_role": "Проект менеджер, UX/UI дизайнер"
+    "title": "JETEKSHILERIMIZ",
+    "qural": "Qural Atabaev",
+    "abat": "Abat Dauletbaev",
+    "azamat": "Azamat Jumabaev",
+    "begis": "Begis Orınbaev",
+    "qural_role": "Tiykarshı",
+    "abat_role": "Direktor, baǵdarlamashı",
+    "azamat_role": "Texnik direktor",
+    "begis_role": "Proekt menejer, UX/UI dizayner"
   },
   "members": {
     "muxammetsharip": "Muxammetsharip",
-    "muxammetsharip_role": "Baǵdarlamashı",
+    "muxammetsharip_role": "Web baǵdarlamashı",
     "jamshid": "Jamshid Isoqov",
-    "jamshid_role": "Baǵdarlamashı"
+    "jamshid_role": "Android baǵdarlamashı",
+    "azamat_berdimuratov": "Azamat Berdimuratov",
+    "azamat_berdimuratov_role": "Front-end baǵdarlamashı",
+    "dilshod": "Dilshod",
+    "dilshod_role": "Back-end baǵdarlamashı"
   },
-  "open_details": "Подробнее",
-  "our_projects": "Наши проекты",
-  "all_projects": "Все проекты",
+  "open_details": "Tolıǵıraq",
+  "our_projects": "PROEKTLERIMIZ",
+  "all_projects": "Barlıq proektler",
   "startups": "Стартапы",
   "testimonials": "О нас пишут",
   "contact_us": {
-    "title": "Свяжитесь с нами",
-    "email": "Электронная почта",
+    "title": "Biz benen baylanısıw",
+    "email": "Elektron pochta",
     "email_placeholder": "email@example.com",
-    "message": "Сообщение",
-    "message_placeholder": "Ваше сообщение",
-    "submit": "Отправить",
-    "invalid_email": "Неверный email",
-    "message_min_length": "Сообщение должно содержать не менее 10 символов",
-    "phone": "Телефон",
-    "phone_placeholder": "+996 700 123 456",
-    "invalid_phone": "Неверный формат телефона",
-    "success": "Сообщение успешно отправлено",
-    "error": "Произошла ошибка при отправке сообщения",
-    "reach_us_directly": "Свяжитесь с нами напрямую",
-    "reach_us_description": "Ваш успех - наша цель. Не теряйте времени, свяжитесь с нами сейчас, и наша команда экспертов с радостью окажет вам поддержку, решит любые вопросы и поможет достичь ваших целей вместе!"
+    "message": "Xabar",
+    "message_placeholder": "Xabarıńız",
+    "submit": "Jiberiw",
+    "invalid_email": "Nadurıs elektron pochta formatı",
+    "message_min_length": "Xabar keminde 10 simvoldan ibarat bolıwı kerek",
+    "phone": "Telefon",
+    "phone_placeholder": "+998 90 123-45-67",
+    "invalid_phone": "Nadurıs telefon formatı",
+    "success": "Xabarıńız jiberildi tez arada siz benen baylanısamız",
+    "error": "Xabarıńızdı jiberiwde qátelik júz berdi",
+    "reach_us_directly": "Tuwrıdan-tuwrı baylanısıw",
+    "reach_us_description": "Maqsetimiz — bul siziń áwmetińiz. Не теряйте времени, свяжитесь с нами сейчас, и наша команда экспертов с радостью окажет вам поддержку, решит любые вопросы и поможет достичь ваших целей вместе!"
   },
   "links": {
-    "home": "Главная",
-    "about": "О нас",
-    "team": "Команда",
-    "projects": "Проекты",
-    "contact": "Связаться с нами",
-    "testimonials": "Отзывы"
+    "home": "Bas bet",
+    "about": "Biz haqqımızda",
+    "team": "Toparımız",
+    "projects": "Proektler",
+    "contact": "Baylanısıw",
+    "testimonials": "Pikirler"
   },
-  "all_rights_reserved": "Все права защищены",
-  "page_not_found": "Страница не найдена",
-  "open_main_menu": "Open main menu"
+  "all_rights_reserved": "Barlıq huqıqlar qorǵalǵan",
+  "page_not_found": "Bul bet tabılmadı",
+  "open_main_menu": "Tiykarǵı menyudi ashıw"
 }
