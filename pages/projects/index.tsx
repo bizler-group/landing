@@ -22,12 +22,22 @@ export default function Project() {
         </h1>
 
         <div className="flex flex-wrap gap-3">
-          <Button variant="outlined" active>
+          <Button
+            variant="outlined"
+            className="max-md:px-3 max-md:py-1.5"
+            active
+          >
             {t('common:all_projects')}
           </Button>
-          <Button variant="outlined">{t('website')}</Button>
-          <Button variant="outlined">{t('crm')}</Button>
-          <Button variant="outlined">{t('mobile_app')}</Button>
+          <Button variant="outlined" className="max-md:px-3 max-md:py-1.5">
+            {t('website')}
+          </Button>
+          <Button variant="outlined" className="max-md:px-3 max-md:py-1.5">
+            {t('crm')}
+          </Button>
+          <Button variant="outlined" className="max-md:px-3 max-md:py-1.5">
+            {t('mobile_app')}
+          </Button>
         </div>
       </div>
 
@@ -47,7 +57,8 @@ export default function Project() {
                 href={project.link}
                 className="flex text-white absolute top-[35%] left-1/3"
               >
-                {t('common:open_details')} <IconArrowUpRight className="text-[#52B6C4]" />
+                {t('common:open_details')}{' '}
+                <IconArrowUpRight className="text-[#52B6C4]" />
               </Link>
             )}
           </ProjectCard>

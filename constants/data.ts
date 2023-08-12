@@ -118,6 +118,30 @@ export const TEAM_MEMBERS = [
     flag: '/images/flags/karakalpakstan.svg',
     country: 'karakalpakstan',
   },
+  {
+    id: 9,
+    name: 'common:members.muxammedali',
+    position: 'common:members.muxammedali_role',
+    image: '/images/members/muxammedali.png',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'karakalpakstan',
+  },
+  {
+    id: 10,
+    name: 'common:members.aleuatdin',
+    position: 'common:members.aleuatdin_role',
+    image: '/images/members/aleuatdin.jpg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'karakalpakstan',
+  },
+  {
+    id: 11,
+    name: 'common:members.sharyar',
+    position: 'common:members.sharyar_role',
+    image: '/images/members/sharyar.jpg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'karakalpakstan',
+  },
 ]
 
 export const ROLES = [
@@ -161,77 +185,21 @@ export const ROLES = [
 export const PROJECT_SLIDES = [
   {
     id: 1,
-    image: '/images/projects/1.webp',
-    title: 'Project name',
-    description: 'Position + some information in 2 lines lorem ipsum',
-    link: '/projects/some-project',
+    image: '/images/projects/skymaxx/1.png',
+    title: 'SkyMaxx',
+    description: 'Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану',
+    link: '/projects/skymaxx',
   },
   {
     id: 2,
-    image: '/images/projects/2.jpeg',
-    title: 'Project name',
-    description: 'Position + some information in 2 lines lorem ipsum',
-    link: '/projects/some-project',
-  },
-  {
-    id: 3,
-    image: '/images/projects/3.webp',
-    title: 'Project name',
-    description: 'Position + some information in 2 lines lorem ipsum',
-    link: '/projects/some-project',
-  },
-  {
-    id: 4,
-    image: '/images/projects/4.jpeg',
-    title: 'Project name',
-    description: 'Position + some information in 2 lines lorem ipsum',
-    link: '/projects/some-project',
-  },
-  {
-    id: 5,
-    image: '/images/projects/5.webp',
-    title: 'Project name',
-    description: 'Position + some information in 2 lines lorem ipsum',
-    link: '/projects/some-project',
-  },
-  {
-    id: 6,
-    image: '/images/projects/6.jpeg',
-    title: 'Project name',
-    description: 'Position + some information in 2 lines lorem ipsum',
-    link: '/projects/some-project',
-  },
-  {
-    id: 7,
-    image: '/images/projects/7.jpeg',
-    title: 'Project name',
-    description: 'Position + some information in 2 lines lorem ipsum',
-    link: '/projects/some-project',
-  },
-  {
-    id: 8,
-    image: '/images/projects/8.jpeg',
-    title: 'Project name',
-    description: 'Position + some information in 2 lines lorem ipsum',
-    link: '/projects/some-project',
-  },
-  {
-    id: 9,
-    image: '/images/projects/9.jpeg',
-    title: 'Project name',
-    description: 'Position + some information in 2 lines lorem ipsum',
-    link: '/projects/some-project',
-  },
-  {
-    id: 10,
-    image: '/images/projects/10.webp',
-    title: 'Project name',
-    description: 'Position + some information in 2 lines lorem ipsum',
-    link: '/projects/some-project',
+    image: '/images/projects/newera/1.png',
+    title: 'New Era',
+    description: 'Сайт сделан для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга',
+    link: '/projects/newera',
   },
 ]
 
-export const KILLED_PROJECTS = [
+export const FAILED_PROJECTS = [
   {
     name: 'Saiga',
     date: 'December 1, 2021',
