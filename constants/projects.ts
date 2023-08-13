@@ -37,6 +37,6 @@ export const PROJECT_DETAILS = {
         `Сайт сделан для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга.`
       ].join('<br />')
     },
-    link: 'https://newera.uz',
+    link: 'http://newera.uz',
   },
 }
