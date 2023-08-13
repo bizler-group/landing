@@ -7,7 +7,7 @@ import { PROJECT_DETAILS } from '~/constants/projects'
 type Project = {
   title: string
   description: string
-  link: string
+  link: string | null
   tools: string[]
   type: string
 }
@@ -43,14 +43,16 @@ export default function Project(props: Project) {
       </div>
 
       <div>
-        <Button
-          href={link}
-          className="mt-4 flex justify-center items-center gap-2 w-60 max-md:w-max max-md:mx-auto"
-          active
-          external
-        >
-          Go to website <IconArrowUpRight />
-        </Button>
+        {link && (
+          <Button
+            href={link}
+            className="mt-4 flex justify-center items-center gap-2 w-60 max-md:w-max max-md:mx-auto"
+            active
+            external
+          >
+            Go to website <IconArrowUpRight />
+          </Button>
+        )}
       </div>
 
       <div

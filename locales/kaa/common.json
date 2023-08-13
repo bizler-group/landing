@@ -31,7 +31,7 @@
     "azamat": "Azamat Jumabaev",
     "begis": "Begis Orınbaev",
     "qural_role": "Tiykarshı",
-    "abat_role": "Direktor, baǵdarlamashı",
+    "abat_role": "Direktor, generalist",
     "azamat_role": "Texnik direktor",
     "begis_role": "Proekt menejer, UX/UI dizayner"
   },
@@ -48,8 +48,10 @@
     "muxammedali_role": "Junior java baǵdarlamashı",
     "aleuatdin": "Jaksilikov Aleuatdin",
     "aleuatdin_role": "Junior android baǵdarlamashı",
-    "sharyar": "Sháryar",
-    "sharyar_role": "UI/UX dizayner"
+    "sharyar": "Sháryar Nazarbaev",
+    "sharyar_role": "UI/UX dizayner",
+    "mukhammedali": "Mukhammedali Ametov",
+    "mukhammedali_role": "Junior front-end baǵdarlamashı"
   },
   "open_details": "Tolıǵıraq",
   "our_projects": "PROEKTLERIMIZ",
@@ -71,7 +73,7 @@
     "success": "Xabarıńız jiberildi tez arada siz benen baylanısamız",
     "error": "Xabarıńızdı jiberiwde qátelik júz berdi",
     "reach_us_directly": "Tuwrıdan-tuwrı baylanısıw",
-    "reach_us_description": "Maqsetimiz — bul siziń áwmetińiz. Не теряйте времени, свяжитесь с нами сейчас, и наша команда экспертов с радостью окажет вам поддержку, решит любые вопросы и поможет достичь ваших целей вместе!"
+    "reach_us_description": "Maqsetimiz — bul siziń áwmetińiz. Waqıttı joǵaltpastan házir-aq biz benen baylanısıń hám toparımız benen siziń mashqalańızdı sheshiwge járdemge tayınbız!"
   },
   "links": {
     "home": "Bas bet",

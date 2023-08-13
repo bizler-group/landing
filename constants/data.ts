@@ -142,6 +142,14 @@ export const TEAM_MEMBERS = [
     flag: '/images/flags/karakalpakstan.svg',
     country: 'karakalpakstan',
   },
+  {
+    id: 12,
+    name: 'common:members.mukhammedali',
+    position: 'common:members.mukhammedali_role',
+    image: '/images/members/mukhammedali.jpeg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'karakalpakstan',
+  },
 ]
 
 export const ROLES = [
@@ -196,6 +204,34 @@ export const PROJECT_SLIDES = [
     title: 'New Era',
     description: 'Сайт сделан для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга',
     link: '/projects/newera',
+  },
+  {
+    id: 3,
+    image: '/images/projects/nukusavtovokzal/1.png',
+    title: 'Нукус Автовокзал',
+    description: 'Сайт сделан по заказу ООО "Нукус Автовокзал" для своей дочерней компании занимающийся туризмом.',
+    link: '/projects/nukusavtovokzal',
+  },
+  {
+    id: 4,
+    image: '/images/projects/tashkenthotel/1.png',
+    title: 'Tashkent Hotel',
+    description: 'Сайт сделан для самого лучшего отеля Нукуса. Гостиница находится в центре города.',
+    link: '/projects/tashkenthotel',
+  },
+  {
+    id: 5,
+    image: '/images/projects/intertravel/1.png',
+    title: 'Inter Travel Nukus',
+    description: 'Веб-сайт сделан по заказу тур агентсва в Нукусе. С помощью этого сайта вы можете организовать путешествие по всему миру и по Узбекистану.',
+    link: '/projects/intertravel',
+  },
+  {
+    id: 6,
+    image: '/images/projects/xuxo/1.png',
+    title: 'Xuxo CRM',
+    description: 'CRM система сделана для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга',
+    link: '/projects/xuxo',
   },
 ]
 
