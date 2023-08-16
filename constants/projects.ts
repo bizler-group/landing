@@ -14,7 +14,9 @@ export const PROJECT_DETAILS = {
       ].join('<br />'),
       kaa: [
         `<img class="mb-2" src="/images/projects/skymaxx/1.png" alt="SkyMaxx" />`,
-        `Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану.`
+        `GPS monitoring hám janılǵı sarıplanıwın qadaǵalaw úskenelerin ornatıwshı hám texnik xızmet kórsetiwshi kompanıya ushın web-sayt jaratıw bizge isenip tapsırıldı. Toparımız benen hám Skymaxx kompaniyası menejerleri menen oylasqan xalda kompaniya saytın islep shıqtıq.`,
+        '', // empty line
+        `Kompaniya Tashkent qalasında óz iskerligin alıp baradı hám Ózbekstan boyınsha xızmet kórsetedi. Egerde siz avtoparkıńızdı online qadaǵalawdı qáleseńiz Skymaxx kompanıyası xızmetlerin usınıs etemiz.`,
       ].join('<br />')
     },
     link: 'https://skymaxx.uz',
@@ -34,7 +36,9 @@ export const PROJECT_DETAILS = {
       ].join('<br />'),
       kaa: [
         `<img class="mb-2" src="/images/projects/newera/1.png" alt="New Era" />`,
-        `Сайт сделан для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга.`
+        `"New Era Gps Control" kompaniyası ushın web-sayt jaratıw Bizler Group kompaniyasına isenip tapsırıldı. Toparımız benen tutınıwshımızdıń kewlindegidey sayt jaratıwǵa kiristik hám onıń kewlinen shıǵa alǵanımızdan quwanıshlı boldıq.`,
+        '', // empty line
+        `"New Era GPS Control" kompaniyasi Ózbekstan boylap tiykarınan M2M hám IoT tarawında arnawlı sheshimlerdi usınıp keledi. Bunda siz óz avtoparkıńızdaǵı hár túrli transport qurallardı online qadaǵalay alasız. Yaǵnıy avtokóliktiń GPS arqalı júrgen ornın biliw, janılǵı sarplanıwın qadaǵalaw, júrgen jolınıń aralıǵın esaplaw(km), tezligin anıqlaw, kólik basqarıwshınıń hám kóliktiń jaǵdayın analizlew imkaniyatına iye bolasız.`
       ].join('<br />')
     },
     link: 'http://newera.uz',
@@ -114,6 +118,86 @@ export const PROJECT_DETAILS = {
       ].join('<br />'),
       kaa: [
         `<img class="mb-2" src="/images/projects/xuxo/1.png" alt="Xuxo" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+    },
+    link: null,
+  },
+  toybaslar: {
+    title: 'Toybaslar',
+    tools: ['React'],
+    type: 'CRM',
+    description: {
+      en: [
+        `<img class="mb-2" src="/images/projects/toybaslar/1.png" alt="Toybaslar" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+      ru: [
+        `<img class="mb-2" src="/images/projects/toybaslar/1.png" alt="Toybaslar" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+      kaa: [
+        `<img class="mb-2" src="/images/projects/toybaslar/1.png" alt="Toybaslar" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+    },
+    link: null,
+  },
+  flytravel: {
+    title: 'Fly Travel',
+    tools: ['React'],
+    type: 'Website',
+    description: {
+      en: [
+        `<img class="mb-2" src="/images/projects/flytravel/1.png" alt="Flytravel" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+      ru: [
+        `<img class="mb-2" src="/images/projects/flytravel/1.png" alt="Flytravel" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+      kaa: [
+        `<img class="mb-2" src="/images/projects/flytravel/1.png" alt="Flytravel" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+    },
+    link: 'https://flytravel.uz',
+  },
+  kodtime: {
+    title: 'Kodtime',
+    tools: ['React'],
+    type: 'Website',
+    description: {
+      en: [
+        `<img class="mb-2" src="/images/projects/kodtime/1.png" alt="Kodtime" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+      ru: [
+        `<img class="mb-2" src="/images/projects/kodtime/1.png" alt="Kodtime" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+      kaa: [
+        `<img class="mb-2" src="/images/projects/kodtime/1.png" alt="Kodtime" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+    },
+    link: 'https://kodtime.ru/virtualreality',
+  },
+  nawbet: {
+    title: 'Nawbet',
+    tools: ['React'],
+    type: 'Website',
+    description: {
+      en: [
+        `<img class="mb-2" src="/images/projects/nawbet/1.jpeg" alt="Náwbet" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+      ru: [
+        `<img class="mb-2" src="/images/projects/nawbet/1.jpeg" alt="Náwbet" />`,
+        `CRM система для управления заказами.`
+      ].join('<br />'),
+      kaa: [
+        `<img class="mb-2" src="/images/projects/nawbet/1.jpeg" alt="Náwbet" />`,
         `CRM система для управления заказами.`
       ].join('<br />'),
     },

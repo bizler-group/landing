@@ -193,6 +193,7 @@ export const ROLES = [
 export const PROJECT_SLIDES = [
   {
     id: 1,
+    type: 'website',
     image: '/images/projects/skymaxx/1.png',
     title: 'SkyMaxx',
     description: 'Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану',
@@ -200,6 +201,7 @@ export const PROJECT_SLIDES = [
   },
   {
     id: 2,
+    type: 'website',
     image: '/images/projects/newera/1.png',
     title: 'New Era',
     description: 'Сайт сделан для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга',
@@ -207,6 +209,7 @@ export const PROJECT_SLIDES = [
   },
   {
     id: 3,
+    type: 'website',
     image: '/images/projects/nukusavtovokzal/1.png',
     title: 'Нукус Автовокзал',
     description: 'Сайт сделан по заказу ООО "Нукус Автовокзал" для своей дочерней компании занимающийся туризмом.',
@@ -214,6 +217,7 @@ export const PROJECT_SLIDES = [
   },
   {
     id: 4,
+    type: 'website',
     image: '/images/projects/tashkenthotel/1.png',
     title: 'Tashkent Hotel',
     description: 'Сайт сделан для самого лучшего отеля Нукуса. Гостиница находится в центре города.',
@@ -221,6 +225,7 @@ export const PROJECT_SLIDES = [
   },
   {
     id: 5,
+    type: 'website',
     image: '/images/projects/intertravel/1.png',
     title: 'Inter Travel Nukus',
     description: 'Веб-сайт сделан по заказу тур агентсва в Нукусе. С помощью этого сайта вы можете организовать путешествие по всему миру и по Узбекистану.',
@@ -228,10 +233,70 @@ export const PROJECT_SLIDES = [
   },
   {
     id: 6,
+    type: 'crm',
     image: '/images/projects/xuxo/1.png',
     title: 'Xuxo CRM',
     description: 'CRM система сделана для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга',
     link: '/projects/xuxo',
+  },
+  {
+    id: 7,
+    type: 'website',
+    image: '/images/projects/flytravel/1.png',
+    title: 'Fly Travel',
+    description: 'Доработали сайт по требованию клиента. Добавили к ним система платежа по Click.',
+    link: '/projects/flytravel',
+  },
+  {
+    id: 8,
+    type: 'website',
+    image: '/images/projects/kodtime/1.png',
+    title: 'Kodtime',
+    description: 'Доработали сайт по требованию клиента. Сделали слайдер и подключили ютуб. Немного изменили вид.',
+    link: '/projects/kodtime',
+  },
+  {
+    id: 9,
+    type: 'website',
+    image: '/images/projects/toybaslar/1.png',
+    title: 'Toy Baslar',
+    description: 'Сделали платформу по заказу "Toy Baslar" для рассрочки. Эта платформа даёт возможность вести учёт долгов, оформлять заказы на товары и услуги, уведомлять клиентов в день выплаты долга по договору.',
+    link: '/projects/toybaslar',
+  },
+  {
+    id: 10,
+    type: 'website',
+    image: '/images/projects/nawbet/1.jpeg',
+    title: 'Náwbet',
+    description: 'Сделали платформу по заказу "Toy Baslar" для рассрочки. Эта платформа даёт возможность вести учёт долгов, оформлять заказы на товары и услуги, уведомлять клиентов в день выплаты долга по договору.',
+    link: '/projects/nawbet',
+  },
+]
+
+export const SERVICES = [
+  {
+    id: 1,
+    title: 'services.web_development',
+    image: '/images/services/web-dev.svg',
+    description: 'services.web_development_description',
+  },
+  {
+    id: 2,
+    title: 'services.design',
+    image: '/images/services/ux-ui.svg',
+    description: 'services.design_description',
+  },
+  {
+    id: 3,
+    title: 'services.crm',
+    image: '/images/services/crm.svg',
+    description: 'services.crm_description',
+  },
+  {
+    id: 4,
+    title: 'services.mobile_development',
+    image: '/images/services/mobile-apps.svg',
+    description: 'services.mobile_development_description',
   },
 ]
 
@@ -292,48 +357,14 @@ export const FAILED_PROJECTS = [
   },
 ]
 
-const content =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in'
-
 export const TESTIMONIALS_SLIDES = [
   {
     id: 1,
-    avatar: '/images/leaders/qural.jpg',
-    name: 'Айдана Абдыкадырова',
-    position: 'Директор',
-    company: 'Компания',
-    content,
-  },
-  {
-    id: 2,
-    avatar: '/images/leaders/qural.jpg',
-    name: 'Айдана Абдыкадырова',
-    position: 'Директор',
-    company: 'Компания',
-    content,
-  },
-  {
-    id: 3,
-    avatar: '/images/leaders/qural.jpg',
-    name: 'Айдана Абдыкадырова',
-    position: 'Директор',
-    company: 'Компания',
-    content,
-  },
-  {
-    id: 4,
-    avatar: '/images/leaders/qural.jpg',
-    name: 'Айдана Абдыкадырова',
-    position: 'Директор',
-    company: 'Компания',
-    content,
-  },
-  {
-    id: 5,
-    avatar: '/images/leaders/qural.jpg',
-    name: 'Айдана Абдыкадырова',
-    position: 'Директор',
-    company: 'Компания',
-    content,
+    // avatar: '/images/profile-circle.svg',
+    avatar: '/images/testimonials/aziz-adilbekov.png',
+    name: 'feedback.xuxo_name',
+    position: 'feedback.xuxo_position',
+    company: 'feedback.xuxo_company',
+    content: 'feedback.xuxo_content',
   },
 ]

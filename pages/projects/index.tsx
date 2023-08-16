@@ -1,16 +1,30 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { IconArrowUpRight } from '@tabler/icons-react'
+import useTranslation from 'next-translate/useTranslation'
 
 import { Button } from '~/components/ui/Button'
 import { ProjectCard } from '~/components/ui/ProjectCard'
 import { PROJECT_SLIDES } from '~/constants/data'
 import { nunitoSans } from '..'
-import useTranslation from 'next-translate/useTranslation'
+import { useRouter } from 'next/router'
+
+const PROJECT_TYPES = ['all', 'website', 'crm'] as const
 
 export default function Project() {
   const { t } = useTranslation('projects')
+  const router = useRouter()
   const [hoveredImageIndex, setHoveredImageIndex] = useState(-1)
+  const [projectType, setProjectType] =
+    useState<(typeof PROJECT_TYPES)[number]>('all')
+
+  useEffect(() => {
+    const { type } = router.query
+
+    if (typeof type === 'string' && PROJECT_TYPES.includes(type as any)) {
+      setProjectType(type as any)
+    }
+  }, [router])
 
   return (
     <main
@@ -22,27 +36,24 @@ export default function Project() {
         </h1>
 
         <div className="flex flex-wrap gap-3">
-          <Button
-            variant="outlined"
-            className="max-md:px-3 max-md:py-1.5"
-            active
-          >
-            {t('common:all_projects')}
-          </Button>
-          <Button variant="outlined" className="max-md:px-3 max-md:py-1.5">
-            {t('website')}
-          </Button>
-          <Button variant="outlined" className="max-md:px-3 max-md:py-1.5">
-            {t('crm')}
-          </Button>
-          <Button variant="outlined" className="max-md:px-3 max-md:py-1.5">
-            {t('mobile_app')}
-          </Button>
+          {PROJECT_TYPES.map((type) => (
+            <Button
+              key={type}
+              variant="outlined"
+              className="max-md:px-3 max-md:py-1.5"
+              active={projectType === type}
+              onClick={() => setProjectType(type)}
+            >
+              {t(type === 'all' ? 'common:all_projects' : type)}
+            </Button>
+          ))}
         </div>
       </div>
 
       <div className="mt-8 mb-20 grid grid-cols-4 gap-y-7 gap-x-5 max-md:grid-cols-1">
-        {PROJECT_SLIDES.map((project, index) => (
+        {PROJECT_SLIDES.filter(
+          (project) => projectType === 'all' || project.type === projectType
+        ).map((project, index) => (
           <ProjectCard
             key={project.id}
             title={t(project.title)}

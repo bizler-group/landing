@@ -15,6 +15,7 @@ import { ContactForm } from '~/components/ContactForm'
 import {
   LEADER_SLIDES,
   PROJECT_SLIDES,
+  SERVICES,
   TESTIMONIALS_SLIDES,
 } from '~/constants/data'
 
@@ -207,6 +208,32 @@ export default function Home() {
         </div>
 
         <Slider slides={PROJECT_SLIDES} />
+      </section>
+
+      <section id="testimonials" className="pt-7 mb-16 max-md:mx-5">
+        <h2 className="text-4xl font-bold text-white mb-7">
+          {t('our_services')}
+        </h2>
+
+        <div className="flex gap-5 max-md:flex-wrap">
+          {SERVICES.map((service) => (
+            <div key={service.id} className="flex flex-col items-start">
+              <Image
+                className={`rounded-3xl object-cover transition-all duration-300 ease-in-out ${
+                  t(service.description).length > 35 ? 'h-[70%]' : 'h-[80%]'
+                }`}
+                src={t(service.image)}
+                alt={t(service.title)}
+                width={500}
+                height={500}
+              />
+              <div className="mt-3 text-center">
+                <p className="text-white">{t(service.title)}</p>
+                <span className="text-[#B8C1C1]">{t(service.description)}</span>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section id="testimonials" className="pt-7 mb-16 max-md:mx-5">

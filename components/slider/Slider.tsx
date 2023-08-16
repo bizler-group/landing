@@ -78,7 +78,7 @@ export const Slider: React.FC<Props> = ({ slides, namespace = 'common' }) => {
             >
               <Image
                 className={`rounded-3xl object-cover transition-all duration-300 ease-in-out ${
-                  slide.description.length > 35 ? 'h-[70%]' : 'h-[80%]'
+                  t(slide.description).length > 35 ? 'h-[70%]' : 'h-[80%]'
                 } ${
                   slide.link &&
                   hoveredImageIndex === index &&

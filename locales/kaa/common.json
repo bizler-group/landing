@@ -9,19 +9,19 @@
   "our_mission": {
     "title": "MISSÍYAMÍZ",
     "subtitle": "BIZ IT-TEXNOLOGIYALAR ARQALÍ DÚNYANÍ JAQSÍLAWDÍ QÁLEYMIZ",
-    "p": "IT arqalı jergilikli mashqalalardı sheshiw hám elimimizdiń rawajlanıwına úles qosıw. Bizler óz bilim hám uqıplarımızdı maksimal paydalanıp, joybarlardı islep elimizdiń jaģdayın jańa dárejege alıp shıģıwdı qáleymiz."
+    "p": "IT arqalı jergilikli mashqalalardı sheshiw hám elimimizdiń rawajlanıwına úles qosıw. Bizler óz bilim hám uqıplarımızdı maksimal paydalanıp, joybarlardı islep elimizdiń jaǵdayın jańa dárejege alıp shıǵıwdı qáleymiz."
   },
   "vision": {
     "title": "KÓZ QARASÍMÍZ",
     "subtitle": "ELEMIZDE EŃ JAQSÍ IT-KOMPANIYA BOLÍW",
-    "p": "Bizlerdiń eń birinshi wazıypamız - hámmeni birdey maqsetler hám qádir-qımbat birlestiretuģın shólkem (community) jaratıw. Bizler kóz qaraslarımız tuwra kelgen bárshege ashıqpız. Bizler kompaniyamızdıń qániygeleri baxıtlı bolıwı hám óz jumısınan ráhatleniwi, tutınıwshılarımızdıń quwanıshlı bolıwı hám jánede bizge isenim bildirip keliwi ushın  elimizde eń jaqsısı bolıwın qáleymiz.",
+    "p": "Bizlerdiń eń birinshi wazıypamız - hámmeni birdey maqsetler hám qádir-qımbat birlestiretuǵın shólkem (community) jaratıw. Bizler kóz qaraslarımız tuwra kelgen bárshege ashıqpız. Bizler kompaniyamızdıń qániygeleri baxıtlı bolıwı hám óz jumısınan ráhatleniwi, tutınıwshılarımızdıń quwanıshlı bolıwı hám jánede bizge isenim bildirip keliwi ushın  elimizde eń jaqsısı bolıwın qáleymiz.",
     "feature1": {
-      "title": "Создать компанию",
-      "p": "Переход от локального лидера к международному гиганту: Наша амбициозная цель - быть в числе глобальных лидеров в сфере информационных технологий"
+      "title": "KOMPANIYA JARATÍW",
+      "p": "Jergilikli liderden xalıq aralıq gigantqa aylanıw: Bizlerdiń úlken maqsetimiz - málimleme texnologiyaları tarawındaģı global liderler qatarında bolıw."
     },
     "feature2": {
-      "title": "Создать комюнити",
-      "p": "Мирные союзники талантов: Наше предназначение - объединять международных единомышленников и таланты для создания инновационных решений в области IT"
+      "title": "SHÓLKEM JARATÍW",
+      "p": "Talantlardıń birlespesi: Biziń missiyamız innovacion IT-sheshimlerdi jaratıw ushın xalıq aralıq pikirles adamlar menen talantlardı birlestiriw."
     }
   },
   "our_leaders": {
@@ -56,8 +56,8 @@
   "open_details": "Tolıǵıraq",
   "our_projects": "PROEKTLERIMIZ",
   "all_projects": "Barlıq proektler",
-  "startups": "Стартапы",
-  "testimonials": "О нас пишут",
+  "startups": "Startaplar",
+  "testimonials": "Biz haqqımızda pikirler",
   "contact_us": {
     "title": "Biz benen baylanısıw",
     "email": "Elektron pochta",
@@ -73,7 +73,13 @@
     "success": "Xabarıńız jiberildi tez arada siz benen baylanısamız",
     "error": "Xabarıńızdı jiberiwde qátelik júz berdi",
     "reach_us_directly": "Tuwrıdan-tuwrı baylanısıw",
-    "reach_us_description": "Maqsetimiz — bul siziń áwmetińiz. Waqıttı joǵaltpastan házir-aq biz benen baylanısıń hám toparımız benen siziń mashqalańızdı sheshiwge járdemge tayınbız!"
+    "reach_us_description": "Siziń áwmetińiz — biziń maqsetimiz. Waqıttı joǵaltpastan biz benen háziraq baylanısıń hám toparımız ekspertleri sizge járdem kórsetip, qálegen sorawıńızǵa sheshim tabadı hám siziń gózlegen maqsetlerińizge jetiwde kómeklesedi."
+  },
+  "feedback": {
+    "xuxo_name": "Aziz Adilbekov",
+    "xuxo_position": "Direktor",
+    "xuxo_company": "\"Xuxo xizmetler orayı\" JShJ",
+    "xuxo_content": "\"Xuxo xizmetler orayı\" JShJ jámáatı atınan Bizler Group programmistlerine minnetdarshılıǵım sheksiz. Bizlerdiń firmamızǵa jaratıp bergen IT programması arqalı jumısımızda biraz rawajlanıw bolıp atır. Bizler Group qániygelerine kúsh-quwat, jańalıq jaratıwda sharshamańlar."
   },
   "links": {
     "home": "Bas bet",
@@ -85,5 +91,16 @@
   },
   "all_rights_reserved": "Barlıq huqıqlar qorǵalǵan",
   "page_not_found": "Bul bet tabılmadı",
-  "open_main_menu": "Tiykarǵı menyudi ashıw"
+  "open_main_menu": "Tiykarǵı menyudi ashıw",
+  "our_services": "Xızmetlerimiz",
+  "services": {
+    "web_development": "Web baǵdarlamlar",
+    "web_development_description": "Position + some information in 2 lines lorem ipsum",
+    "mobile_development": "Mobil baǵdarlamalar",
+    "mobile_development_description": "Position + some information in 2 lines lorem ipsum",
+    "design": "UI/UX dizayn",
+    "design_description": "Position + some information in 2 lines lorem ipsum",
+    "crm": "CRM",
+    "crm_description": "Position + some information in 2 lines lorem ipsum"
+  }
 }

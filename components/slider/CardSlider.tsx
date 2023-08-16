@@ -1,5 +1,6 @@
 import { useCallback, useRef, useState } from 'react'
 import Image from 'next/image'
+import useTranslation from 'next-translate/useTranslation'
 import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react'
 
 interface Props {
@@ -14,6 +15,7 @@ interface Props {
 }
 
 export const CardSlider: React.FC<Props> = ({ slides }) => {
+  const {t} = useTranslation('common')
   const [slideClientWidth, setSlideClientWidth] = useState(0)
   const [noPrev, setNoPrev] = useState(false)
   const [noNext, setNoNext] = useState(false)
@@ -64,25 +66,25 @@ export const CardSlider: React.FC<Props> = ({ slides }) => {
                 if (!ref) return
                 setSlideClientWidth(ref.clientWidth)
               }}
-              className="relative transition-all flex flex-col justify-between bg-[#041C1F] px-10 py-14 max-md:px-5 max-md:py-7 rounded-3xl md:min-w-[500px] aspect-square hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
+              className="relative transition-all flex flex-col justify-between bg-[#041C1F] p-10 max-md:px-5 max-md:py-7 rounded-3xl md:min-w-[500px] aspect-square hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
             >
-              <div>
-                <p className="text-white">{slide.content}</p>
+              <div className='mb-5'>
+                <p className="text-white">{t(slide.content)}</p>
               </div>
 
               <div className="flex gap-5 items-center justify-start">
                 <Image
                   className="rounded-full w-14 h-14 object-cover"
                   src={slide.avatar}
-                  alt={slide.name}
+                  alt={t(slide.name)}
                   width={100}
                   height={100}
                 />
 
                 <div className="mt-2.5">
-                  <p className="text-white">{slide.name}</p>
+                  <p className="text-white">{t(slide.name)}</p>
                   <span className="text-[#B8C1C1]">
-                    {slide.position}, {slide.company}
+                    {t(slide.position)}, {t(slide.company)}
                   </span>
                 </div>
               </div>
