@@ -217,18 +217,18 @@ export default function Home() {
 
         <div className="flex gap-5 max-md:flex-wrap">
           {SERVICES.map((service) => (
-            <div key={service.id} className="flex flex-col items-start">
+            <div key={service.id} className="flex sm:flex-1 flex-col items-start">
               <Image
-                className={`rounded-3xl object-cover transition-all duration-300 ease-in-out ${
-                  t(service.description).length > 35 ? 'h-[70%]' : 'h-[80%]'
-                }`}
+                className={`rounded-3xl object-cover transition-all duration-300 ease-in-out h-[70%]`}
                 src={t(service.image)}
                 alt={t(service.title)}
                 width={500}
                 height={500}
               />
-              <div className="mt-3 text-center">
-                <p className="text-white">{t(service.title)}</p>
+              <div className="mt-5 text-center">
+                <p className="text-white text-xl font-medium mb-2">
+                  {t(service.title)}
+                </p>
                 <span className="text-[#B8C1C1]">{t(service.description)}</span>
               </div>
             </div>

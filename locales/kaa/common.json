@@ -17,7 +17,7 @@
     "p": "Bizlerdiń eń birinshi wazıypamız - hámmeni birdey maqsetler hám qádir-qımbat birlestiretuǵın shólkem (community) jaratıw. Bizler kóz qaraslarımız tuwra kelgen bárshege ashıqpız. Bizler kompaniyamızdıń qániygeleri baxıtlı bolıwı hám óz jumısınan ráhatleniwi, tutınıwshılarımızdıń quwanıshlı bolıwı hám jánede bizge isenim bildirip keliwi ushın  elimizde eń jaqsısı bolıwın qáleymiz.",
     "feature1": {
       "title": "KOMPANIYA JARATÍW",
-      "p": "Jergilikli liderden xalıq aralıq gigantqa aylanıw: Bizlerdiń úlken maqsetimiz - málimleme texnologiyaları tarawındaģı global liderler qatarında bolıw."
+      "p": "Jergilikli liderden xalıq aralıq gigantqa aylanıw: Bizlerdiń úlken maqsetimiz - málimleme texnologiyaları tarawındaǵı global liderler qatarında bolıw."
     },
     "feature2": {
       "title": "SHÓLKEM JARATÍW",
@@ -95,12 +95,12 @@
   "our_services": "Xızmetlerimiz",
   "services": {
     "web_development": "Web baǵdarlamlar",
-    "web_development_description": "Position + some information in 2 lines lorem ipsum",
+    "web_development_description": "Hár túrli web-baǵdarlamalar, web-saytlar, landing page (vizitka) saytlardı joqarı sapada jaratıp beremiz.",
     "mobile_development": "Mobil baǵdarlamalar",
-    "mobile_development_description": "Position + some information in 2 lines lorem ipsum",
+    "mobile_development_description": "Qálegen dárejedegi mobil baǵdarlamalardı jaratamız. Ápiwayısınan tartıp quramalı baǵdarlamalarǵa shekem siziń kewlińizdegidey isleymiz.",
     "design": "UI/UX dizayn",
-    "design_description": "Position + some information in 2 lines lorem ipsum",
+    "design_description": "Siziń web-saytıńız hám mobil baǵdarlamańız qolaylı, sulıw hám ıqsham bolıwı ushın dizayn jaratamız.",
     "crm": "CRM",
-    "crm_description": "Position + some information in 2 lines lorem ipsum"
+    "crm_description": "Biznes hám processlerdi avtomatizaciyalaw, basqarıwdı ápiwayılastırıwshı hám qaǵazbazlıqtı azaytıwshı elektron sistemalar jaratıw."
   }
 }

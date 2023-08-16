@@ -57,7 +57,7 @@ export const CardSlider: React.FC<Props> = ({ slides }) => {
         <div
           ref={slidesContainer}
           onScroll={onScroll}
-          className="scrollbar-hide h-80 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[35vw] before:shrink-0 after:w-[35vw] after:shrink-0 md:before:w-0 md:after:w-0"
+          className="scrollbar-hide h-80 max-md:h-[22rem]  flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[35vw] before:shrink-0 after:w-[35vw] after:shrink-0 md:before:w-0 md:after:w-0"
         >
           {slides.map((slide, index) => (
             <div

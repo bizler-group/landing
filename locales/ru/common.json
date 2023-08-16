@@ -85,5 +85,16 @@
   },
   "all_rights_reserved": "Все права защищены",
   "page_not_found": "Страница не найдена",
-  "open_main_menu": "Открыть главное меню"
+  "open_main_menu": "Открыть главное меню",
+  "our_services": "Xızmetlerimiz",
+  "services": {
+    "web_development": "Web baǵdarlamlar",
+    "web_development_description": "Hár túrli web-baǵdarlamalar, web-saytlar, landing page (vizitka) saytlardı joqarı sapada jaratıp beremiz.",
+    "mobile_development": "Mobil baǵdarlamalar",
+    "mobile_development_description": "Qálegen dárejedegi mobil baǵdarlamalardı jaratamız. Ápiwayısınan tartıp quramalı baǵdarlamalarǵa shekem siziń kewlińizdegidey isleymiz.",
+    "design": "UI/UX dizayn",
+    "design_description": "Siziń web-saytıńız hám mobil baǵdarlamańız qolaylı, sulıw hám ıqsham bolıwı ushın dizayn jaratamız.",
+    "crm": "CRM",
+    "crm_description": "Biznes hám processlerdi avtomatizaciyalaw, basqarıwdı ápiwayılastırıwshı hám qaǵazbazlıqtı azaytıwshı elektron sistemalar jaratıw."
+  }
 }
