@@ -3,6 +3,7 @@ import { nunitoSans } from '..'
 import { Button } from '~/components/ui/Button'
 import { IconArrowUpRight } from '@tabler/icons-react'
 import { PROJECT_DETAILS } from '~/constants/projects'
+import useTranslation from 'next-translate/useTranslation'
 
 type Project = {
   title: string
@@ -14,13 +15,14 @@ type Project = {
 
 export default function Project(props: Project) {
   const { description, link, title, tools, type } = props
+  const { t } = useTranslation('common')
 
   return (
     <main
       className={`container ${nunitoSans.className} overflow-hidden relative z-50 max-md:px-5`}
     >
       <div className="mb-7 mt-16 flex items-center justify-between max-md:flex-col max-md:justify-center">
-        <h1 className="text-4xl font-bold text-white max-md:mb-5">{title}</h1>
+        <h1 className="text-4xl font-bold text-white max-md:mb-5">{t(title)}</h1>
 
         <div className="space-x-3">
           {tools.map((tool) => (

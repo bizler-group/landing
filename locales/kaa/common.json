@@ -13,7 +13,7 @@
   },
   "vision": {
     "title": "KÓZ QARASÍMÍZ",
-    "subtitle": "ELEMIZDE EŃ JAQSÍ IT-KOMPANIYA BOLÍW",
+    "subtitle": "ELIMIZDE EŃ JAQSÍ IT-KOMPANIYA BOLÍW",
     "p": "Bizlerdiń eń birinshi wazıypamız - hámmeni birdey maqsetler hám qádir-qımbat birlestiretuǵın shólkem (community) jaratıw. Bizler kóz qaraslarımız tuwra kelgen bárshege ashıqpız. Bizler kompaniyamızdıń qániygeleri baxıtlı bolıwı hám óz jumısınan ráhatleniwi, tutınıwshılarımızdıń quwanıshlı bolıwı hám jánede bizge isenim bildirip keliwi ushın  elimizde eń jaqsısı bolıwın qáleymiz.",
     "feature1": {
       "title": "KOMPANIYA JARATÍW",
@@ -75,11 +75,61 @@
     "reach_us_directly": "Tuwrıdan-tuwrı baylanısıw",
     "reach_us_description": "Siziń áwmetińiz — biziń maqsetimiz. Waqıttı joǵaltpastan biz benen háziraq baylanısıń hám toparımız ekspertleri sizge járdem kórsetip, qálegen sorawıńızǵa sheshim tabadı hám siziń gózlegen maqsetlerińizge jetiwde kómeklesedi."
   },
+  "projects": {
+    "skymaxx": {
+      "title": "SkyMaxx",
+      "description": "Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану"
+    },
+    "newera": {
+      "title": "New Era",
+      "description": "Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану"
+    },
+    "nukusavtovokzal": {
+      "title": "Nókis avtovokzal",
+      "description": "Сайт сделан по заказу ООО \"Нукус Автовокзал\" для своей дочерней компании занимающийся туризмом."
+    },
+    "tashkenthotel": {
+      "title": "Tashkent miymanxanası",
+      "description": "Сайт сделан для самого лучшего отеля Нукуса. Гостиница находится в центре города."
+    },
+    "intertravel": {
+      "title": "Inter Travel Nukus",
+      "description": "Веб-сайт сделан по заказу тур агентсва в Нукусе. С помощью этого сайта вы можете организовать путешествие по всему миру и по Узбекистану."
+    },
+    "xuxo": {
+      "title": "Xuxo CRM",
+      "description": "CRM система сделана для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга"
+    },
+    "flytravel": {
+      "title": "Fly Travel",
+      "description": "Доработали сайт по требованию клиента. Добавили к ним система платежа по Click."
+    },
+    "kodtime": {
+      "title": "Kodtime",
+      "description": "Доработали сайт по требованию клиента. Сделали слайдер и подключили ютуб. Немного изменили вид."
+    },
+    "toybaslar": {
+      "title": "Toy Baslar",
+      "description": "Сделали платформу по заказу «Toy Baslar» для рассрочки. Эта платформа даёт возможность вести учёт долгов, оформлять заказы на товары и услуги, уведомлять клиентов в день выплаты долга по договору."
+    },
+    "nawbet": {
+      "title": "Náwbet",
+      "description": "Náwbet app"
+    }
+  },
   "feedback": {
-    "xuxo_name": "Aziz Adilbekov",
-    "xuxo_position": "Direktor",
-    "xuxo_company": "\"Xuxo xizmetler orayı\" JShJ",
-    "xuxo_content": "\"Xuxo xizmetler orayı\" JShJ jámáatı atınan Bizler Group programmistlerine minnetdarshılıǵım sheksiz. Bizlerdiń firmamızǵa jaratıp bergen IT programması arqalı jumısımızda biraz rawajlanıw bolıp atır. Bizler Group qániygelerine kúsh-quwat, jańalıq jaratıwda sharshamańlar."
+    "xuxo": {
+      "name": "Aziz Adilbekov",
+      "position": "Direktor",
+      "company": "\"Xuxo xizmetler orayı\" JShJ",
+      "content": "\"Xuxo xizmetler orayı\" JShJ jámáatı atınan Bizler Group programmistlerine minnetdarshılıǵım sheksiz. Bizlerdiń firmamızǵa jaratıp bergen IT programması arqalı jumısımızda biraz rawajlanıw bolıp atır. Bizler Group qániygelerine kúsh-quwat, jańalıq jaratıwda sharshamańlar."
+    },
+    "skymaxx": {
+      "name": "Aziz Adilbekov",
+      "position": "Direktor",
+      "company": "\"Skymaxx\" JShJ",
+      "content": "\"New Era\" ham \"Skymaxx\" JShJ lar atınan Bizler Group qániygelerine óz minnetdarshılıǵımdı bildiremen. Járatılǵan veb-saytlar arqalı firmamız haqqında jánede kóbirek maǵlıwmat jetkeriw imkanı payda boldı. Bizler Group programmistlerine áwmet tileymen!"
+    }
   },
   "links": {
     "home": "Bas bet",

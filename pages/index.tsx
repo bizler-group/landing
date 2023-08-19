@@ -84,6 +84,14 @@ export default function Home() {
           </div>
           <div>
             <Image
+              src="/images/partner-logos/UNDP.png"
+              alt="UNDP logo"
+              width={100}
+              height={50}
+            />
+          </div>
+          <div>
+            <Image
               src="/images/partner-logos/mitc.svg"
               alt="MITC logo"
               width={100}
@@ -102,15 +110,7 @@ export default function Home() {
             <Image
               className="invert"
               src="/images/partner-logos/nukus-avtovokzal.png"
-              alt="Intuza academy logo"
-              width={100}
-              height={50}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/partner-logos/intuza.png"
-              alt="Intuza logo"
+              alt="Nukus avtovokzal logo"
               width={100}
               height={50}
             />

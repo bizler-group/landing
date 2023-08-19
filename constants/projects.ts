@@ -1,6 +1,6 @@
 export const PROJECT_DETAILS = {
   skymaxx: {
-    title: 'SkyMaxx',
+    title: 'projects.skymaxx.title',
     tools: ['React', 'Next.js', 'TypeScript'],
     type: 'Website',
     description: {
@@ -10,7 +10,9 @@ export const PROJECT_DETAILS = {
       ].join('<br />'),
       ru: [
         `<img class="mb-2" src="/images/projects/skymaxx/1.png" alt="SkyMaxx" />`,
-        `Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану.`
+        `Нам было задано создание Веб-сайта для компании, занимающейся GPS мониторингом и ограничением расхода топлива. В взаимодействии с сотрудниками компании Skymaxx, мы разработали веб-сайт.`,
+        '',
+        `Компания находится в городе Ташкент, и придоставляет свои услуги по всему Узбекистану. Если вы хотите контролировать свой автопарк в онлайн формате, то мы предлагаем вам компанию Skymaxx.`
       ].join('<br />'),
       kaa: [
         `<img class="mb-2" src="/images/projects/skymaxx/1.png" alt="SkyMaxx" />`,
@@ -22,7 +24,7 @@ export const PROJECT_DETAILS = {
     link: 'https://skymaxx.uz',
   },
   newera: {
-    title: 'New Era',
+    title: 'projects.newera.title',
     tools: ['React', 'Next.js', 'TypeScript'],
     type: 'Website',
     description: {
@@ -32,7 +34,9 @@ export const PROJECT_DETAILS = {
       ].join('<br />'),
       ru: [
         `<img class="mb-2" src="/images/projects/newera/1.png" alt="New Era" />`,
-        `Сайт сделан для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга.`
+        `Bizler Group было поручено создание веб-сайта для New Era Gps Control. С нашей группой мы начали создавать сайт по пожеланиям наших клиентов и были рады, что смогли их удовлетворить.`,
+        '',
+        `Компания «New Era GPS Control» предоставляет специальные решения по всему Узбекистану в основном в сфере M2M и IoT. В этом случае вы можете управлять всеми видами транспортных средств в своем автопарке онлайн. Вы сможете узнать местоположение автомобиля по GPS, контролировать расход топлива, рассчитать пробег (км), определить скорость, а также проанализировать состояние автомобиля и водителя.`
       ].join('<br />'),
       kaa: [
         `<img class="mb-2" src="/images/projects/newera/1.png" alt="New Era" />`,
@@ -44,7 +48,7 @@ export const PROJECT_DETAILS = {
     link: 'http://newera.uz',
   },
   nukusavtovokzal: {
-    title: 'Нукус Автовокзал',
+    title: 'projects.nukusavtovokzal.title',
     tools: ['HTML', 'CSS'],
     type: 'Website',
     description: {
@@ -64,7 +68,7 @@ export const PROJECT_DETAILS = {
     link: 'https://nukusavtovokzaltour.uz',
   },
   tashkenthotel: {
-    title: 'Tashkent Hotel',
+    title: 'projects.tashkenthotel.title',
     tools: ['React', 'Next.js'],
     type: 'Website',
     description: {
@@ -84,7 +88,7 @@ export const PROJECT_DETAILS = {
     link: 'https://www.hoteltashkent.info',
   },
   intertravel: {
-    title: 'Inter Travel Nukus',
+    title: 'projects.intertravel.title',
     tools: ['React', 'Next.js'],
     type: 'Website',
     description: {
@@ -104,7 +108,7 @@ export const PROJECT_DETAILS = {
     link: 'https://www.inter-travel-nukus.uz',
   },
   xuxo: {
-    title: 'Xuxo CRM',
+    title: 'projects.xuxo.title',
     tools: ['React'],
     type: 'CRM',
     description: {
@@ -114,7 +118,9 @@ export const PROJECT_DETAILS = {
       ].join('<br />'),
       ru: [
         `<img class="mb-2" src="/images/projects/xuxo/1.png" alt="Xuxo" />`,
-        `CRM система для управления заказами.`
+        `Центр услуг Хухо. Через этот сайт вы можете пользоваться 16 видами услуг со скидкой. Помимо этого, сайт включает в себя услугу находить работу на заказ разным специалистам.`,
+        '',
+        `Директор этой предприятий: +998(88) 355-88-99`
       ].join('<br />'),
       kaa: [
         `<img class="mb-2" src="/images/projects/xuxo/1.png" alt="Xuxo" />`,
@@ -124,7 +130,7 @@ export const PROJECT_DETAILS = {
     link: null,
   },
   toybaslar: {
-    title: 'Toybaslar',
+    title: 'projects.toybaslar.title',
     tools: ['React'],
     type: 'CRM',
     description: {
@@ -144,7 +150,7 @@ export const PROJECT_DETAILS = {
     link: null,
   },
   flytravel: {
-    title: 'Fly Travel',
+    title: 'projects.flytravel.title',
     tools: ['React'],
     type: 'Website',
     description: {
@@ -164,7 +170,7 @@ export const PROJECT_DETAILS = {
     link: 'https://flytravel.uz',
   },
   kodtime: {
-    title: 'Kodtime',
+    title: 'projects.kodtime.title',
     tools: ['React'],
     type: 'Website',
     description: {
@@ -184,7 +190,7 @@ export const PROJECT_DETAILS = {
     link: 'https://kodtime.ru/virtualreality',
   },
   nawbet: {
-    title: 'Nawbet',
+    title: 'projects.nawbet.title',
     tools: ['React'],
     type: 'Website',
     description: {

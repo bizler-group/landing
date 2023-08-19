@@ -83,18 +83,74 @@
     "contact": "Связаться с нами",
     "testimonials": "Отзывы"
   },
+  "projects": {
+    "skymaxx": {
+      "title": "SkyMaxx",
+      "description": "Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану"
+    },
+    "newera": {
+      "title": "New Era",
+      "description": "Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану"
+    },
+    "nukusavtovokzal": {
+      "title": "Нукус Автовокзал",
+      "description": "Сайт сделан по заказу ООО \"Нукус Автовокзал\" для своей дочерней компании занимающийся туризмом."
+    },
+    "tashkenthotel": {
+      "title": "Ташкент Отель",
+      "description": "Сайт сделан для самого лучшего отеля Нукуса. Гостиница находится в центре города."
+    },
+    "intertravel": {
+      "title": "Inter Travel Nukus",
+      "description": "Веб-сайт сделан по заказу тур агентсва в Нукусе. С помощью этого сайта вы можете организовать путешествие по всему миру и по Узбекистану."
+    },
+    "xuxo": {
+      "title": "Xuxo CRM",
+      "description": "CRM система сделана для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга"
+    },
+    "flytravel": {
+      "title": "Fly Travel",
+      "description": "Доработали сайт по требованию клиента. Добавили к ним система платежа по Click."
+    },
+    "kodtime": {
+      "title": "Kodtime",
+      "description": "Доработали сайт по требованию клиента. Сделали слайдер и подключили ютуб. Немного изменили вид."
+    },
+    "toybaslar": {
+      "title": "Toy Baslar",
+      "description": "Сделали платформу по заказу «Toy Baslar» для рассрочки. Эта платформа даёт возможность вести учёт долгов, оформлять заказы на товары и услуги, уведомлять клиентов в день выплаты долга по договору."
+    },
+    "nawbet": {
+      "title": "Náwbet",
+      "description": "Náwbet app"
+    }
+  },
+  "feedback": {
+    "xuxo": {
+      "name": "Азиз Адилбеков",
+      "position": "Директор",
+      "company": "ООО «Xuxo xizmetler orayı»",
+      "content": "Здравствуйте, от имени ООО «Xuxo xizmetler orayı» мы выражаем нашу бесконечную благодарность программистам Bizler Group. Благодаря созданной ими ИТ программе, замечаются отличные развития в нашей работе. Желаем специалистам Bizler Group здоровья, и не уставайте открывать новинки."
+    },
+    "skymaxx": {
+      "name": "Азиз Адилбеков",
+      "position": "Директор",
+      "company": "ООО «Skymaxx»",
+      "content": "От имени компании «New era» и ООО «Skymaxx» хочу выразить благодарность специалистам Bizler Group. Благодаря созданным веб-сайтам стало возможным предоставить больше информации о нашей компании. Желаю разработчикам Bizler Group удачи!"
+    }
+  },
   "all_rights_reserved": "Все права защищены",
   "page_not_found": "Страница не найдена",
   "open_main_menu": "Открыть главное меню",
   "our_services": "Xızmetlerimiz",
   "services": {
-    "web_development": "Web baǵdarlamlar",
-    "web_development_description": "Hár túrli web-baǵdarlamalar, web-saytlar, landing page (vizitka) saytlardı joqarı sapada jaratıp beremiz.",
-    "mobile_development": "Mobil baǵdarlamalar",
-    "mobile_development_description": "Qálegen dárejedegi mobil baǵdarlamalardı jaratamız. Ápiwayısınan tartıp quramalı baǵdarlamalarǵa shekem siziń kewlińizdegidey isleymiz.",
-    "design": "UI/UX dizayn",
-    "design_description": "Siziń web-saytıńız hám mobil baǵdarlamańız qolaylı, sulıw hám ıqsham bolıwı ushın dizayn jaratamız.",
+    "web_development": "Веб-разработка",
+    "web_development_description": "Мы создаем веб-сайты любой сложности. Мы создаем сайты, которые легко адаптируются под любые устройства.",
+    "mobile_development": "Мобильная разработка",
+    "mobile_development_description": "Мы создаем мобильные приложения для Android и iOS. Мы создаем приложения, которые легко адаптируются под любые устройства.",
+    "design": "UI/UX дизайн",
+    "design_description": "Мы создаем дизайн для веб-сайтов и мобильных приложений. Мы создаем дизайн, который легко адаптируется под любые устройства.",
     "crm": "CRM",
-    "crm_description": "Biznes hám processlerdi avtomatizaciyalaw, basqarıwdı ápiwayılastırıwshı hám qaǵazbazlıqtı azaytıwshı elektron sistemalar jaratıw."
+    "crm_description": "Мы создаем CRM системы для управления бизнесом. Мы создаем системы, которые легко адаптируются под любые устройства."
   }
 }
