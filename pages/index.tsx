@@ -26,6 +26,9 @@ export const nunitoSans = Inter({
 })
 export const jost = Open_Sans({ subsets: ['cyrillic', 'latin'] })
 
+// It's not ment to be used only for tailwind JIT compiler
+const makeTailwindAware = 'invert'
+
 export default function Home() {
   const { t } = useTranslation('common')
 

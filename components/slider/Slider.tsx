@@ -80,13 +80,14 @@ export const Slider: React.FC<Props> = ({ slides, namespace = 'common' }) => {
               }}
               onMouseEnter={() => setHoveredImageIndex(index)}
               onMouseLeave={() => setHoveredImageIndex(-1)}
-              className="transition-all aspect-square h-[90%] w-72 max-md:w-60 hover:w-80 hover:h-full hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
+              className="transition-all aspect-square h-[90%] w-72 max-md:w-60 md:hover:w-80 hover:h-full hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
             >
               <div className="relative">
                 <Image
                   className={cx(
                     'rounded-2xl object-cover transition-all duration-300 ease-in-out',
                     slide.link && 'h-48',
+                    !slide.link && 'max-md:h-[225px]',
                     slide.link &&
                       hoveredImageIndex === index &&
                       'brightness-[30%]'
