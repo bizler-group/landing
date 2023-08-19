@@ -9,7 +9,12 @@ import { PROJECT_SLIDES } from '~/constants/data'
 import { nunitoSans } from '..'
 import { useRouter } from 'next/router'
 
-const PROJECT_TYPES = ['all', 'website', 'crm'] as const
+const PROJECT_TYPES = [
+  'all',
+  'website',
+  'crm',
+  // 'mobile_app',
+] as const
 
 export default function Project() {
   const { t } = useTranslation('projects')
@@ -44,7 +49,7 @@ export default function Project() {
               active={projectType === type}
               onClick={() => setProjectType(type)}
             >
-              {t(type === 'all' ? 'common:all_projects' : type)}
+              {t(type === 'all' ? 'common:all_projects' : t(type))}
             </Button>
           ))}
         </div>
@@ -56,8 +61,8 @@ export default function Project() {
         ).map((project, index) => (
           <ProjectCard
             key={project.id}
-            title={t(project.title)}
-            description={t(project.description)}
+            title={t(`common:${project.title}`)}
+            // description={`${t(`common:${project.description}`).slice(0, 50)}...`}
             image={project.image}
             isImageOnHover={hoveredImageIndex === index}
             onMouseEnter={() => setHoveredImageIndex(index)}
@@ -66,7 +71,7 @@ export default function Project() {
             {project.link && hoveredImageIndex === index && (
               <Link
                 href={project.link}
-                className="flex text-white absolute top-[35%] left-1/3"
+                className="flex text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               >
                 {t('common:open_details')}{' '}
                 <IconArrowUpRight className="text-[#52B6C4]" />

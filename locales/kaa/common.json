@@ -6,6 +6,15 @@
     "cta": "Biz benen baylanısıw"
   },
   "trusted_by": "Bizge isenim bildirgenler",
+  "partners": {
+    "newera": "New Era",
+    "skymaxx": "Skymaxx",
+    "jaslar_isleri_agentligi": "Jaslar isleri agentligi",
+    "it_park_kr": "IT park Karakalpakstan",
+    "nukus_avtovokzal": "Nukus avtovokzal",
+    "undp": "United Nations Development Programme",
+    "mitc": "Ministry of Digital Technologies of the Republic of Uzbekistan"
+  },
   "our_mission": {
     "title": "MISSÍYAMÍZ",
     "subtitle": "BIZ IT-TEXNOLOGIYALAR ARQALÍ DÚNYANÍ JAQSÍLAWDÍ QÁLEYMIZ",
@@ -75,6 +84,13 @@
     "reach_us_directly": "Tuwrıdan-tuwrı baylanısıw",
     "reach_us_description": "Siziń áwmetińiz — biziń maqsetimiz. Waqıttı joǵaltpastan biz benen háziraq baylanısıń hám toparımız ekspertleri sizge járdem kórsetip, qálegen sorawıńızǵa sheshim tabadı hám siziń gózlegen maqsetlerińizge jetiwde kómeklesedi."
   },
+  "project_types": {
+    "web": "Veb-sayt",
+    "mobile": "Mobil baǵdarlama",
+    "startup": "Startup",
+    "crm": "CRM sistema"
+  },
+  "go_to_website": "Veb saytqa kiriw",
   "projects": {
     "skymaxx": {
       "title": "SkyMaxx",
@@ -85,7 +101,7 @@
       "description": "Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану"
     },
     "nukusavtovokzal": {
-      "title": "Nókis avtovokzal",
+      "title": "Nókis avtovokzal tur",
       "description": "Сайт сделан по заказу ООО \"Нукус Автовокзал\" для своей дочерней компании занимающийся туризмом."
     },
     "tashkenthotel": {
@@ -98,7 +114,7 @@
     },
     "xuxo": {
       "title": "Xuxo CRM",
-      "description": "CRM система сделана для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга"
+      "description": "Центр услуг Хухо. Через этот сайт вы можете пользоваться 16 видами услуг со скидкой. Помимо этого, сайт включает в себя услугу находить работу на заказ разным специалистам."
     },
     "flytravel": {
       "title": "Fly Travel",
@@ -110,7 +126,7 @@
     },
     "toybaslar": {
       "title": "Toy Baslar",
-      "description": "Сделали платформу по заказу «Toy Baslar» для рассрочки. Эта платформа даёт возможность вести учёт долгов, оформлять заказы на товары и услуги, уведомлять клиентов в день выплаты долга по договору."
+      "description": "Сделали платформу по заказу «Toy Baslar» для рассрочки."
     },
     "nawbet": {
       "title": "Náwbet",
@@ -125,7 +141,7 @@
       "content": "\"Xuxo xizmetler orayı\" JShJ jámáatı atınan Bizler Group programmistlerine minnetdarshılıǵım sheksiz. Bizlerdiń firmamızǵa jaratıp bergen IT programması arqalı jumısımızda biraz rawajlanıw bolıp atır. Bizler Group qániygelerine kúsh-quwat, jańalıq jaratıwda sharshamańlar."
     },
     "skymaxx": {
-      "name": "Aziz Adilbekov",
+      "name": "Allayar Mámbetkarimov",
       "position": "Direktor",
       "company": "\"Skymaxx\" JShJ",
       "content": "\"New Era\" ham \"Skymaxx\" JShJ lar atınan Bizler Group qániygelerine óz minnetdarshılıǵımdı bildiremen. Járatılǵan veb-saytlar arqalı firmamız haqqında jánede kóbirek maǵlıwmat jetkeriw imkanı payda boldı. Bizler Group programmistlerine áwmet tileymen!"

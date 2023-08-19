@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
@@ -7,6 +7,7 @@ import {
   IconArrowRight,
   IconArrowUpRight,
 } from '@tabler/icons-react'
+import cx from '~/lib/cx'
 
 interface Props {
   namespace?: string
@@ -47,7 +48,7 @@ export const Slider: React.FC<Props> = ({ slides, namespace = 'common' }) => {
     [slideClientWidth, noPrev, noNext]
   )
 
-  const onScroll = useCallback((e: React.FormEvent) => {
+  const onScroll = useCallback((e: React.FormEvent<HTMLDivElement>) => {
     const target = e.target as HTMLDivElement
     const scrollLeft = target.scrollLeft
     const scrollWidth = target.scrollWidth
@@ -55,6 +56,11 @@ export const Slider: React.FC<Props> = ({ slides, namespace = 'common' }) => {
 
     setNoPrev(scrollLeft === 0)
     setNoNext(scrollLeft + clientWidth === scrollWidth)
+  }, [])
+
+  useEffect(() => {
+    if (!slidesContainer.current) return
+    slidesContainer.current.dispatchEvent(new Event('scroll'))
   }, [])
 
   return (
@@ -74,30 +80,33 @@ export const Slider: React.FC<Props> = ({ slides, namespace = 'common' }) => {
               }}
               onMouseEnter={() => setHoveredImageIndex(index)}
               onMouseLeave={() => setHoveredImageIndex(-1)}
-              className="relative transition-all aspect-square h-[90%] w-72 max-md:w-60 hover:w-80 hover:h-full hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
+              className="transition-all aspect-square h-[90%] w-72 max-md:w-60 hover:w-80 hover:h-full hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
             >
-              <Image
-                className={`rounded-3xl object-cover transition-all duration-300 ease-in-out ${
-                  t(slide.description).length > 35 ? 'h-[70%]' : 'h-[80%]'
-                } ${
-                  slide.link &&
-                  hoveredImageIndex === index &&
-                  'brightness-[30%]'
-                }`}
-                src={t(slide.image)}
-                alt={t(slide.title)}
-                width={500}
-                height={500}
-              />
-              {slide.link && hoveredImageIndex === index && (
-                <Link
-                  href={slide.link}
-                  className="flex text-white absolute top-[35%] left-1/3"
-                >
-                  {t('open_details', { namespace: 'common' })}{' '}
-                  <IconArrowUpRight className="text-[#52B6C4]" />
-                </Link>
-              )}
+              <div className="relative">
+                <Image
+                  className={cx(
+                    'rounded-2xl object-cover transition-all duration-300 ease-in-out',
+                    slide.link && 'h-48',
+                    slide.link &&
+                      hoveredImageIndex === index &&
+                      'brightness-[30%]'
+                    // t(slide.description).length > 35 ? 'h-[70%]' : 'h-[80%]'
+                  )}
+                  src={t(slide.image)}
+                  alt={t(slide.title)}
+                  width={500}
+                  height={500}
+                />
+                {slide.link && hoveredImageIndex === index && (
+                  <Link
+                    href={slide.link}
+                    className="flex text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  >
+                    {t('open_details', { namespace: 'common' })}{' '}
+                    <IconArrowUpRight className="text-[#52B6C4]" />
+                  </Link>
+                )}
+              </div>
               <div className="mt-2.5 text-center">
                 <p className="text-white">{t(slide.title)}</p>
                 <span className="text-[#B8C1C1]">{t(slide.description)}</span>

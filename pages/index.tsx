@@ -14,6 +14,7 @@ import { CardSlider } from '~/components/slider/CardSlider'
 import { ContactForm } from '~/components/ContactForm'
 import {
   LEADER_SLIDES,
+  PARTNERS,
   PROJECT_SLIDES,
   SERVICES,
   TESTIMONIALS_SLIDES,
@@ -57,64 +58,17 @@ export default function Home() {
         </h2>
 
         <div className="flex justify-center items-center gap-x-16 max-md:mx-3 mt-10 max-md:flex-wrap max-md:gap-10">
-          <div>
-            <Image
-              className="rounded-full"
-              src="/images/partner-logos/era.jpeg"
-              alt="New Era GPS logo"
-              width={100}
-              height={40}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/partner-logos/jaslar-isler-agentligi.png"
-              alt="Jaslar isler agentligi logo"
-              width={100}
-              height={50}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/partner-logos/it-park-kr.png"
-              alt="IT Park Karakalpakstan logo"
-              width={100}
-              height={50}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/partner-logos/UNDP.png"
-              alt="UNDP logo"
-              width={100}
-              height={50}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/partner-logos/mitc.svg"
-              alt="MITC logo"
-              width={100}
-              height={50}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/partner-logos/logo_sky.png"
-              alt="Skymax logo"
-              width={100}
-              height={50}
-            />
-          </div>
-          <div>
-            <Image
-              className="invert"
-              src="/images/partner-logos/nukus-avtovokzal.png"
-              alt="Nukus avtovokzal logo"
-              width={100}
-              height={50}
-            />
-          </div>
+          {PARTNERS.map((partner) => (
+            <div key={partner.id}>
+              <Image
+                className={partner.className}
+                src={partner.src}
+                alt={t(partner.alt)}
+                width={100}
+                height={50}
+              />
+            </div>
+          ))}
         </div>
       </section>
 
@@ -210,14 +164,17 @@ export default function Home() {
         <Slider slides={PROJECT_SLIDES} />
       </section>
 
-      <section id="testimonials" className="pt-7 mb-16 max-md:mx-5">
+      <section id="our-services" className="pt-7 mb-16 max-md:mx-5">
         <h2 className="text-4xl font-bold text-white mb-7">
           {t('our_services')}
         </h2>
 
         <div className="flex gap-5 max-md:flex-wrap">
           {SERVICES.map((service) => (
-            <div key={service.id} className="flex sm:flex-1 flex-col items-start">
+            <div
+              key={service.id}
+              className="flex sm:flex-1 flex-col items-start"
+            >
               <Image
                 className={`rounded-3xl object-cover transition-all duration-300 ease-in-out h-[70%]`}
                 src={t(service.image)}

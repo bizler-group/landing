@@ -6,6 +6,15 @@
     "cta": "Связаться с нами"
   },
   "trusted_by": "Нам доверяют",
+  "partners": {
+    "newera": "New Era",
+    "skymaxx": "Skymaxx",
+    "jaslar_isleri_agentligi": "Jaslar isleri agentligi",
+    "it_park_kr": "IT park Karakalpakstan",
+    "nukus_avtovokzal": "Nukus avtovokzal",
+    "undp": "United Nations Development Programme",
+    "mitc": "Ministry of Digital Technologies of the Republic of Uzbekistan"
+  },
   "our_mission": {
     "title": "Наша миссия",
     "subtitle": "Мы хотим сделать мир лучше, используя IT-технологии",
@@ -53,6 +62,13 @@
     "mukhammedali": "Мухаммедали Аметов",
     "mukhammedali_role": "Junior front-end разработчик"
   },
+  "project_types": {
+    "web": "Веб-сайт",
+    "mobile": "Мобильное приложение",
+    "startup": "Стартап",
+    "crm": "CRM система"
+  },
+  "go_to_website": "Перейти на сайт",
   "open_details": "Подробнее",
   "our_projects": "Наши проекты",
   "all_projects": "Все проекты",
@@ -93,7 +109,7 @@
       "description": "Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану"
     },
     "nukusavtovokzal": {
-      "title": "Нукус Автовокзал",
+      "title": "Нукус Автовокзал - Туризм",
       "description": "Сайт сделан по заказу ООО \"Нукус Автовокзал\" для своей дочерней компании занимающийся туризмом."
     },
     "tashkenthotel": {
@@ -106,7 +122,7 @@
     },
     "xuxo": {
       "title": "Xuxo CRM",
-      "description": "CRM система сделана для компании в Ташкенте. Компания занимается установкой системы GPS мониторинга"
+      "description": "Центр услуг Хухо. Через этот сайт вы можете пользоваться 16 видами услуг со скидкой. Помимо этого, сайт включает в себя услугу находить работу на заказ разным специалистам."
     },
     "flytravel": {
       "title": "Fly Travel",
@@ -122,7 +138,7 @@
     },
     "nawbet": {
       "title": "Náwbet",
-      "description": "Náwbet app"
+      "description": "Наш продукт для автоматизации очередов предприятий."
     }
   },
   "feedback": {
@@ -133,16 +149,16 @@
       "content": "Здравствуйте, от имени ООО «Xuxo xizmetler orayı» мы выражаем нашу бесконечную благодарность программистам Bizler Group. Благодаря созданной ими ИТ программе, замечаются отличные развития в нашей работе. Желаем специалистам Bizler Group здоровья, и не уставайте открывать новинки."
     },
     "skymaxx": {
-      "name": "Азиз Адилбеков",
+      "name": "Аллаяр Мамбеткаримов",
       "position": "Директор",
-      "company": "ООО «Skymaxx»",
-      "content": "От имени компании «New era» и ООО «Skymaxx» хочу выразить благодарность специалистам Bizler Group. Благодаря созданным веб-сайтам стало возможным предоставить больше информации о нашей компании. Желаю разработчикам Bizler Group удачи!"
+      "company": "ООО «Skymaxx» и «New era»",
+      "content": "От имени компании ООО «New era» и «Skymaxx» хочу выразить благодарность специалистам Bizler Group. Благодаря созданным веб-сайтам стало возможным предоставить больше информации о нашей компании. Желаю разработчикам Bizler Group удачи!"
     }
   },
   "all_rights_reserved": "Все права защищены",
   "page_not_found": "Страница не найдена",
   "open_main_menu": "Открыть главное меню",
-  "our_services": "Xızmetlerimiz",
+  "our_services": "Наши услуги",
   "services": {
     "web_development": "Веб-разработка",
     "web_development_description": "Мы создаем веб-сайты любой сложности. Мы создаем сайты, которые легко адаптируются под любые устройства.",

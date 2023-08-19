@@ -1,100 +1,172 @@
 {
   "hero": {
     "h1": "Realize your ideas with us",
-    "p1": "Наша креативная команда поможет вам воплотить вашу идею в жизнь.",
-    "p2": "С нами – всё легко и просто.",
-    "cta": "Связаться с нами"
+    "p1": "Our creative team will help you bring your idea to life.",
+    "p2": "With us, everything is easy and simple.",
+    "cta": "Get started"
   },
-  "trusted_by": "Нам доверяют",
+  "trusted_by": "Trusted by",
+  "partners": {
+    "newera": "New Era",
+    "skymaxx": "Skymaxx",
+    "jaslar_isleri_agentligi": "Jaslar isleri agentligi",
+    "it_park_kr": "IT park Karakalpakstan",
+    "nukus_avtovokzal": "Nukus avtovokzal",
+    "undp": "United Nations Development Programme",
+    "mitc": "Ministry of Digital Technologies of the Republic of Uzbekistan"
+  },
   "our_mission": {
-    "title": "Наша миссия",
-    "subtitle": "Мы хотим сделать мир лучше, используя IT-технологии",
-    "p": "Решить локальные проблемы с помощью IT и внести свой вклад в развитие нашего региона. Мы хотим использовать максимум своих знаний и навыков для реализаций проектов и поднять благополучие региона на новый уровень."
+    "title": "Our Mission",
+    "subtitle": "We want to make the world a better place using IT technologies",
+    "p": "Address local issues through IT and contribute to the development of our region. We want to utilize our knowledge and skills to execute projects and elevate the prosperity of the region to a new level."
   },
   "vision": {
-    "title": "Видение",
-    "subtitle": "Мы хотим стать лучшей IT-компанией в регионе",
-    "p": "Наша первостепенная задача – создать коммьюнити, где всех будет объединять одна миссия и ценности. Мы открыты для всех, чьё виденье совпадает с нашим. Мы хотим, чтобы наша компания была лучшей в регионе, чтобы наши сотрудники были счастливы и гордились своей работой, чтобы наши клиенты были довольны и возвращались к нам снова и снова.",
+    "title": "Our Vision",
+    "subtitle": "We aspire to be the top IT company in the region",
+    "p": "Our primary goal is to create a community where everyone is united by a shared mission and values. We are open to all who share our vision. We aim for our company to be the best in the region, where our employees are happy and proud of their work, and our clients are satisfied and return to us again and again.",
     "feature1": {
-      "title": "Создать компанию",
-      "p": "Переход от локального лидера к международному гиганту: Наша амбициозная цель - быть в числе глобальных лидеров в сфере информационных технологий"
+      "title": "Build a company",
+      "p": "Transitioning from a local leader to a global giant: Our ambitious goal is to be among the global leaders in the field of information technology."
     },
     "feature2": {
-      "title": "Создать комюнити",
-      "p": "Мирные союзники талантов: Наше предназначение - объединять международных единомышленников и таланты для создания инновационных решений в области IT"
+      "title": "Build a community",
+      "p": "Peaceful allies of talents: Our purpose is to bring together international like-minded individuals and talents to create innovative IT solutions."
     }
   },
   "our_leaders": {
-    "title": "Наши лидеры",
-    "qural": "Курал Атабаев",
-    "abat": "Абат Даулетбаев",
+    "title": "Our leaders",
+    "qural": "Kural Atabaev",
+    "abat": "Abat Dauletbaev",
     "azamat": "Азамат Жумабаев",
-    "begis": "Бегис Орынбаев",
-    "qural_role": "Основатель",
-    "abat_role": "Директор, программист, инженер",
-    "azamat_role": "Технический директор",
-    "begis_role": "Проект менеджер, UX/UI дизайнер"
+    "begis": "Begis Orinbaev",
+    "qural_role": "Founder",
+    "abat_role": "CEO, Software engineer",
+    "azamat_role": "CTO",
+    "begis_role": "Project manager, UX/UI designer"
   },
   "members": {
-    "muxammetsharip": "Мухамметшарип",
-    "muxammetsharip_role": "Фулл-стек веб разработчик",
-    "jamshid": "Джамшид Исоков",
-    "jamshid_role": "iOS/Android разработчик",
-    "azamat_berdimuratov": "Азамат Бердимуратов",
-    "azamat_berdimuratov_role": "Front-end разработчик",
-    "dilshod": "Дилшод",
-    "dilshod_role": "Back-end разработчик",
-    "muxammedali": "Мухаммедали",
-    "muxammedali_role": "Junior java разработчик",
-    "aleuatdin": "Жаксылыков Алеуатдин",
-    "aleuatdin_role": "Junior android разработчик",
-    "sharyar": "Шарьяр Назарбаев",
+    "muxammetsharip": "Mukhammetsharip",
+    "muxammetsharip_role": "Full-stack веб developer",
+    "jamshid": "Jamshid Isokov",
+    "jamshid_role": "iOS/Android developer",
+    "azamat_berdimuratov": "Azamat Berdimuratov",
+    "azamat_berdimuratov_role": "Front-end developer",
+    "dilshod": "Dilshod",
+    "dilshod_role": "Back-end developer",
+    "muxammedali": "Mukhammedali",
+    "muxammedali_role": "Junior java developer",
+    "aleuatdin": "Jaksilikov Aleuatdin",
+    "aleuatdin_role": "Junior android developer",
+    "sharyar": "Sharyar Nazarbaev",
     "sharyar_role": "UI/UX дизайнер",
     "mukhammedali": "Mukhammedali Ametov",
-    "mukhammedali_role": "Junior front-end разработчик"
+    "mukhammedali_role": "Junior front-end developer"
   },
-  "open_details": "Подробнее",
-  "our_projects": "Наши проекты",
-  "all_projects": "Все проекты",
-  "startups": "Стартапы",
-  "testimonials": "О нас пишут",
+  "project_types": {
+    "web": "Website",
+    "mobile": "Mobile",
+    "startup": "Startup",
+    "crm": "CRM"
+  },
+  "go_to_website": "Go to website",
+  "open_details": "Details",
+  "our_projects": "Our projects",
+  "all_projects": "All projects",
+  "startups": "Start ups",
+  "testimonials": "Reviews",
   "contact_us": {
-    "title": "Свяжитесь с нами",
-    "email": "Электронная почта",
+    "title": "Contact us",
+    "email": "Email",
     "email_placeholder": "email@example.com",
-    "message": "Сообщение",
-    "message_placeholder": "Ваше сообщение",
-    "submit": "Отправить",
-    "invalid_email": "Неверный email",
-    "message_min_length": "Сообщение должно содержать не менее 10 символов",
-    "success": "Сообщение успешно отправлено",
-    "error": "Произошла ошибка при отправке сообщения",
-    "phone": "Телефон",
+    "message": "Message",
+    "message_placeholder": "Enter your message",
+    "submit": "Submit",
+    "invalid_email": "Invalid email",
+    "message_min_length": "Message must be at least 10 characters long",
+    "success": "Your message has been sent successfully",
+    "error": "Something went wrong. Please try again later",
+    "phone": "Phone",
     "phone_placeholder": "+996 700 123 456",
-    "invalid_phone": "Неверный формат телефона",
-    "reach_us_directly": "Свяжитесь с нами напрямую",
-    "reach_us_description": "Ваш успех - наша цель. Не теряйте времени, свяжитесь с нами сейчас, и наша команда экспертов с радостью окажет вам поддержку, решит любые вопросы и поможет достичь ваших целей вместе!"
+    "invalid_phone": "Invalid phone number",
+    "reach_us_directly": "Reach us directly",
+    "reach_us_description": "Your success is our goal. Don't waste time, contact us now and our team of experts will be happy to support you, solve any issues and help you achieve your goals together!"
+  },
+  "projects": {
+    "skymaxx": {
+      "title": "SkyMaxx",
+      "description": "Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану"
+    },
+    "newera": {
+      "title": "New Era",
+      "description": "Сайт сделан для компании в Ташкенте по установке GPS мониторинга по всему Узбекистану"
+    },
+    "nukusavtovokzal": {
+      "title": "Nukus bus station tour",
+      "description": "Сайт сделан по заказу ООО \"Нукус Автовокзал\" для своей дочерней компании занимающийся туризмом."
+    },
+    "tashkenthotel": {
+      "title": "Tashkent hotel",
+      "description": "Сайт сделан для самого лучшего отеля Нукуса. Гостиница находится в центре города."
+    },
+    "intertravel": {
+      "title": "Inter Travel Nukus",
+      "description": "Веб-сайт сделан по заказу тур агентсва в Нукусе. С помощью этого сайта вы можете организовать путешествие по всему миру и по Узбекистану."
+    },
+    "xuxo": {
+      "title": "Xuxo CRM",
+      "description": "Центр услуг Хухо. Через этот сайт вы можете пользоваться 16 видами услуг со скидкой. Помимо этого, сайт включает в себя услугу находить работу на заказ разным специалистам."
+    },
+    "flytravel": {
+      "title": "Fly Travel",
+      "description": "Доработали сайт по требованию клиента. Добавили к ним система платежа по Click."
+    },
+    "kodtime": {
+      "title": "Kodtime",
+      "description": "Доработали сайт по требованию клиента. Сделали слайдер и подключили ютуб. Немного изменили вид."
+    },
+    "toybaslar": {
+      "title": "Toy Baslar",
+      "description": "Сделали платформу по заказу «Toy Baslar» для рассрочки."
+    },
+    "nawbet": {
+      "title": "Nawbet",
+      "description": "Our product is designed for automating enterprise queues."
+    }
+  },
+  "feedback": {
+    "xuxo": {
+      "name": "Aziz Adilbekov",
+      "position": "CEO",
+      "company": "\"Xuxo Services\" LLC",
+      "content": "Hello, on behalf of \"Xuxo Services\" LLC, we express our endless gratitude to the programmers at Bizler Group. Thanks to the IT program they created, we have noticed excellent advancements in our work. We wish the specialists at Bizler Group good health and continued success in introducing new innovations."
+    },
+    "skymaxx": {
+      "name": "Allayar Mambetkarimov",
+      "position": "CEO",
+      "company": "\"New Era\" LLC and \"Skymaxx\" LLC",
+      "content": "On behalf of \"New Era\" LLC and \"Skymaxx\" LLC, I want to express my gratitude to the specialists at Bizler Group. Thanks to the created websites, it has become possible to provide more information about our companies. I wish the developers at Bizler Group good luck!"
+    }
   },
   "links": {
-    "home": "Главная",
-    "about": "О нас",
-    "team": "Команда",
-    "projects": "Проекты",
-    "contact": "Связаться с нами",
-    "testimonials": "Отзывы"
+    "home": "Main",
+    "about": "About us",
+    "team": "Team",
+    "projects": "Projects",
+    "contact": "Contact us",
+    "testimonials": "Testimonials"
   },
-  "all_rights_reserved": "Все права защищены",
+  "all_rights_reserved": "All rights reserved",
   "page_not_found": "Page not found",
   "open_main_menu": "Open main menu",
-  "our_services": "Xızmetlerimiz",
+  "our_services": "Our services",
   "services": {
-    "web_development": "Web baǵdarlamlar",
-    "web_development_description": "Hár túrli web-baǵdarlamalar, web-saytlar, landing page (vizitka) saytlardı joqarı sapada jaratıp beremiz.",
-    "mobile_development": "Mobil baǵdarlamalar",
-    "mobile_development_description": "Qálegen dárejedegi mobil baǵdarlamalardı jaratamız. Ápiwayısınan tartıp quramalı baǵdarlamalarǵa shekem siziń kewlińizdegidey isleymiz.",
-    "design": "UI/UX dizayn",
-    "design_description": "Siziń web-saytıńız hám mobil baǵdarlamańız qolaylı, sulıw hám ıqsham bolıwı ushın dizayn jaratamız.",
+    "web_development": "Web development",
+    "web_development_description": "We create websites of any complexity. We develop websites using modern technologies and frameworks.",
+    "mobile_development": "Mobile development",
+    "mobile_development_description": "We develop mobile applications for Android and iOS. We use modern technologies and frameworks.",
+    "design": "UI/UX design",
+    "design_description": "We create modern and user-friendly designs for websites and mobile applications.",
     "crm": "CRM",
-    "crm_description": "Biznes hám processlerdi avtomatizaciyalaw, basqarıwdı ápiwayılastırıwshı hám qaǵazbazlıqtı azaytıwshı elektron sistemalar jaratıw."
+    "crm_description": "We develop CRM systems for your business. Accelerate your business with CRM systems."
   }
 }

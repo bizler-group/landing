@@ -26,6 +26,46 @@ export const LINKS = [
   },
 ]
 
+export const PARTNERS = [
+  {
+    id: 1,
+    src: '/images/partner-logos/era.jpeg',
+    alt: 'partners.newera',
+    className: 'rounded-full',
+  },
+  {
+    id: 2,
+    src: '/images/partner-logos/jaslar-isler-agentligi.png',
+    alt: 'partners.jaslar_isleri_agentligi',
+  },
+  {
+    id: 3,
+    src: '/images/partner-logos/it-park-kr.png',
+    alt: 'partners.it_park_kr',
+  },
+  {
+    id: 4,
+    src: '/images/partner-logos/UNDP.png',
+    alt: 'partners.undp',
+  },
+  {
+    id: 5,
+    src: '/images/partner-logos/mitc.svg',
+    alt: 'partners.mitc',
+  },
+  {
+    id: 6,
+    src: '/images/partner-logos/logo_sky.png',
+    alt: 'partners.skymaxx',
+  },
+  {
+    id: 7,
+    src: '/images/partner-logos/nukus-avtovokzal.png',
+    alt: 'partners.nukus_avtovokzal',
+    className: 'invert',
+  }
+]
+
 export const LEADER_SLIDES = [
   {
     id: 1,
@@ -368,7 +408,7 @@ export const TESTIMONIALS_SLIDES = [
     content: 'feedback.xuxo.content',
   },
   {
-    id: 1,
+    id: 2,
     avatar: '/images/testimonials/newera.jpeg',
     name: 'feedback.skymaxx.name',
     position: 'feedback.skymaxx.position',

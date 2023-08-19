@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
 import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react'
@@ -15,7 +15,7 @@ interface Props {
 }
 
 export const CardSlider: React.FC<Props> = ({ slides }) => {
-  const {t} = useTranslation('common')
+  const { t } = useTranslation('common')
   const [slideClientWidth, setSlideClientWidth] = useState(0)
   const [noPrev, setNoPrev] = useState(false)
   const [noNext, setNoNext] = useState(false)
@@ -51,13 +51,18 @@ export const CardSlider: React.FC<Props> = ({ slides }) => {
     setNoNext(scrollLeft + clientWidth === scrollWidth)
   }, [])
 
+  useEffect(() => {
+    if (!slidesContainer.current) return
+    slidesContainer.current.dispatchEvent(new Event('scroll'))
+  }, [])
+
   return (
     <>
       <div className="relative">
         <div
           ref={slidesContainer}
           onScroll={onScroll}
-          className="scrollbar-hide h-80 max-md:h-[22rem]  flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[35vw] before:shrink-0 after:w-[35vw] after:shrink-0 md:before:w-0 md:after:w-0"
+          className="scrollbar-hide h-80 max-md:h-[22rem] flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[35vw] before:shrink-0 after:w-[35vw] after:shrink-0 md:before:w-0 md:after:w-0"
         >
           {slides.map((slide, index) => (
             <div
@@ -66,9 +71,9 @@ export const CardSlider: React.FC<Props> = ({ slides }) => {
                 if (!ref) return
                 setSlideClientWidth(ref.clientWidth)
               }}
-              className="relative transition-all flex flex-col justify-between bg-[#041C1F] p-10 max-md:px-5 max-md:py-7 rounded-3xl md:min-w-[500px] aspect-square hover:cursor-pointer flex-shrink-0 snap-center overflow-hidden"
+              className="relative transition-all flex flex-col justify-between bg-[#041C1F] p-10 max-md:px-5 max-md:py-7 rounded-3xl md:min-w-[500px] aspect-square flex-shrink-0 snap-center overflow-hidden"
             >
-              <div className='mb-5'>
+              <div className="mb-5">
                 <p className="text-white">{t(slide.content)}</p>
               </div>
 
@@ -93,31 +98,33 @@ export const CardSlider: React.FC<Props> = ({ slides }) => {
         </div>
       </div>
 
-      <div className="mt-5 gap-5 mx-auto flex justify-center items-center">
-        <button
-          role="button"
-          className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
-          aria-label="prev"
-          disabled={noPrev}
-          onClick={onPrevNext.bind(null, 'prev')}
-        >
-          <IconArrowLeft
-            className={noPrev ? 'text-[#194f55]' : 'text-[#52B6C4]'}
-          />
-        </button>
+      {(!noPrev || !noNext) && (
+        <div className="mt-5 gap-5 mx-auto flex justify-center items-center">
+          <button
+            role="button"
+            className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
+            aria-label="prev"
+            disabled={noPrev}
+            onClick={onPrevNext.bind(null, 'prev')}
+          >
+            <IconArrowLeft
+              className={noPrev ? 'text-[#194f55]' : 'text-[#52B6C4]'}
+            />
+          </button>
 
-        <button
-          role="button"
-          className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
-          aria-label="next"
-          disabled={noNext}
-          onClick={onPrevNext.bind(null, 'next')}
-        >
-          <IconArrowRight
-            className={noNext ? 'text-[#194f55]' : 'text-[#52B6C4]'}
-          />
-        </button>
-      </div>
+          <button
+            role="button"
+            className="next px-2 py-2 rounded-full bg-transparent text-white border-[#52B6C4] disabled:border-[#194f55] border-2 border-solid"
+            aria-label="next"
+            disabled={noNext}
+            onClick={onPrevNext.bind(null, 'next')}
+          >
+            <IconArrowRight
+              className={noNext ? 'text-[#194f55]' : 'text-[#52B6C4]'}
+            />
+          </button>
+        </div>
+      )}
     </>
   )
 }

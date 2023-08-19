@@ -39,7 +39,7 @@ export default function Project(props: Project) {
             className="mt-4 ml-4 py-3 px-6 inline-block max-md:hidden max-md:text-sm"
             active
           >
-            {type}
+            {t(type)}
           </Button>
         </div>
       </div>
@@ -52,7 +52,7 @@ export default function Project(props: Project) {
             active
             external
           >
-            Go to website <IconArrowUpRight />
+            {t('go_to_website')} <IconArrowUpRight />
           </Button>
         )}
       </div>

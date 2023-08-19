@@ -2,7 +2,7 @@ export const PROJECT_DETAILS = {
   skymaxx: {
     title: 'projects.skymaxx.title',
     tools: ['React', 'Next.js', 'TypeScript'],
-    type: 'Website',
+    type: 'project_types.web',
     description: {
       en: [
         `<img class="mb-2" src="/images/projects/skymaxx/1.png" alt="SkyMaxx" />`,
@@ -26,7 +26,7 @@ export const PROJECT_DETAILS = {
   newera: {
     title: 'projects.newera.title',
     tools: ['React', 'Next.js', 'TypeScript'],
-    type: 'Website',
+    type: 'project_types.web',
     description: {
       en: [
         `<img class="mb-2" src="/images/projects/newera/1.png" alt="New Era" />`,
@@ -50,7 +50,7 @@ export const PROJECT_DETAILS = {
   nukusavtovokzal: {
     title: 'projects.nukusavtovokzal.title',
     tools: ['HTML', 'CSS'],
-    type: 'Website',
+    type: 'project_types.web',
     description: {
       en: [
         `<img class="mb-2" src="/images/projects/nukusavtovokzal/1.png" alt="Нукус Автовокзал" />`,
@@ -70,7 +70,7 @@ export const PROJECT_DETAILS = {
   tashkenthotel: {
     title: 'projects.tashkenthotel.title',
     tools: ['React', 'Next.js'],
-    type: 'Website',
+    type: 'project_types.web',
     description: {
       en: [
         `<img class="mb-2" src="/images/projects/tashkenthotel/1.png" alt="Tashkent Hotel" />`,
@@ -90,7 +90,7 @@ export const PROJECT_DETAILS = {
   intertravel: {
     title: 'projects.intertravel.title',
     tools: ['React', 'Next.js'],
-    type: 'Website',
+    type: 'project_types.web',
     description: {
       en: [
         `<img class="mb-2" src="/images/projects/intertravel/1.png" alt="Inter Travel Nukus" />`,
@@ -110,7 +110,7 @@ export const PROJECT_DETAILS = {
   xuxo: {
     title: 'projects.xuxo.title',
     tools: ['React'],
-    type: 'CRM',
+    type: 'project_types.crm',
     description: {
       en: [
         `<img class="mb-2" src="/images/projects/xuxo/1.png" alt="Xuxo" />`,
@@ -132,7 +132,7 @@ export const PROJECT_DETAILS = {
   toybaslar: {
     title: 'projects.toybaslar.title',
     tools: ['React'],
-    type: 'CRM',
+    type: 'project_types.crm',
     description: {
       en: [
         `<img class="mb-2" src="/images/projects/toybaslar/1.png" alt="Toybaslar" />`,
@@ -152,7 +152,7 @@ export const PROJECT_DETAILS = {
   flytravel: {
     title: 'projects.flytravel.title',
     tools: ['React'],
-    type: 'Website',
+    type: 'project_types.web',
     description: {
       en: [
         `<img class="mb-2" src="/images/projects/flytravel/1.png" alt="Flytravel" />`,
@@ -172,7 +172,7 @@ export const PROJECT_DETAILS = {
   kodtime: {
     title: 'projects.kodtime.title',
     tools: ['React'],
-    type: 'Website',
+    type: 'project_types.web',
     description: {
       en: [
         `<img class="mb-2" src="/images/projects/kodtime/1.png" alt="Kodtime" />`,
@@ -192,7 +192,7 @@ export const PROJECT_DETAILS = {
   nawbet: {
     title: 'projects.nawbet.title',
     tools: ['React'],
-    type: 'Website',
+    type: 'project_types.web',
     description: {
       en: [
         `<img class="mb-2" src="/images/projects/nawbet/1.jpeg" alt="Náwbet" />`,
