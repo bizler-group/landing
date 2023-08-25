@@ -190,6 +190,14 @@ export const TEAM_MEMBERS = [
     flag: '/images/flags/karakalpakstan.svg',
     country: 'karakalpakstan',
   },
+  {
+    id: 13,
+    name: 'common:members.shaxzod_masharipov',
+    position: 'common:members.shaxzod_masharipov_role',
+    image: '/images/members/shaxzod_masharipov.jpeg',
+    flag: '/images/flags/karakalpakstan.svg',
+    country: 'karakalpakstan',
+  }
 ]
 
 export const ROLES = [
@@ -236,7 +244,7 @@ export const PROJECT_SLIDES = [
     type: 'website',
     image: '/images/projects/skymaxx/1.png',
     title: 'projects.skymaxx.title',
-    description: 'projects.skymaxx.description',
+    // description: 'projects.skymaxx.description',
     link: '/projects/skymaxx',
   },
   {
@@ -244,7 +252,7 @@ export const PROJECT_SLIDES = [
     type: 'website',
     image: '/images/projects/newera/1.png',
     title: 'projects.newera.title',
-    description: 'projects.newera.description',
+    // description: 'projects.newera.description',
     link: '/projects/newera',
   },
   {
@@ -252,7 +260,7 @@ export const PROJECT_SLIDES = [
     type: 'website',
     image: '/images/projects/nukusavtovokzal/1.png',
     title: 'projects.nukusavtovokzal.title',
-    description: 'projects.nukusavtovokzal.description',
+    // description: 'projects.nukusavtovokzal.description',
     link: '/projects/nukusavtovokzal',
   },
   {
@@ -260,7 +268,7 @@ export const PROJECT_SLIDES = [
     type: 'website',
     image: '/images/projects/tashkenthotel/1.png',
     title: 'projects.tashkenthotel.title',
-    description: 'projects.tashkenthotel.description',
+    // description: 'projects.tashkenthotel.description',
     link: '/projects/tashkenthotel',
   },
   {
@@ -268,7 +276,7 @@ export const PROJECT_SLIDES = [
     type: 'website',
     image: '/images/projects/intertravel/1.png',
     title: 'projects.intertravel.title',
-    description: 'projects.intertravel.description',
+    // description: 'projects.intertravel.description',
     link: '/projects/intertravel',
   },
   {
@@ -276,7 +284,7 @@ export const PROJECT_SLIDES = [
     type: 'crm',
     image: '/images/projects/xuxo/1.png',
     title: 'projects.xuxo.title',
-    description: 'projects.xuxo.description',
+    // description: 'projects.xuxo.description',
     link: '/projects/xuxo',
   },
   {
@@ -284,7 +292,7 @@ export const PROJECT_SLIDES = [
     type: 'website',
     image: '/images/projects/flytravel/1.png',
     title: 'projects.flytravel.title',
-    description: 'projects.flytravel.description',
+    // description: 'projects.flytravel.description',
     link: '/projects/flytravel',
   },
   {
@@ -292,7 +300,7 @@ export const PROJECT_SLIDES = [
     type: 'website',
     image: '/images/projects/kodtime/1.png',
     title: 'projects.kodtime.title',
-    description: 'projects.kodtime.description',
+    // description: 'projects.kodtime.description',
     link: '/projects/kodtime',
   },
   {
@@ -300,7 +308,7 @@ export const PROJECT_SLIDES = [
     type: 'website',
     image: '/images/projects/toybaslar/1.png',
     title: 'projects.toybaslar.title',
-    description: 'projects.toybaslar.description',
+    // description: 'projects.toybaslar.description',
     link: '/projects/toybaslar',
   },
   {
@@ -308,9 +316,17 @@ export const PROJECT_SLIDES = [
     type: 'website',
     image: '/images/projects/nawbet/1.jpeg',
     title: 'projects.nawbet.title',
-    description: 'projects.nawbet.description',
+    // description: 'projects.nawbet.description',
     link: '/projects/nawbet',
   },
+  {
+    id: 11,
+    type: 'website',
+    image: '/images/projects/biogumusfarm/1.png',
+    title: 'projects.biogumusfarm.title',
+    // description: 'projects.biogumusfarm.description',
+    link: '/projects/biogumusfarm',
+  }
 ]
 
 export const SERVICES = [

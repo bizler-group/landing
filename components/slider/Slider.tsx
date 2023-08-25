@@ -15,7 +15,7 @@ interface Props {
     id: number | string
     image: string
     title: string
-    description: string
+    description?: string
     link?: string
   }[]
 }
@@ -69,7 +69,10 @@ export const Slider: React.FC<Props> = ({ slides, namespace = 'common' }) => {
         <div
           ref={slidesContainer}
           onScroll={onScroll}
-          className="scrollbar-hide h-96 max-md:h-80 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[35vw] before:shrink-0 after:w-[35vw] after:shrink-0 md:before:w-0 md:after:w-0"
+          className={cx(
+            'scrollbar-hide h-96 max-md:h-80 flex snap-x snap-mandatory overflow-x-auto space-x-4 rounded scroll-smooth before:w-[35vw] before:shrink-0 after:w-[35vw] after:shrink-0 md:before:w-0 md:after:w-0',
+            !slides[0].description && 'h-64 max-md:h-[15.5rem]',
+          )}
         >
           {slides.map((slide, index) => (
             <div
@@ -110,7 +113,9 @@ export const Slider: React.FC<Props> = ({ slides, namespace = 'common' }) => {
               </div>
               <div className="mt-2.5 text-center">
                 <p className="text-white">{t(slide.title)}</p>
-                <span className="text-[#B8C1C1]">{t(slide.description)}</span>
+                {slide.description && (
+                  <span className="text-[#B8C1C1]">{t(slide.description)}</span>
+                )}
               </div>
             </div>
           ))}

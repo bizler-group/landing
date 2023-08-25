@@ -60,7 +60,9 @@
     "sharyar": "Sháryar Nazarbaev",
     "sharyar_role": "UI/UX dizayner",
     "mukhammedali": "Mukhammedali Ametov",
-    "mukhammedali_role": "Junior front-end baǵdarlamashı"
+    "mukhammedali_role": "Junior front-end baǵdarlamashı",
+    "shaxzod_masharipov": "Shaxzod Masharipov",
+    "shaxzod_masharipov_role": "Junior backend baǵdarlamashı"
   },
   "open_details": "Tolıǵıraq",
   "our_projects": "PROEKTLERIMIZ",
@@ -102,7 +104,7 @@
     },
     "nukusavtovokzal": {
       "title": "Nókis avtovokzal tur",
-      "description": "Сайт сделан по заказу ООО \"Нукус Автовокзал\" для своей дочерней компании занимающийся туризмом."
+      "description": "Nókis avtovokzalına tiyisli bolģan \"Nukus-Avtovokzal Tour\" kompaniyası ushın Bizler group tárepinen sayt islep berildi. "
     },
     "tashkenthotel": {
       "title": "Tashkent miymanxanası",
@@ -131,6 +133,10 @@
     "nawbet": {
       "title": "Náwbet",
       "description": "Náwbet app"
+    },
+    "biogumusfarm": {
+      "title": "Biogumus farm",
+      "description": "Сайт сделан для компании по производству удобрений в Ташкенте."
     }
   },
   "feedback": {
@@ -144,7 +150,7 @@
       "name": "Allayar Mámbetkarimov",
       "position": "Direktor",
       "company": "\"New Era\" hám \"Skymaxx\" JShJ",
-      "content": "\"New Era\" JShJ ham \"Skymaxx\" JShJ lar atınan Bizler Group qániygelerine óz minnetdarshılıǵımdı bildiremen. Járatılǵan veb-saytlar arqalı firmamız haqqında jánede kóbirek maǵlıwmat jetkeriw imkanı payda boldı. Bizler Group programmistlerine áwmet tileymen!"
+      "content": "\"New Era\" ham \"Skymaxx\" JShJ lar atınan Bizler Group qániygelerine óz minnetdarshılıǵımdı bildiremen. Járatılǵan veb-saytlar arqalı firmamız haqqında jánede kóbirek maǵlıwmat jetkeriw imkanı payda boldı. Bizler Group programmistlerine áwmet tileymen!"
     }
   },
   "links": {

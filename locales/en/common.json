@@ -60,7 +60,9 @@
     "sharyar": "Sharyar Nazarbaev",
     "sharyar_role": "UI/UX дизайнер",
     "mukhammedali": "Mukhammedali Ametov",
-    "mukhammedali_role": "Junior front-end developer"
+    "mukhammedali_role": "Junior front-end developer",
+    "shaxzod_masharipov": "Shaxzod Masharipov",
+    "shaxzod_masharipov_role": "Junior backend developer"
   },
   "project_types": {
     "web": "Website",
@@ -131,6 +133,10 @@
     "nawbet": {
       "title": "Nawbet",
       "description": "Our product is designed for automating enterprise queues."
+    },
+    "biogumusfarm": {
+      "title": "Biogumus farm",
+      "description": "Сайт сделан для компании по производству удобрений в Ташкенте."
     }
   },
   "feedback": {
