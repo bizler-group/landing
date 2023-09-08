@@ -104,7 +104,7 @@
     },
     "nukusavtovokzal": {
       "title": "Nókis avtovokzal tur",
-      "description": "Nókis avtovokzalına tiyisli bolģan \"Nukus-Avtovokzal Tour\" kompaniyası ushın Bizler group tárepinen sayt islep berildi. "
+      "description": "Nókis avtovokzalına tiyisli bolǵan \"Nukus-Avtovokzal Tour\" kompaniyası ushın Bizler group tárepinen sayt islep berildi. "
     },
     "tashkenthotel": {
       "title": "Tashkent miymanxanası",
@@ -151,6 +151,12 @@
       "position": "Direktor",
       "company": "\"New Era\" hám \"Skymaxx\" JShJ",
       "content": "\"New Era\" ham \"Skymaxx\" JShJ lar atınan Bizler Group qániygelerine óz minnetdarshılıǵımdı bildiremen. Járatılǵan veb-saytlar arqalı firmamız haqqında jánede kóbirek maǵlıwmat jetkeriw imkanı payda boldı. Bizler Group programmistlerine áwmet tileymen!"
+    },
+    "intertravel": {
+      "name":"Jumagúl Jalǵasova",
+      "position": "Direktor",
+      "company": "\"Inter Travel Nukus\" JShJ",
+      "content": "\"Inter Travel Nukus\" JShJ turistik firması atınan \"Bizler Group\" qániygelerine aldaǵı jumıslarına tasqın tabıslar tileymen. Islengen  web saytı búgingi kúnde óziniń jaqsı nátiyjesin kórsetip atır. \"Bizler Group\" programmistleriniń aldaǵı jumıslarında áwmet yar bolsın. Raxmet."
     }
   },
   "links": {

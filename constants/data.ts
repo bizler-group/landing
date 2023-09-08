@@ -416,7 +416,6 @@ export const FAILED_PROJECTS = [
 export const TESTIMONIALS_SLIDES = [
   {
     id: 1,
-    // avatar: '/images/profile-circle.svg',
     avatar: '/images/testimonials/aziz-adilbekov.png',
     name: 'feedback.xuxo.name',
     position: 'feedback.xuxo.position',
@@ -430,5 +429,13 @@ export const TESTIMONIALS_SLIDES = [
     position: 'feedback.skymaxx.position',
     company: 'feedback.skymaxx.company',
     content: 'feedback.skymaxx.content',
+  },
+  {
+    id: 3,
+    avatar: '/images/profile-circle.svg',
+    name: 'feedback.intertravel.name',
+    position: 'feedback.intertravel.position',
+    company: 'feedback.intertravel.company',
+    content: 'feedback.intertravel.content',
   },
 ]
