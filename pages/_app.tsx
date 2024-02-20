@@ -3,6 +3,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import type { AppProps } from 'next/app'
 
 import Head from 'next/head'
+import Script from 'next/script'
 import { ToastContainer } from 'react-toastify'
 import { Header } from '~/components/layout/Header'
 import { Footer } from '~/components/layout/Footer'
@@ -37,6 +38,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <ToastContainer />
 
       <Footer />
+
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </>
   )
 }
