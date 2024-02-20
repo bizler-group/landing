@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Footer />
 
-      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
+      <Script src="https://sa.bizler.group/latest.js" />
     </>
   )
 }
